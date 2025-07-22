@@ -15,7 +15,7 @@ key: home
               {% elsif forloop.index == 2 %} animate-fadein-200
               {% elsif forloop.index == 3 %} animate-fadein-300
               {% endif %}">
-                <img src="{{ subimage.image }}" alt="{{ site.data.textblocks.pages.home.hero_preheadline | escape }}" class="w-auto h-full object-cover mx-auto">
+                <img src="{{ subimage.image | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_preheadline | escape }}" class="w-auto h-full object-cover mx-auto">
               </div>
               {% endfor %}
               <span class="ml-4 opacity-0 animate-fadein-400">{{site.data.textblocks.pages.home.hero_preheadline}}</span>
@@ -29,7 +29,7 @@ key: home
         <!-- Image -->
         <div class="w-full md:w-1/2 flex justify-center relative items-center">
           <div class="relative">
-            <img src="{{ site.data.textblocks.pages.home.hero_image1 }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
+            <img src="{{ site.data.textblocks.pages.home.hero_image1 | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
                 class="max-h-128 object-contain w-full opacity-0 animate-fadein-400">
             <span
                     class="flex items-center px-4 py-2 rounded-full text-xl w-fit border-12 border-white {{ site.data.textblocks.pages.home.hero_tag1.color }} absolute -bottom-8 -right-1 opacity-0 animate-fadedown-800">
@@ -40,9 +40,9 @@ key: home
                 </span>
           </div>
           <div class="relative">
-            <img src="{{ site.data.textblocks.pages.home.hero_image2 }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
+            <img src="{{ site.data.textblocks.pages.home.hero_image2 | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
               class="max-h-128 object-contain w-full  opacity-0 animate-fadein-500">
-            <img src="{{ site.data.textblocks.pages.home.hero_image3 }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
+            <img src="{{ site.data.textblocks.pages.home.hero_image3 | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
               class="max-h-128 object-contain w-full opacity-0 animate-fadein-600">
               <span
                     class="flex items-center px-4 py-2 rounded-full text-xl w-fit border-12 border-white {{ site.data.textblocks.pages.home.hero_tag2.color }} absolute -bottom-8 -left-1 opacity-0 animate-fadein-800">

@@ -3,7 +3,7 @@
     {% if include.left %}md:flex-row{% else %}md:flex-row-reverse{% endif %}">
         <!-- Image -->
         <div class="w-full md:w-1/2 flex justify-center relative">
-            <img src="{{ include.image }}" alt="{{ include.headline | escape }}"
+            <img src="{{ include.image | relative_url }}" alt="{{ include.headline | escape }}"
                 class="max-h-128 object-contain w-full">
             <!-- Tags -->
             {% if include.tags %}
