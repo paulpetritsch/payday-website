@@ -1,0 +1,13 @@
+---
+layout: default
+title: Bonitätsprüfung in der Schweiz
+intro: Was ist eine Bonitätsprüfung? Eine Bonitätsprüfung ist die Bewertung der finanziellen Zuverlässigkeit einer Person oder eines Unternehmens.
+image: /assets/images/bonitaet.png
+color: green-50
+duration: 5
+categories: financial-advice
+permalink: /financial-advice/bonitaet/
+---
+# Bonitätsprüfung in der Schweiz
+
+Blog-Inhalt...

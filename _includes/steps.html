@@ -1,0 +1,39 @@
+{% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
+{% assign section = 'steps' %}
+
+{% assign section_data = site.data.textblocks.pages[page_key].sections[section] | default:
+site.data.textblocks.sections[section] %}
+
+<div class="px-4 py-32 bg-purple-50 rounded-3xl h-screen">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            {% include section-headline.html text=section_data.headline %}
+            {% include section-subheadline.html text=section_data.subheadline %}
+        </div>
+        <div class="flex gap-4 mb-16">
+            {% for step in section_data.steps %}
+            <div class="relative flex-1 flex justify-center items-center is-animated">
+                <svg class="w-full h-full" width="336" height="260" viewBox="0 0 336 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-{{ step.bg }}" d="M108 0C119.046 0 127.586 9.49047 132.889 19.1794C139.681 31.5865 152.858 40 168 40C183.142 40 196.319 31.5865 203.111 19.1794C208.414 9.49047 216.954 0 228 0H316C327.046 2.06162e-06 336 8.95431 336 20V240C336 251.046 327.046 260 316 260H20C8.95431 260 4.02687e-07 251.046 0 240V20C0 8.95431 8.95431 3.22129e-08 20 0H108Z"/>
+                </svg>  
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 text-center">         
+                    <div class="!font-semibold text-3xl text-{{ step.color }}">
+                        {{forloop.index}}
+                    </div>
+                </div>
+                <div class="absolute top-1/3 left-1/2 -translate-x-1/2 text-center">         
+                    <div class="!font-semibold">
+                        {% include section-subheadline.html text=step.title animation=false %}
+                    </div>
+                    <p class="">
+                        {{ step.text }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center">
+        {% include button.html text=section_data.button_text link=section_data.button_link %}
+        </div>
+    </div>
+</div>

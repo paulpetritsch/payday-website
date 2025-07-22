@@ -1,0 +1,83 @@
+<footer class="h-[80vh] flex flex-col bg-purple-50">
+    <div class="pt-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <svg class="w-full h-auto" width="1038" height="235" viewBox="0 0 1038 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M83.723 33.5645C37.4824 33.5645 0 71.0459 0 117.346V209.58C12.2492 220.665 26.7032 229.362 42.6271 234.935V190.227C54.7538 197.086 68.7791 201.067 83.7843 201.067C130.025 201.067 167.569 163.586 167.569 117.285C167.507 71.0459 130.025 33.5645 83.723 33.5645ZM83.723 158.441C61.0008 158.441 42.5658 140.007 42.5658 117.285C42.5658 94.5636 61.0008 76.1291 83.723 76.1291C106.445 76.1291 124.88 94.5636 124.88 117.285C124.88 140.007 106.445 158.441 83.723 158.441Z" fill="#E659B5"/>
+                <path d="M472.878 33.875V117.351V117.596C472.756 140.195 454.382 158.507 431.721 158.507C408.999 158.507 390.564 140.072 390.564 117.351V33.875H347.998V117.351C347.998 163.59 385.48 201.133 431.782 201.133C446.726 201.133 460.752 197.152 472.94 190.293V235.001C488.863 229.428 503.317 220.731 515.567 209.646V33.875H472.878Z" fill="#E659B5"/>
+                <path d="M257.906 33.5645C211.665 33.5645 174.183 71.0459 174.183 117.346C174.183 163.647 211.665 201.128 257.906 201.128C272.85 201.128 286.875 197.148 299.063 190.288V201.128H341.69V117.285C341.629 71.0459 304.146 33.5645 257.906 33.5645ZM257.906 158.441C235.183 158.441 216.748 140.007 216.748 117.285C216.748 94.5636 235.183 76.1291 257.906 76.1291C280.628 76.1291 299.063 94.5636 299.063 117.285C299.063 140.007 280.628 158.441 257.906 158.441Z" fill="#E659B5"/>
+                <path d="M646.817 44.647C634.69 37.7876 620.665 33.8068 605.66 33.8068C559.419 33.8068 521.937 71.2882 521.937 117.589C521.937 163.889 559.419 201.371 605.66 201.371C651.9 201.371 689.444 163.889 689.444 117.589V25.3551C677.195 14.2699 662.741 5.57322 646.817 0V44.647ZM605.66 158.745C582.937 158.745 564.502 140.31 564.502 117.589C564.502 94.8672 582.937 76.4327 605.66 76.4327C628.382 76.4327 646.817 94.8672 646.817 117.589C646.817 140.31 628.382 158.745 605.66 158.745Z" fill="#B8DE31"/>
+                <path d="M995.306 33.8691V117.345C995.306 140.066 976.871 158.501 954.149 158.501C931.427 158.501 912.992 140.066 912.992 117.345V33.8691H870.426V117.345C870.426 163.584 907.908 201.127 954.21 201.127C969.154 201.127 983.179 197.146 995.367 190.287V234.995C1011.29 229.422 1025.75 220.725 1037.99 209.64V33.8691H995.306Z" fill="#B8DE31"/>
+                <path d="M780.333 33.5645C734.093 33.5645 696.61 71.0459 696.61 117.346C696.61 163.647 734.093 201.128 780.333 201.128C795.277 201.128 809.303 197.148 821.491 190.288V201.128H864.118V117.285C864.118 71.0459 826.635 33.5645 780.333 33.5645ZM780.333 158.441C757.611 158.441 739.176 140.007 739.176 117.285C739.176 94.5636 757.611 76.1291 780.333 76.1291C803.056 76.1291 821.491 94.5636 821.491 117.285C821.491 140.007 803.056 158.441 780.333 158.441Z" fill="#B8DE31"/>
+            </svg>
+        </div>
+      </div>
+      <div class="flex-1 flex items-center px-4">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between gap-4">
+          <div>
+            {{ site.data.textblocks.footer.address_street }}<br>
+            {{ site.data.textblocks.footer.address_city }}
+            <br><br>
+            <a class="text-black transition-colors duration-200 hover:text-purple-500" href="mailto:info@payday.ch">
+                {{ site.data.textblocks.footer.email }}
+            </a>
+          </div>
+          <div>
+            <div class="font-bold mb-8">
+                {{ site.data.textblocks.footer.company }}
+            </div>
+            <a class="leading-8 text-gray-400 transition-colors duration-200 hover:text-black" href="/companies">
+                {{ site.data.textblocks.footer.for_companies }}
+            </a>
+            <br>
+            <a class="leading-8 text-gray-400 transition-colors duration-200 hover:text-black" href="/anti-moneylaundering">
+                {{ site.data.textblocks.footer.anti_money_laundering }}
+            </a>
+            <br>
+            <a class="leading-8 text-gray-400 transition-colors duration-200 hover:text-black" href="/financial-advice">
+                {{ site.data.textblocks.footer.financial_advice }}
+            </a>
+          </div>
+          <div>
+            <div class="font-bold mb-8">{{ site.data.textblocks.footer.help }}</div>
+            <a class="leading-8 text-gray-400 transition-colors duration-200 hover:text-black" href="/process-benefits">
+                {{ site.data.textblocks.footer.process_benefits }}
+            </a>
+            <br>
+            <a class="leading-8 text-gray-400 transition-colors duration-200 hover:text-black" href="/support">
+                {{ site.data.textblocks.footer.support }}
+            </a>
+            <br>
+            <a class="leading-8 text-gray-400 transition-colors duration-200 hover:text-black" href="/faqs">
+                {{ site.data.textblocks.footer.faqs }}
+            </a>
+          </div>
+          <div>
+            <div class="font-bold mb-8">
+                {{ site.data.textblocks.footer.more }}
+            </div>
+            <a class="leading-8 text-gray-400 transition-colors duration-200 hover:text-black"" href="/privacy">
+                {{ site.data.textblocks.footer.privacy }}
+            </a>
+            <br>
+            <a class="leading-8 text-gray-400 transition-colors duration-200 hover:text-black"" href="/terms">
+                {{ site.data.textblocks.footer.terms }}
+            </a>
+            <br>
+            <a class="leading-8 text-gray-400 transition-colors duration-200 hover:text-black"" href="/imprint">
+                {{ site.data.textblocks.footer.imprint }}
+            </a>
+          </div>
+        </div>
+      </div>
+    <div class="bg-black text-white px-4 py-2">
+        <div class="max-w-7xl mx-auto flex justify-between font-display text-sm">
+            <div>
+                &copy; {{ site.title }} {{ site.time | date: "%Y" }}{{ site.data.textblocks.footer.copyright }}
+            </div>
+            <div>
+                {{ site.data.textblocks.footer.unerwartet_design }}
+                {{ site.data.textblocks.footer.bureaubuero }}
+            </div>
+        </div>
+    </div>
+</footer>

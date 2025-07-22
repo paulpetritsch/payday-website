@@ -1,0 +1,187 @@
+# _data/textblocks.de.yml
+
+# Global/shared text
+footer:
+  copyright: ". Alle Rechte vorbehalten."
+  address_street: "Beethovenstrasse 11"
+  address_city: "8002 Zürich, Schweiz"
+  email: "info@payday.ch"
+
+  company: "Unternehmen"
+  for_companies: "Für Unternehmen"
+  anti_money_laundering: "Anti-Geldwäsche KYC"
+  financial_advice: "Finanztipps"
+
+  help: "Hilfe"
+  process_benefits: "Ablauf & Vorteile"
+  support: "Kundenservice"
+  faqs: "FAQs"
+
+  more: "Weiteres"
+  privacy: "Datenschutz"
+  terms: "AGB"
+  imprint: "Impressum"
+
+  unerwartet_design: "Gestaltet von <a class='text-white transition-colors duration-200 hover:text-pink-100 underline' href='https://www.unerwartet.design'>Unerwartet Design</a>."
+  bureaubuero: "Umgesetzt von <a class='text-white transition-colors duration-200 hover:text-green-100 underline' href='https://www.bureaubuero.com'>BUREAU BÜRO</a>"
+
+nav:
+  about: "Über Payday"
+  process: "Ablauf & Vorteile"
+
+texts:
+  reading_time: "Lesezeit"
+  min: "Min."
+
+sections:
+  steps:
+    headline: "In 3 Schritten zu mehr finanzieller Freiheit"
+    subheadline: "Ohne Zinsen. Ohne Papierkram. Ohne Druck."
+    steps:
+      - title: "Konto erstellen"
+        text: "Registriere dich in wenigen Minuten für nur CHF 19.90 (einmalig) - ganz einfach und unkompliziert."
+        bg: "pink-50"
+        color: "pink-100"
+      - title: "Hochladen"
+        text: "Lade deine offenen Rechnungen hoch, bis zu CHF 499.- pro Monat."
+        bg: "purple-100"
+        color: "purple-200"
+      - title: "Durchatmen"
+        text: "Wir zahlen für dich - und du begleichst den Betrag ohne Zinsen ganz entspannt innerhalb von 30 Tagen."
+        bg: "green-50"
+        color: "green-100"
+    button_text: "Jetzt registrieren"
+    button_link: "/register"
+  image_quote:
+    home1:
+      image: "/assets/images/image-placeholder2.png"
+      headline: "Eine Rechnung zu viel?<br><strong>Zum Glück gibt's PayDay</strong>"
+      text: "Egal ob Zahnarzt, Strom, Reparatur oder Versicherung: Lade deine Rechnung bei uns hoch - wir bezahlen sie für dich. 
+        <br><br>
+        Dann hast du 30 Tage Zeit, den Betrag stressfrei zurückzuzahlen - ganz diskret, ohne jemandem aus dem Freundes- oder Familienkreis erklären zu müssen, warum das Geld gerade knapp ist."
+      button_text: "Ablauf & Vorteile"
+      button_link: "/process-benefits"
+      left: true
+      tags:
+        - color: "bg-green-50"
+          text: "30 Tage Zeit"
+          svg: "smiley"
+          svg_color: "text-green-100"
+        - color: "bg-purple-100"
+          text: "diskret"
+          svg: "lock"
+          svg_color: "text-purple-200"
+    home2:
+      image: "/assets/images/image-placeholder.png"
+      headline: "Vorteile bei PayDay"
+      subheadline: "Fair & schnell, ohne versteckte Kosten."
+      text: |
+        - Keine Zinsen
+        - Nur CHF 25.- für die 1. Rechnung
+        - Weitere Rechnungen für nur CHF 5.-
+        - Direkte Bezahlung
+        - Einfach & papierlos
+        - Diskrete Abwicklung - wir schützen deine Privatsphäre
+        - Deine Kreditwürdigkeit bleibt unberührt
+      button_text: "Rechnung hochladen"
+      button_link: "/upload"
+      left: false
+      tags:
+        - color: "bg-green-50"
+          text: "schnell"
+          svg: "fast"
+          svg_color: "text-green-100"
+        - color: "bg-pink-50"
+          text: "nur 25 CHF"
+          svg: "franken"
+          svg_color: "text-pink-100"
+        - color: "bg-purple-100"
+          text: "Kreditwürdigkeit"
+          svg: "lock"
+          svg_color: "text-purple-200"
+        - color: "bg-green-50"
+          text: "0% Zinsen"
+          svg: "smiley"
+          svg_color: "text-green-100"
+    home3:
+      image: "/assets/images/image-placeholder.png"
+      headline: "Dein persönlicher PayDay - genau dann, wenn du ihn brauchst"
+      subheadline: "Weil du Besseres zu tun hast, als dich um unbezahlte Rechnungen zu sorgen."
+      button_text: "Jetzt Registrieren"
+      button_link: "/register"
+      left: true
+      tags:
+        - color: "bg-pink-50"
+          text: "Soforthilfe"
+          svg: "heart-handshake"
+          svg_color: "text-pink-100"
+        - color: "bg-purple-100"
+          text: "Für dich"
+          svg: "persona"
+          svg_color: "text-purple-200"
+  blog_overview:
+      headline: "Für alle, die Geld neu denken"
+      subheadline: "Finanztipps"
+      button_text: "Weitere Tipps"
+  newsletter:
+    headline: "Dein monatliches Finanz-Update"
+    text: "Unsere besten Finanztipps direkt in dein Postfach: klar verständlich, leicht umzusetzen und wirklich hilfreich. Weil du selbst bestimmst, was mit deinem Geld passiert - und wir dich dabei unterstützen."
+    button_text: "Abonnieren"
+    placeholder: "me@mail.com"
+  faqs:
+    headline: "Häufig gestellte Fragen"
+    faqs:
+    - category: "Allgemeines"
+      items:
+        - question: "Was ist Payday?"
+          answer: "Payday ist ein Service für schnelle und sichere Rechnungsfinanzierung."
+        - question: "Wie funktioniert die Anmeldung?"
+          answer: "Sie registrieren sich online und laden Ihre Rechnung hoch."
+    - category: "Kosten"
+      items:
+        - question: "Wie sicher sind meine Daten?"
+          answer: "Ihre Daten werden nach höchsten Sicherheitsstandards verarbeitet."
+        - question: "Wer kann meine Daten sehen?"
+          answer: "Nur autorisierte Mitarbeiter haben Zugriff auf Ihre Daten."
+    - category: "Nutzung"
+      items:
+        - question: "Wie schnell erhalte ich mein Geld?"
+          answer: "In der Regel innerhalb von 24 Stunden nach Prüfung."
+        - question: "Welche Gebühren fallen an?"
+          answer: "Die Gebühren sind transparent und werden vorab angezeigt."
+
+pages:
+  home:
+    hero_headline: "Sorgenfrei bis zum nächsten PayDay"
+    hero_subheadline: "Wenn das Geld knapp wird, <strong>bezahlen wir deine Rechnungen.</strong>"
+    hero_button_text: "Rechnung hochladen"
+    hero_button_link: "/upload"
+    hero_preheadline: "300+ benutzen bereits PayDay"
+    hero_subimages:
+      - image: "/assets/images/women1.png"
+        color: "pink-50"
+      - image: "/assets/images/women2.png"
+        color: "purple-100"
+      - image: "/assets/images/man1.png"
+        color: "green-50"
+    hero_image1: "/assets/images/image-placeholder2.png"
+    hero_image2: "/assets/images/image-placeholder2.png"
+    hero_image3: "/assets/images/image-placeholder2.png"
+    hero_tag1:
+      color: "bg-green-50"
+      text: "0% Zinsen!"
+      svg: "smiley"
+      svg_color: "text-green-100"
+    hero_tag2:
+      color: "bg-pink-50"
+      text: "bis zu CHF 499,-"
+      svg: "fast"
+      svg_color: "text-pink-100"
+
+    sections:
+    
+  about:
+    sections:
+      blog_overview:
+        headline: "Für alle, die Geld neu denken"
+        subheadline: "Finanztipps"

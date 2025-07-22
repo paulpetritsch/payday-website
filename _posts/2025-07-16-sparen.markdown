@@ -1,0 +1,13 @@
+---
+layout: default
+title: Sparen im täglichen Leben - Tipps & Tricks
+intro: Wie kann man bei den Lebensmitteln sparen? Sparen bei Lebensmitteln gelingt durch klugen Preisvergleich und die Nutzung von Angeboten. 
+image: /assets/images/tips-tricks.png
+color: purple-100
+duration: 5
+categories: financial-advice
+permalink: /financial-advice/sparen/
+---
+# Sparen im täglichen Leben - Tipps & Tricks
+
+Blog-Inhalt...

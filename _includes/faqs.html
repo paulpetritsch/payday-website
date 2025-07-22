@@ -1,0 +1,163 @@
+{% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
+{% assign section = 'faqs' %}
+
+{% assign section_data = site.data.textblocks.pages[page_key].sections[section] | default:
+site.data.textblocks.sections[section] %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Category switching
+    const categoryBtns = document.querySelectorAll('.faq-category-btn');
+    const categories = document.querySelectorAll('.faq-category');
+    let currentCategory = 0;
+
+    function showCategory(idx) {
+      // Fade out current
+      const current = categories[currentCategory];
+      current.classList.remove('opacity-100', 'translate-y-0');
+      current.classList.add('opacity-0', 'translate-y-4');
+      setTimeout(() => {
+        current.classList.add('hidden');
+        // Fade in new
+        const next = categories[idx];
+        next.classList.remove('hidden');
+        // Start from below and invisible
+        next.classList.add('opacity-0', 'translate-y-4');
+        setTimeout(() => {
+          next.classList.remove('opacity-0', 'translate-y-4');
+          next.classList.add('opacity-100', 'translate-y-0');
+        }, 10);
+        // Reset all accordions in all categories
+        document.querySelectorAll('.faq-answer').forEach(ans => {
+          ans.style.maxHeight = '0';
+          ans.style.opacity = '0';
+        });
+        document.querySelectorAll('.faq-toggle').forEach(tg => {
+          tg.style.transform = 'rotate(0deg)';
+          tg.classList.remove('text-pink-500');
+        });
+        currentCategory = idx;
+        initAccordion(next);
+      }, 700); // match transition duration (700ms)
+    }
+
+    categoryBtns.forEach((btn, idx) => {
+      btn.addEventListener('click', function () {
+        if (currentCategory === idx) return;
+        // Toggle button styles
+        categoryBtns.forEach(b => b.classList.remove('!bg-black', '!text-white'));
+        btn.classList.add('!bg-black', '!text-white');
+        showCategory(idx);
+      });
+    });
+
+    // Accordion behavior
+    document.querySelectorAll('.faq-category').forEach(category => {
+      const items = category.querySelectorAll('.faq-item');
+      items.forEach((item, idx) => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const toggle = item.querySelector('.faq-toggle');
+        question.addEventListener('click', function () {
+          // Close all others in this category
+          items.forEach((it, i) => {
+            if (i !== idx) {
+              it.querySelector('.faq-answer').style.maxHeight = '0';
+              it.querySelector('.faq-toggle').style.transform = 'rotate(0deg)';
+            }
+          });
+          // Toggle this one
+          if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+            answer.style.maxHeight = '0';
+            toggle.style.transform = 'rotate(0deg)';
+          } else {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            toggle.style.transform = 'rotate(45deg)';
+          }
+        });
+      });
+    });
+  });
+
+  function initAccordion(category) {
+  const items = category.querySelectorAll('.faq-item');
+  items.forEach((item, idx) => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    const toggle = item.querySelector('.faq-toggle');
+    // Remove previous event listeners by cloning
+    const newQuestion = question.cloneNode(true);
+    question.parentNode.replaceChild(newQuestion, question);
+    newQuestion.addEventListener('click', function() {
+      // Close all others in this category
+      items.forEach((it, i) => {
+        if (i !== idx) {
+          it.querySelector('.faq-answer').style.maxHeight = '0';
+          it.querySelector('.faq-answer').style.opacity = '0';
+          it.querySelector('.faq-toggle').style.transform = 'rotate(0deg)';
+          it.querySelector('.faq-toggle').classList.remove('text-pink-500');
+        }
+      });
+      // Toggle this one
+      if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+        answer.style.maxHeight = '0';
+        answer.style.opacity = '0';
+        toggle.style.transform = 'rotate(0deg)';
+        toggle.classList.remove('text-pink-500');
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.opacity = '1';
+        toggle.style.transform = 'rotate(45deg)';
+        toggle.classList.add('text-pink-500');
+      }
+    });
+  });
+}
+initAccordion(categories[0]);
+</script>
+
+<div class="px-4 py-12 bg-purple-50 rounded-3xl">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-8">
+      {% include section-headline.html text=section_data.headline %}
+    </div>
+    <div class="max-w-4xl mx-auto" id="faq-app">
+
+      <!-- Category Buttons -->
+      <div class="flex gap-4 justify-center mb-8">
+        {% for cat in section_data.faqs %}
+        <button
+          class="faq-category-btn px-4 py-2 font-semibold rounded-xl transition-colors duration-200 text-gray-400 {% if forloop.first %} !bg-black !text-white{% endif %}"
+          data-category="{{ forloop.index0 }}" type="button">{{ cat.category }}</button>
+        {% endfor %}
+      </div>
+
+      <!-- FAQ Categories -->
+      {% for cat in section_data.faqs %}
+      <div
+        class="faq-category transition-all duration-500 ease-in-out {% if forloop.first %}opacity-100{% else %}opacity-0 hidden{% endif %}"
+        data-category="{{ forloop.index0 }}">
+        {% for faq in cat.items %}
+        <div class="faq-item border-b border-gray-200 first-of-type:border-t">
+          <button class="faq-question py-4 w-full flex justify-between items-center font-semibold text-left transition"
+            type="button">
+            <span>{{ faq.question }}</span>
+            <span class="faq-toggle ml-4 transition-transform duration-300">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path class="stroke-purple-500" d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer overflow-hidden"
+            style="max-height:0;transition:max-height 0.3s ease-in-out;">
+            <div class="pb-4">
+              {{ faq.answer }}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
