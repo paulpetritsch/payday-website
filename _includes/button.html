@@ -1,1 +1,1 @@
-<a href="{{include.link}}" class="is-animated bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 rounded-xl">{{ include.text }}</a>
+<a href="{{include.link}}" class="{% if include.animation != false and include.animation != 'false' %}is-animated{% endif %} inline-block bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-4 md:py-3 rounded-xl text-xl md:text-base w-full md:w-fit text-center">{{ include.text }}</a>

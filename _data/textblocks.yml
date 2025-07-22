@@ -26,8 +26,21 @@ footer:
   bureaubuero: "Umgesetzt von <a class='text-white transition-colors duration-200 hover:text-green-100 underline' href='https://www.bureaubuero.com'>BUREAU BÜRO</a>"
 
 nav:
-  about: "Über Payday"
-  process: "Ablauf & Vorteile"
+  nav_links:
+    - url: "/about"
+      text: "Über Payday"
+    - url: "/process-benefits"
+      text: "Ablauf & Vorteile"
+    - url: "/financial-advice"
+      text: "Finanztipps"
+    - url: "/support"
+      text: "Support"
+  nav_cta:
+      url: "/upload"
+      text: "Rechnung hochladen"
+  nav_register:
+      url: "/register"
+      text: "Registrieren"
 
 texts:
   reading_time: "Lesezeit"
@@ -62,6 +75,8 @@ sections:
       button_text: "Ablauf & Vorteile"
       button_link: "/process-benefits"
       left: true
+      bg: "purple-50"
+      centered: true
       tags:
         - color: "bg-green-50"
           text: "30 Tage Zeit"
@@ -110,6 +125,7 @@ sections:
       button_text: "Jetzt Registrieren"
       button_link: "/register"
       left: true
+      centered: true
       tags:
         - color: "bg-pink-50"
           text: "Soforthilfe"
@@ -123,6 +139,7 @@ sections:
       headline: "Für alle, die Geld neu denken"
       subheadline: "Finanztipps"
       button_text: "Weitere Tipps"
+      bg: "purple-50"
   newsletter:
     headline: "Dein monatliches Finanz-Update"
     text: "Unsere besten Finanztipps direkt in dein Postfach: klar verständlich, leicht umzusetzen und wirklich hilfreich. Weil du selbst bestimmst, was mit deinem Geld passiert - und wir dich dabei unterstützen."
@@ -177,7 +194,6 @@ pages:
       text: "bis zu CHF 499,-"
       svg: "fast"
       svg_color: "text-pink-100"
-
     sections:
     
   about:

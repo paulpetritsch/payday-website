@@ -103,13 +103,40 @@
       }
     }
 
-    .is-animated {
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-16px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .is-animated,
+    .is-animated-reverse {
       opacity: 0;
     }
 
     .reveal {
       opacity: 0;
       animation: fadeIn 1s ease forwards;
+    }
+
+    .reveal-down {
+      opacity: 0;
+      animation: fadeDown 1s ease forwards;
+    }
+
+    .is-animated-footer path {
+      transform: translateY(120%);
+      transition: transform 1.6s cubic-bezier(.77, 0, .18, 1);
+    }
+
+    .reveal-footer path {
+      transform: translateY(0);
     }
   </style>
 </head>
@@ -126,8 +153,15 @@
       const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('reveal');
-            observer.unobserve(entry.target); // Optional: only animate once
+            if(entry.target.classList.contains('is-animated-footer')){
+              entry.target.classList.add('reveal-footer');
+            }
+            else if (entry.target.classList.contains('is-animated-reverse')) {
+              entry.target.classList.add('reveal-down');
+            } else {
+              entry.target.classList.add('reveal');
+            }
+            observer.unobserve(entry.target);
           }
         });
       }, {
@@ -136,8 +170,7 @@
         threshold: 0.7,
       });
 
-      const elements = document.querySelectorAll(".is-animated");
-      elements.forEach((element) => {
+      document.querySelectorAll(".is-animated, .is-animated-reverse, .is-animated-footer").forEach((element) => {
         observer.observe(element);
       });
     });

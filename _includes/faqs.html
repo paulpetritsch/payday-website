@@ -117,9 +117,9 @@ initAccordion(categories[0]);
 </script>
 
 <div class="px-4 py-12 bg-purple-50 rounded-3xl">
-  <div class="max-w-7xl mx-auto">
+  <div class="max-w-7xl mx-auto is-animated">
     <div class="text-center mb-8">
-      {% include section-headline.html text=section_data.headline %}
+      {% include section-headline.html text=section_data.headline animation=false %}
     </div>
     <div class="max-w-4xl mx-auto" id="faq-app">
 
@@ -127,7 +127,7 @@ initAccordion(categories[0]);
       <div class="flex gap-4 justify-center mb-8">
         {% for cat in section_data.faqs %}
         <button
-          class="faq-category-btn px-4 py-2 font-semibold rounded-xl transition-colors duration-200 text-gray-400 {% if forloop.first %} !bg-black !text-white{% endif %}"
+          class=" faq-category-btn px-4 py-2 font-semibold rounded-xl transition-colors duration-200 text-gray-400 {% if forloop.first %} !bg-black !text-white{% endif %}"
           data-category="{{ forloop.index0 }}" type="button">{{ cat.category }}</button>
         {% endfor %}
       </div>
@@ -139,18 +139,18 @@ initAccordion(categories[0]);
         data-category="{{ forloop.index0 }}">
         {% for faq in cat.items %}
         <div class="faq-item border-b border-gray-200 first-of-type:border-t">
-          <button class="faq-question py-4 w-full flex justify-between items-center font-semibold text-left transition"
+          <button class="faq-question py-4 w-full flex justify-between items-center text-lg md:text-base md:font-semibold text-left transition"
             type="button">
             <span>{{ faq.question }}</span>
             <span class="faq-toggle ml-4 transition-transform duration-300">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <svg class="w-8 h-8 md:w-6 md:h-6" width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <path class="stroke-purple-500" d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" />
               </svg>
             </span>
           </button>
           <div class="faq-answer overflow-hidden"
             style="max-height:0;transition:max-height 0.3s ease-in-out;">
-            <div class="pb-4">
+            <div class="pb-4 text-lg md:text-base">
               {{ faq.answer }}
             </div>
           </div>

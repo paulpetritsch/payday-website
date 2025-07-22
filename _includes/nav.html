@@ -1,10 +1,10 @@
-<nav class="fixed top-5 left-0 w-full z-50 px-2 opacity-0 animate-fadein-100">
-    <div class="bg-white max-w-8xl mx-auto flex items-center justify-between px-4 py-3 rounded-2xl">
+<nav class="fixed top-0 md:top-5 left-0 w-full z-50 md:px-2 opacity-0 animate-fadein-100">
+    <div class="z-50 relative bg-white max-w-8xl mx-auto flex items-center justify-between pl-8 pr-6 md:px-4 py-5 md:py-3 md:rounded-2xl border-b border-grey md:border-0">
       <!-- Left: Logo and Main Menu -->
       <div class="flex items-center space-x-8">
         <!-- SVG Logo -->
         <a href="/" class="flex items-center">
-          <svg class="h-7 w-auto" width="106" height="24" viewBox="0 0 106 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="h-8 md:h-7 w-auto" width="106" height="24" viewBox="0 0 106 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.55043 3.42761C3.82799 3.42761 0 7.25558 0 11.9842V21.404C1.25098 22.5361 2.72713 23.4243 4.3534 23.9935V19.4275C5.59187 20.128 7.02424 20.5346 8.55669 20.5346C13.2791 20.5346 17.1134 16.7066 17.1134 11.978C17.1071 7.25557 13.2791 3.42761 8.55043 3.42761ZM8.55043 16.1812C6.22987 16.1812 4.34715 14.2985 4.34715 11.978C4.34715 9.65743 6.22987 7.77473 8.55043 7.77473C10.871 7.77473 12.7537 9.65743 12.7537 11.978C12.7537 14.2985 10.871 16.1812 8.55043 16.1812Z" fill="#E659B5"/>
             <path d="M48.2938 3.45911V11.9845V12.0095C48.2812 14.3175 46.4048 16.1877 44.0905 16.1877C41.7699 16.1877 39.8872 14.305 39.8872 11.9845V3.45911H35.54V11.9845C35.54 16.7069 39.368 20.5411 44.0967 20.5411C45.6229 20.5411 47.0553 20.1345 48.3 19.434V24C49.9263 23.4308 51.4024 22.5426 52.6534 21.4105V3.45911H48.2938Z" fill="#E659B5"/>
             <path d="M26.3395 3.42761C21.6171 3.42761 17.7891 7.25557 17.7891 11.9842C17.7891 16.7129 21.6171 20.5409 26.3395 20.5409C27.8657 20.5409 29.2981 20.1343 30.5428 19.4337V20.5409H34.8962V11.978C34.8899 7.25557 31.0619 3.42761 26.3395 3.42761ZM26.3395 16.1812C24.0189 16.1812 22.1362 14.2985 22.1362 11.978C22.1362 9.65743 24.0189 7.77473 26.3395 7.77473C28.6601 7.77473 30.5428 9.65743 30.5428 11.978C30.5428 14.2985 28.6601 16.1812 26.3395 16.1812Z" fill="#E659B5"/>
@@ -14,16 +14,100 @@
             </svg>            
         </a>
         <!-- Main Menu -->
-        <a href="/about" class="">Über Payday</a>
-        <a href="/process-benefits" class="">Ablauf & Vorteile</a>
-        <a href="/financial-advice" class="">Finanztipps</a>
-        <a href="/support" class="">Support</a>
-        <a href="#" class="">DE</a>
+        {% for link in site.data.textblocks.nav.nav_links %}
+          <a href="{{ link.url }}" class="hidden md:inline">{{ link.text }}</a>
+        {% endfor %}
+        <div class="hidden md:flex border-[0.5px] text-sm px-2 py-1.5 border-grey rounded-lg bg-white items-center justify-center">
+          <svg class="w-4 h-4 mr-1.5" xmlns="http://www.w3.org/2000/svg" width="241.008" height="241.009" viewBox="0 0 241.008 241.009">
+            <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
+              <path id="Path_1" data-name="Path 1" d="M241.008,120.506a120.5,120.5,0,1,0-120.5,120.5,120.5,120.5,0,0,0,120.5-120.5" transform="translate(0 -0.002)" fill="red"/>
+              <path id="Path_2" data-name="Path 2" d="M481.538,383.628v52.72h52.72v45.189h-52.72v52.72H436.349v-52.72h-52.72V436.349h52.72v-52.72Z" transform="translate(-338.439 -338.439)" fill="#fff"/>
+            </g>
+          </svg>
+            DE
+        </div>
       </div>
       <!-- Right: Actions -->
       <div class="flex items-center space-x-4">
-        <a href="/register" class="">Registrieren</a>
-        <a href="/upload" class="bg-black hover:bg-pink-100 transition-colors duration-200 text-white font-medium px-4 py-3 rounded-xl">Rechnung Hochladen</a>
+        <a href="{{ site.data.textblocks.nav.nav_register.link }}" class="hidden md:inline">
+          {{ site.data.textblocks.nav.nav_register.text }}
+        </a>
+        <a href="{{ site.data.textblocks.nav.nav_cta.link }}" class="hidden md:inline bg-black hover:bg-pink-100 transition-colors duration-200 text-white font-medium px-4 py-3 rounded-xl">
+          {{ site.data.textblocks.nav.nav_cta.text }}
+        </a>
+        <button id="nav-toggle" class="md:hidden ml-2 p-2 rounded focus:outline-none group">
+          <span class="block w-7 h-0.5 bg-black mb-1 transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
+          <span class="block w-7 h-0.5 bg-black mb-1 transition-all duration-300 group-[.open]:opacity-0"></span>
+          <span class="block w-7 h-0.5 bg-black transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-1"></span>
+        </button>
+      </div>
+    </div>
+    <div id="language-switch" class="absolute top-5 right-20 z-50 flex border-[0.5px] text-sm px-2 py-1.5 border-grey rounded-lg bg-white items-center justify-center opacity-0 pointer-events-none transition-opacity duration-700 md:hidden">
+      <svg class="w-4 h-4 mr-1.5" xmlns="http://www.w3.org/2000/svg" width="241.008" height="241.009" viewBox="0 0 241.008 241.009">
+        <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
+          <path id="Path_1" data-name="Path 1" d="M241.008,120.506a120.5,120.5,0,1,0-120.5,120.5,120.5,120.5,0,0,0,120.5-120.5" transform="translate(0 -0.002)" fill="red"/>
+          <path id="Path_2" data-name="Path 2" d="M481.538,383.628v52.72h52.72v45.189h-52.72v52.72H436.349v-52.72h-52.72V436.349h52.72v-52.72Z" transform="translate(-338.439 -338.439)" fill="#fff"/>
+        </g>
+      </svg>
+        DE
+    </div>
+    <!-- Mobile Menu -->
+    <div id="nav-overlay" class="fixed px-8 top-0 left-0 h-screen w-screen inset-0 bg-white z-30 flex flex-col justify-between pt-32 pb-16 opacity-0 pointer-events-none transition-opacity duration-700 md:hidden">
+      <div class="flex flex-col space-y-8 ">
+        {% for link in site.data.textblocks.nav.nav_links %}
+        <a href="{{ link.url }}" class="text-3xl flex justify-between items-center w-full">
+          {{ link.text }}
+          <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 12H27M27 12L15.8571 23M27 12L15.8571 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>          
+        </a>
+      {% endfor %}
+      </div>
+      <div class="flex flex-col space-y-4">
+        <a href="{{ site.data.textblocks.nav.nav_cta.link }}" class="text-xl bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-4 rounded-xl text-center">
+          {{ site.data.textblocks.nav.nav_cta.text }}
+        </a>
+        <a href="{{ site.data.textblocks.nav.nav_register.link }}" class="text-xl border border-grey hover:bg-pink-100 transition-colors duration-200 px-4 py-4 rounded-xl text-center">
+          {{ site.data.textblocks.nav.nav_register.text }}
+        </a>
       </div>
     </div>
   </nav>
+  <a href="/upload" class="fixed bottom-2 right-2 bg-black w-14 h-14 rounded-full z-50 flex items-center justify-center opacity-0 animate-fadein-100 md:hidden">
+    <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.8571 1V6.77778C13.8571 7.16087 14.0077 7.52827 14.2756 7.79915C14.5435 8.07004 14.9068 8.22222 15.2857 8.22222H21M13.8571 1H3.85714C3.09938 1 2.37266 1.30436 1.83684 1.84614C1.30102 2.38791 1 3.12271 1 3.88889V24.1111C1 24.8773 1.30102 25.6121 1.83684 26.1539C2.37266 26.6956 3.09938 27 3.85714 27H18.1429C18.9006 27 19.6273 26.6956 20.1632 26.1539C20.699 25.6121 21 24.8773 21 24.1111V8.22222M13.8571 1L21 8.22222M11 12.5556V21.2222M11 12.5556L7.42857 16.1667M11 12.5556L14.5714 16.1667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>      
+  </a>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById('nav-toggle');
+      const overlay = document.getElementById('nav-overlay');
+      const languageSwitch = document.getElementById('language-switch');
+      toggle.addEventListener('click', function () {
+        toggle.classList.toggle('open');
+        if (toggle.classList.contains('open')) {
+          overlay.classList.remove('opacity-0', 'pointer-events-none');
+          overlay.classList.add('opacity-100');
+          languageSwitch.classList.remove('opacity-0', 'pointer-events-none');
+          languageSwitch.classList.add('opacity-100');
+        } else {
+          overlay.classList.remove('opacity-100');
+          overlay.classList.add('opacity-0');
+          languageSwitch.classList.remove('opacity-100');
+          languageSwitch.classList.add('opacity-0');
+          setTimeout(() => overlay.classList.add('pointer-events-none'), 300);
+          setTimeout(() => languageSwitch.classList.add('pointer-events-none'), 300);
+        }
+      });
+      // Close menu when clicking a link
+      overlay.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          toggle.classList.remove('open');
+          overlay.classList.remove('opacity-100');
+          overlay.classList.add('opacity-0', 'pointer-events-none');
+          languageSwitch.classList.remove('opacity-100');
+          languageSwitch.classList.add('opacity-0', 'pointer-events-none');
+        });
+      });
+    });
+  </script>
