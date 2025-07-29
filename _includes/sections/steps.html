@@ -4,13 +4,13 @@
 {% assign section_data = site.data.textblocks.pages[page_key].sections[section] | default:
 site.data.textblocks.sections[section] %}
 
-<div class="px-8 md:px-4 py-10 md:py-32 bg-purple-50 rounded-3xl min-h-screen">
+<div class="px-8 md:px-4 py-10 md:py-32 bg-purple-50 rounded-3xl">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             {% include elements/section-headline.html text=section_data.headline %}
             {% include elements/section-subheadline.html text=section_data.subheadline %}
         </div>
-        <div class="flex flex-col md:flex-row gap-8 md:gap-4 mb-16">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-4 mb-16 max-w-md mx-auto lg:max-w-full">
             {% for step in section_data.steps %}
             <div class="relative flex-1 flex justify-center items-center is-animated"
             style="animation-delay: {{ forloop.index0 | times: 0.4 }}s;">

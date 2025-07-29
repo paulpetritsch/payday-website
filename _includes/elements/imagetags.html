@@ -1,0 +1,87 @@
+{% if include.tags %}
+<div class="absolute inset-0 pointer-events-none">
+  {% for tag in include.tags %}
+    {% assign tag_class = "" %}
+    
+    {% assign layout_type = include.layout | default: "quote-2tags" %}
+    
+    {% case layout_type %}
+      {% when "quote-2tags" %}
+        {% if forloop.index == 1 %}
+          {% assign tag_class = "-right-4 md:-right-12 bottom-4 md:bottom-2/3" %}
+        {% elsif forloop.index == 2 %}
+          {% assign tag_class = "-left-4 md:-left-12 top-[45%]" %}
+        {% endif %}
+
+      {% when "quote-2tags-alt" %}
+        {% if forloop.index == 1 %}
+          {% assign tag_class = "left-0 md:-left-12 top-1/4" %}
+        {% elsif forloop.index == 2 %}
+          {% assign tag_class = "right-0 md:-right-12 bottom-1/4" %}
+        {% endif %}
+
+      {% when "quote-2tags-bottom" %}
+        {% if forloop.index == 1 %}
+          {% assign tag_class = "left-4 bottom-4" %}
+        {% elsif forloop.index == 2 %}
+          {% assign tag_class = "right-4 bottom-4" %}
+        {% endif %}
+
+      {% when "quote-4tags" %}
+        {% if forloop.index == 1 %}
+          {% assign tag_class = "-left-2 md:-left-12 top-1/4" %}
+        {% elsif forloop.index == 2 %}
+          {% assign tag_class = "-right-6 md:-right-12 top-1/4 translate-y-5" %}
+        {% elsif forloop.index == 3 %}
+          {% assign tag_class = "-left-4 md:-left-20 bottom-6 md:bottom-1/4" %}
+        {% elsif forloop.index == 4 %}
+          {% assign tag_class = "-right-3 md:-right-4 bottom-1/4 translate-y-10" %}
+        {% endif %}
+
+      {% when "quote-4tags-alt" %}
+        {% if forloop.index == 1 %}
+          {% assign tag_class = "left-4 top-4" %}
+        {% elsif forloop.index == 2 %}
+          {% assign tag_class = "-right-4 top-4" %}
+        {% elsif forloop.index == 3 %}
+          {% assign tag_class = "left-4 bottom-4" %}
+        {% elsif forloop.index == 4 %}
+          {% assign tag_class = "-right-4 bottom-4" %}
+        {% endif %}
+
+      {% when "square-2tags-bottom" %}
+        {% if forloop.index == 1 %}
+          {% assign tag_class = "-left-4 md:-left-12 top-1/4" %}
+        {% elsif forloop.index == 2 %}
+          {% assign tag_class = "-right-3 bottom-0" %}
+      {% endif %}
+
+      {% when "square-2tags" %}
+        {% if forloop.index == 1 %}
+          {% assign tag_class = "-left-4 md:-left-12 top-1/4" %}
+        {% elsif forloop.index == 2 %}
+          {% assign tag_class = "-right-3 bottom-1/4" %}
+      {% endif %}
+
+    {% endcase %}
+
+    <div class="flex items-center text-sm md:text-xl w-fit absolute {{ tag_class }}"
+    data-scroll
+    data-scroll-speed="{{ forloop.index0 | minus: 0.4 | times: 0.05 }}">
+        <span class="px-4 py-2 rounded-full border-12 {% if include.bg %}border-{{include.bg}} {% else %} border-white {% endif %} {{ tag.color }} 
+        {% if forloop.index == 1 or forloop.index == 4 %}
+            is-animated
+        {% else %}
+            is-animated-reverse
+        {% endif %}">
+        {% if tag.svg %}
+            <span class="w-5 h-5 mr-2 inline-block align-middle {% if tag.svg_color %}{{ tag.svg_color }}{% endif %}">
+                {{ site.data.svgs[tag.svg] }}
+            </span>
+        {% endif %}
+        <span>{{ tag.text }}</span>
+    </span>
+    </div>
+  {% endfor %}
+</div>
+{% endif %}

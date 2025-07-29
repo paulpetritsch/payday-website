@@ -1,6 +1,6 @@
-<div class="w-full md:w-1/2 flex flex-col items-start justify-center">
+<div class="w-full lg:w-1/2 flex flex-col items-start justify-center lg:pr-12">
   {% if include.preheadline %}
-    <div class="flex mb-2 items-center w-full justify-center md:justify-left md:w-fit">
+    <div class="flex mb-2 items-center w-full justify-center lg:justify-left lg:w-fit">
       {% for subimage in include.images %}
         <div class="w-8 h-8 rounded-full overflow-hidden bg-{{ subimage.color }} -mr-2 -z-[{{forloop.index}}] opacity-0 {% if forloop.index == 1 %} animate-fadein-100
         {% elsif forloop.index == 2 %} animate-fadein-200
@@ -14,20 +14,20 @@
       </span>
     </div>
   {% endif %}
-    <h1 class="text-7xl font-bold font-display mb-4 opacity-0 animate-fadein-500 text-center md:text-left">
+    <h1 class="text-7xl font-bold font-display mb-4 opacity-0 animate-fadein-500 text-center lg:text-left w-full break-words">
       {{ include.headline }}
     </h1>
     {% if include.subheadline %}
-      <div class="text-2xl font-display mb-4 opacity-0 animate-fadein-600 text-center md:text-left">
+      <div class="text-2xl font-display mb-4 opacity-0 animate-fadein-600 text-center lg:text-left  mx-auto lg:mx-0">
           {{ include.subheadline }}
       </div>
     {% endif %}
     {% if include.text %}
-    <p class="text-center md:text-left max-w-2xl mb-4 opacity-0 animate-fadein-600 max-w-md">
+    <p class="text-center lg:text-left max-w-2xl mb-4 opacity-0 animate-fadein-600 max-w-md mx-auto lg:mx-0">
       {{ include.text }}
     </p>
     {% endif %}
-    <a href="{{ site.baseurl }}{{include.button_link}}" class="text-xl md:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 md:py-3 rounded-xl opacity-0 animate-fadein-700 w-full md:w-fit text-center max-w-xs mx-auto md:mx-0">
+    <a href="{{ site.baseurl }}{{include.button_link}}" class="text-xl lg:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 lg:py-3 rounded-xl opacity-0 animate-fadein-700 w-full lg:w-fit text-center max-w-xs mx-auto lg:mx-0">
       {{ include.button_text }}
     </a>
 </div>

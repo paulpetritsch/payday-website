@@ -109,6 +109,7 @@ sections:
       button_link: "/process-benefits"
       left: true
       bg: "purple-50"
+      tags_layout: "square-2tags"
       centered: true
       tags:
         - color: "bg-green-50"
@@ -134,6 +135,7 @@ sections:
       button_text: "Rechnung hochladen"
       button_link: "/upload"
       left: false
+      tags_layout: "quote-4tags"
       tags:
         - color: "bg-green-50"
           text: "schnell"
@@ -159,6 +161,7 @@ sections:
       button_link: "/register"
       left: true
       centered: true
+      tags_layout: "quote-2tags"
       tags:
         - color: "bg-pink-50"
           text: "Soforthilfe"
@@ -325,6 +328,26 @@ sections:
           text: "givedirectly.org"
           svg: "heart-handshake"
           svg_color: "text-pink-100"
+    antimoneylaundering:
+      image: "/assets/images/antimoneylaundering-section1.png"
+      headline: "Wozu dieser Onboarding-Prozess?"
+      text: "Als Finanzintermediär in der Schweiz sind wir verpflichtet, alle Kund:innen gemäss den Vorschriften der FINMA (Eidgenössische Finanzmarktaufsicht) zu identifizieren. payday nimmt diese KYC-Vorschriften (Know Your Customer) ernst, um unsere Kund:innen zu schützen und eine sichere Plattform aufrechtzuerhalten.
+        <br><br>
+        Keine Sorge, der Vorgang ist schnell und einfach, und alle deine Informationen werden vertraulich und sicher behandelt."
+      button_text: "Jetzt registrieren"
+      button_link: "/register"
+      left: true
+      centered: true
+      tags_layout: "square-2tags-bottom"
+      tags:
+        - color: "bg-pink-50"
+          text: "sicher"
+          svg: "fast"
+          svg_color: "text-pink-100"
+        - color: "bg-green-50"
+          text: "schnell & einfach"
+          svg: "smiley"
+          svg_color: "text-green-100"
   blog_overview:
       headline: "Für alle, die Geld neu denken"
       subheadline: "Finanztipps"
@@ -419,11 +442,22 @@ pages:
 
   anti_money_laundering:
     hero_headline: "KYC-Erklärung Anti-Geldwäsche"
+    hero_image: "/assets/images/antimoneylaundering-hero.png"
     hero_text: >
       Bei KYC geht es darum, deine Identität zu überprüfen und sicherzustellen, dass die Informationen, die du uns zur Verfügung stellst korrekt sind. Dies hilft uns, kriminelle Aktivitäten zu verhindern und unsere Plattform sicher zu halten. <br><br>
       Wenn du unsere Dienste nutzt, wirst du gebeten, einige grundlegende Informationen anzugeben, wie deinen vollständigen Namen, dein Geburtsdatum und deine Adresse. Anschliessend überprüfen und bestätigen wir diese Informationen sorgfältig mithilfe einer von der FINMA festgelegten und empfohlenen Methode
     hero_button_text: "Jetzt registrieren"
     hero_button_link: "/register"
+    hero_tags_layout: "quote-2tags-alt"
+    hero_tags:
+      - color: "bg-green-50"
+        text: "30 Tage Zeit"
+        svg: "smiley"
+        svg_color: "text-green-100"
+      - color: "bg-purple-100"
+        text: "sicher"
+        svg: "lock"
+        svg_color: "text-purple-200"
   
 
   terms:

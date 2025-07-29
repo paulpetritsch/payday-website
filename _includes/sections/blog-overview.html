@@ -10,7 +10,7 @@
             {% include elements/section-subheadline.html text=section_data.subheadline %}
             {% include elements/section-headline.html text=section_data.headline %}
         </div>
-        <div class="flex overflow-x-scroll overflow-y-hidden flex-row gap-8 md:justify-center mb-8 is-animated">
+        <div class="flex overflow-x-scroll overflow-y-hidden md:overflow-visible flex-row gap-8 md:justify-center mb-8 is-animated">
             {% assign blog_posts = site.categories.financial-advice | slice: 0, 4 %}
             {% for post in blog_posts %}
               <a href="{{ post.url }}" class="md:flex-1 group">
