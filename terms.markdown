@@ -1,11 +1,11 @@
 ---
-layout: page
-title: AGBs
+layout: default
+title: "Allgemeine Geschäftsbedingungen | PayDay"
 permalink: /terms/
 ---
 
 <div class="px-4 pt-32 pb-32">
-  <div class="max-w-3xl mx-auto">
+  <div class="max-w-3xl mx-auto break-words reveal">
     <h1 class="text-3xl font-semibold font-display mb-4">
       {{site.data.textblocks.pages.terms.headline}}
     </h1>

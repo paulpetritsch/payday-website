@@ -27,7 +27,7 @@
       {{ include.text }}
     </p>
     {% endif %}
-    <a href="{{include.button_link}}" class="text-xl md:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 md:py-3 rounded-xl opacity-0 animate-fadein-700 w-full md:w-fit text-center max-w-xs mx-auto md:mx-0">
+    <a href="{{ site.baseurl }}{{include.button_link}}" class="text-xl md:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 md:py-3 rounded-xl opacity-0 animate-fadein-700 w-full md:w-fit text-center max-w-xs mx-auto md:mx-0">
       {{ include.button_text }}
     </a>
 </div>

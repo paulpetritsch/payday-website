@@ -29,29 +29,29 @@ footer:
 ######################################################## NAV
 nav:
   nav_links:
-    - url: "{{ site.baseurl }}/about"
+    - url: "/about"
       text: "Über Payday"
-    - url: "{{ site.baseurl }}/process-benefits"
+    - url: "/process-benefits"
       text: "Ablauf & Vorteile"
-    - url: "{{ site.baseurl }}/financial-advice"
+    - url: "/financial-advice"
       text: "Finanztipps"
-    - url: "{{ site.baseurl }}/support"
+    - url: "/support"
       text: "Support"
   nav_cta:
-      url: "{{ site.baseurl }}/upload"
+      url: "/upload"
       text: "Rechnung hochladen"
   nav_register:
-      url: "{{ site.baseurl }}/register"
+      url: "/register"
       text: "Registrieren"
   nav_floating_cta:
-      url: "{{ site.baseurl }}/upload"
+      url: "/upload"
 
 ######################################################## 404
 error:
   headline: "404"
   subheadline: "Seite nicht gefunden"
   button_text: "Zur Startseite"
-  button_link: "{{ site.baseurl }}/"
+  button_link: "/"
 
 ######################################################## Texte
 texts:
@@ -59,7 +59,7 @@ texts:
   min: "Min."
   similar_articles: "Ähnliche Artikel"
   more_tips: "Mehr Finanztipps"
-  blog_link: "{{ site.baseurl }}/financial-advice"
+  blog_link: "/financial-advice"
   months: "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember"
   date_format: "%d. %B %Y"
 
@@ -97,7 +97,7 @@ sections:
         bg: "green-50"
         color: "green-100"
     button_text: "Jetzt registrieren"
-    button_link: "{{ site.baseurl }}/register"
+    button_link: "/register"
   image_quote:
     home1:
       image: "/assets/images/image-placeholder2.png"
@@ -106,7 +106,7 @@ sections:
         <br><br>
         Dann hast du 30 Tage Zeit, den Betrag stressfrei zurückzuzahlen - ganz diskret, ohne jemandem aus dem Freundes- oder Familienkreis erklären zu müssen, warum das Geld gerade knapp ist."
       button_text: "Ablauf & Vorteile"
-      button_link: "{{ site.baseurl }}/process-benefits"
+      button_link: "/process-benefits"
       left: true
       bg: "purple-50"
       centered: true
@@ -132,7 +132,7 @@ sections:
         - Diskrete Abwicklung - wir schützen deine Privatsphäre
         - Deine Kreditwürdigkeit bleibt unberührt
       button_text: "Rechnung hochladen"
-      button_link: "{{ site.baseurl }}/upload"
+      button_link: "/upload"
       left: false
       tags:
         - color: "bg-green-50"
@@ -156,7 +156,7 @@ sections:
       headline: "Dein persönlicher PayDay - genau dann, wenn du ihn brauchst"
       subheadline: "Weil du Besseres zu tun hast, als dich um unbezahlte Rechnungen zu sorgen."
       button_text: "Jetzt Registrieren"
-      button_link: "{{ site.baseurl }}/register"
+      button_link: "/register"
       left: true
       centered: true
       tags:
@@ -194,7 +194,7 @@ sections:
         <br><br>
         In den kommenden Jahren werden wir gezielt Partnerschaften im B2B-Bereich aufbauen, zum Beispiel mit Energieversorgern und Dienstleistungsunternehmen, um noch schneller helfen zu können."
       button_text: "Für Unternehmen"
-      button_link: "{{ site.baseurl }}/companies"
+      button_link: "/companies"
       left: false
       centered: true
       tags:
@@ -253,7 +253,7 @@ sections:
         <br><br>
         In den kommenden Jahren werden wir gezielt Partnerschaften im B2B-Bereich aufbauen, zum Beispiel mit Energieversorgern und Dienstleistungsunternehmen, um noch schneller helfen zu können."
       button_text: "Für Unternehmen"
-      button_link: "{{ site.baseurl }}/companies"
+      button_link: "/companies"
       left: false
       centered: true
       tags:
@@ -278,7 +278,7 @@ sections:
       headline: "Mit jeder Rechnung Hoffnung schenken"
       text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
       button_text: "Rechnung hochladen"
-      button_link: "{{ site.baseurl }}/upload"
+      button_link: "/upload"
       left: true
       centered: true
       tags:
@@ -289,9 +289,9 @@ sections:
     processbenefits3:
       image: "/assets/images/about-section3.png"
       headline: "Mit jeder Rechnung Hoffnung schenken"
-      text: "Bei PayDay setzen wir sich dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
+      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
       button_text: "Rechnung hochladen"
-      button_link: "{{ site.baseurl }}/upload"
+      button_link: "/upload"
       left: true
       centered: true
       tags:
@@ -304,7 +304,7 @@ sections:
       headline: "Mit jeder Rechnung Hoffnung schenken"
       text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
       button_text: "Rechnung hochladen"
-      button_link: "{{ site.baseurl }}/upload"
+      button_link: "/upload"
       left: true
       centered: true
       tags:
@@ -317,7 +317,7 @@ sections:
       headline: "Mit jeder Rechnung Hoffnung schenken"
       text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
       button_text: "Rechnung hochladen"
-      button_link: "{{ site.baseurl }}/upload"
+      button_link: "/upload"
       left: true
       centered: true
       tags:
@@ -363,7 +363,7 @@ pages:
     hero_headline: "Sorgenfrei bis zum nächsten PayDay"
     hero_subheadline: "Wenn das Geld knapp wird, <strong>bezahlen wir deine Rechnungen.</strong>"
     hero_button_text: "Rechnung hochladen"
-    hero_button_link: "{{ site.baseurl }}/upload"
+    hero_button_link: "/upload"
     hero_preheadline: "300+ benutzen bereits PayDay"
     hero_subimages:
       - image: "/assets/images/women1.png"
@@ -392,7 +392,7 @@ pages:
     hero_headline: "Für alle, bei denen’s manchmal knapp wird"
     hero_text: "Statt klassischer Kleinkredite setzen wir auf einen neuen Ansatz: Wir bezahlen offene Rechnungen direkt – schnell, diskret und digital. So helfen wir Menschen, finanzielle Belastungen zu überbrücken und ihren Alltag wieder unter Kontrolle zu bringen."
     hero_button_text: "Rechnung hochladen"
-    hero_button_link: "{{ site.baseurl }}/upload"
+    hero_button_link: "/upload"
     hero_preheadline: "300+ benutzen bereits PayDay"
     hero_subimages:
       - image: "/assets/images/women1.png"
@@ -409,7 +409,7 @@ pages:
     hero_headline: "Rechnung da? PayDay auch"
     hero_text: "Wir zahlen deine offenen Rechnungen direkt, bis zu CHF 499.- pro Monat. Du bekommst 30 Tage Zeit, um uns bequem zurückzuzahlen. So bleibst du handlungsfähig, vermeidest Mahnungen und schützt deinen Bonitäts-Score."
     hero_button_text: "Rechnung hochladen"
-    hero_button_link: "{{ site.baseurl }}/upload"
+    hero_button_link: "/upload"
     
     sections:
       blog_overview:

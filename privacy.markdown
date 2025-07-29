@@ -5,7 +5,7 @@ permalink: /privacy/
 ---
 
 <div class="px-4 pt-32 pb-32">
-  <div class="max-w-3xl mx-auto break-words">
+  <div class="max-w-3xl mx-auto break-words reveal">
     <h1 class="text-3xl font-semibold font-display mb-4">
       {{site.data.textblocks.pages.privacy.headline}}
     </h1>

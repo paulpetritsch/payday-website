@@ -34,7 +34,7 @@ permalink: /anti-money-laundering/
             <p class="text-base font-display mb-4 opacity-0 animate-fadein-600 text-center md:text-left">
                 {{ site.data.textblocks.pages.anti_money_laundering.hero_text }}
             </div>
-            <a href="{{site.data.textblocks.pages.anti_money_laundering.hero_button_link}}" class="text-xl md:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 md:py-3 rounded-xl opacity-0 animate-fadein-700 w-full md:w-fit text-center max-w-xs mx-auto md:mx-0">
+            <a href="{{ site.baseurl }}{{site.data.textblocks.pages.anti_money_laundering.hero_button_link}}" class="text-xl md:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 md:py-3 rounded-xl opacity-0 animate-fadein-700 w-full md:w-fit text-center max-w-xs mx-auto md:mx-0">
               {{ site.data.textblocks.pages.anti_money_laundering.hero_button_text }}
             </a>
         </div>
