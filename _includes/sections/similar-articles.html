@@ -1,18 +1,39 @@
-{% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
-{% assign section = 'blog_overview' %}
+{% comment %} Get current post tags {% endcomment %}
+{% assign current_tags = page.tags | default: page.categories %}
 
-{% assign section_data = site.data.textblocks.pages[page_key].sections[section] | default: site.data.textblocks.sections[section] %}
+{% comment %} Find posts with similar tags {% endcomment %}
+{% assign similar_posts = "" | split: "" %}
 
+{% for post in site.posts %}
+  {% if post.title != page.title %}
+    {% assign similarity_score = 0 %}
+    {% assign post_tags = post.tags | default: post.categories %}
+    
+    {% comment %} Calculate similarity score {% endcomment %}
+    {% for tag in current_tags %}
+      {% if post_tags contains tag %}
+        {% assign similarity_score = similarity_score | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    
+    {% comment %} Add post if it has similar tags {% endcomment %}
+    {% if similarity_score > 0 %}
+      {% assign similar_posts = similar_posts | push: post %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
 
-<div class="px-8 md:px-4 py-10 md:py-32 mt-24 {% if section_data.bg %}bg-{{section_data.bg}} rounded-3xl md:rounded-none md:bg-transparent {% endif %}">
+{% comment %} Limit to 4 articles {% endcomment %}
+{% assign top_similar = similar_posts | slice: 0, 4 %}
+
+{% if top_similar.size > 0 %}
+<div class="px-8 md:px-4 py-10 md:py-24">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-8">
-            {% include section-subheadline.html text=section_data.subheadline %}
-            {% include section-headline.html text=section_data.headline %}
+            {% include elements/section-headline.html text=site.data.textblocks.texts.similar_articles %}
         </div>
         <div class="flex overflow-x-scroll overflow-y-hidden flex-row gap-8 md:justify-center mb-8 is-animated">
-            {% assign blog_posts = site.categories.financial-advice | slice: 0, 4 %}
-            {% for post in blog_posts %}
+            {% for post in top_similar %}
               <a href="{{ post.url }}" class="md:flex-1 group">
                 <div class="mb-4 w-[60vw] md:w-full rounded-3xl aspect-[1/1] relative bg-{{ post.color }}">
                     <div class="absolute top-4 left-4 bg-white text-xs rounded-lg px-2 py-1">
@@ -38,8 +59,9 @@
             </a>
             {% endfor %}
           </div>
-          <div class="text-center">
-            {% include button.html text=section_data.button_text link=section_data.button_link %}
-          </div>
+        <div class="text-center">
+          {% include elements/button.html text=site.data.textblocks.texts.more_tips link=site.data.textblocks.texts.blog_link %}
+        </div>
     </div>
 </div>
+{% endif %}

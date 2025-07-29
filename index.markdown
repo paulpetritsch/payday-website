@@ -8,30 +8,15 @@ key: home
 <div class="px-4 min-h-screen pt-32">
   <div class="flex flex-col md:flex-row items-center gap-8 max-w-7xl mx-auto h-full">
         <!-- Text Content -->
-        <div class="w-full md:w-1/2 flex flex-col items-start justify-center">
-            <div class="flex mb-2 items-center w-full justify-center md:justify-left md:w-fit">
-              {% for subimage in site.data.textblocks.pages.home.hero_subimages %}
-              <div class="w-8 h-8 rounded-full overflow-hidden bg-{{ subimage.color }} -mr-2 -z-[{{forloop.index}}] opacity-0 {% if forloop.index == 1 %} animate-fadein-100
-              {% elsif forloop.index == 2 %} animate-fadein-200
-              {% elsif forloop.index == 3 %} animate-fadein-300
-              {% endif %}">
-                <img src="{{ subimage.image | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_preheadline | escape }}" class="w-auto h-full object-cover mx-auto">
-              </div>
-              {% endfor %}
-              <span class="ml-4 opacity-0 animate-fadein-400">
-                {{site.data.textblocks.pages.home.hero_preheadline}}
-              </span>
-            </div>
-            <h2 class="text-7xl font-bold font-display mb-4 opacity-0 animate-fadein-500 text-center md:text-left">
-              {{ site.data.textblocks.pages.home.hero_headline }}
-            </h2>
-            <div class="text-2xl font-display mb-4 opacity-0 animate-fadein-600 text-center md:text-left">
-                {{ site.data.textblocks.pages.home.hero_subheadline }}
-            </div>
-            <a href="{{site.data.textblocks.pages.home.hero_button_link}}" class="text-xl md:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 md:py-3 rounded-xl opacity-0 animate-fadein-700 w-full md:w-fit text-center max-w-xs mx-auto md:mx-0">
-              {{ site.data.textblocks.pages.home.hero_button_text }}
-            </a>
-        </div>
+        {% include sections/hero-text.html 
+          headline=site.data.textblocks.pages.home.hero_headline
+          subheadline=site.data.textblocks.pages.home.hero_subheadline
+          preheadline=site.data.textblocks.pages.home.hero_preheadline
+          button_text=site.data.textblocks.pages.home.hero_button_text
+          button_link=site.data.textblocks.pages.home.hero_button_link
+          images=site.data.textblocks.pages.home.hero_subimages
+          text=site.data.textblocks.pages.home.hero_text
+          %}
         <!-- Image -->
         <div class="w-full md:w-1/2 flex justify-center relative items-center">
           <div class="relative">
@@ -49,9 +34,9 @@ key: home
             <img src="{{ site.data.textblocks.pages.home.hero_image2 | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
               class="max-h-128 object-contain w-full  opacity-0 animate-fadein-500">
             <img src="{{ site.data.textblocks.pages.home.hero_image3 | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
-              class="max-h-128 object-contain w-full opacity-0 animate-fadein-600">
+              class="max-h-128 object-contain w-full opacity-0 animate-fadein-600 pl-5">
               <span
-                    class="flex items-center px-4 py-2 rounded-full text-sm md:text-xl w-fit border-12 border-white {{ site.data.textblocks.pages.home.hero_tag2.color }} absolute -bottom-8 -left-1 opacity-0 animate-fadein-800">
+                    class="flex items-center px-4 py-2 rounded-full text-sm md:text-xl w-fit border-12 border-white {{ site.data.textblocks.pages.home.hero_tag2.color }} absolute -bottom-8 left-4 opacity-0 animate-fadein-800">
                         <span class="w-5 h-5 mr-2 inline-block align-middle {{ site.data.textblocks.pages.home.hero_tag2.svg_color }}">
                             {{ site.data.svgs[site.data.textblocks.pages.home.hero_tag2.svg] }}
                         </span>
@@ -63,7 +48,7 @@ key: home
   </div>
 
   {% assign home1 = site.data.textblocks.sections.image_quote.home1 %}
-  {% include image-quote-text.html
+  {% include sections/image-quote-text.html
     image=home1.image
     headline=home1.headline
     subheadline=home1.subheadline
@@ -76,7 +61,7 @@ key: home
     centered=home1.centered
   %}
    {% assign home2 = site.data.textblocks.sections.image_quote.home2 %}
-  {% include image-quote-text.html
+  {% include sections/image-quote-text.html
     image=home2.image
     headline=home2.headline
     subheadline=home2.subheadline
@@ -86,10 +71,11 @@ key: home
     left=home2.left
     tags=home2.tags
   %}
-  {% include steps.html %}
-  {% include faqs.html %}
+  {% include sections/steps.html %}
+  {% include sections/slider.html %}
+  {% include sections/faqs.html %}
   {% assign home3 = site.data.textblocks.sections.image_quote.home3 %}
-  {% include image-quote-text.html
+  {% include sections/image-quote-text.html
     image=home3.image
     headline=home3.headline
     subheadline=home3.subheadline
@@ -99,5 +85,5 @@ key: home
     tags=home3.tags
     centered=home3.centered
   %}
-  {% include blog-overview.html %}
-  {% include newsletter.html %}
+  {% include sections/blog-overview.html %}
+  {% include sections/newsletter.html %}

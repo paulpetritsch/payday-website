@@ -1,22 +1,12 @@
 ---
-layout: blog
-categories: financial-advice
-permalink: /financial-advice/betreibungsregister/
-date: 12/06/2022
-tags: 
-  - beitreibungsregister
-  - kreditwürdigkeit
-  - kreditprüfung
-
-show_faq: true
-show_similar: true
-show_newsletter: true
-
+layout: default
 title: Was ist das Schweizer Betreibungsregister?
 intro: Das Schweizer Betreibungsregister ist ein Verzeichnis, in dem Zahlungsverpflichtungen und Betreibungen von Unternehmen erfasst werden.
 image: /assets/images/betreibungsregister.png
 color: pink-50
 duration: 5
+categories: financial-advice
+permalink: /financial-advice/sparpotential/
 ---
 # Was ist das Schweizer Betreibungsregister?
 

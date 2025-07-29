@@ -23,7 +23,7 @@
     rel="stylesheet">
 
   <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 
   <!-- Locomotive Scroll -> For the smoother scroll experience -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@5.0.0/dist/locomotive-scroll.min.css">
@@ -81,6 +81,13 @@
               '100%': { opacity: '1', transform: 'translateY(0)' },
             },
           },
+          typography: () =>({
+            DEFAULT: {
+              css: {
+                '--tw-prose-bullets': 'black',
+              }
+            }
+          })
         }
       }
     }
@@ -142,11 +149,11 @@
 </head>
 
 <body class="antialiased font-sans">
-  {% include nav.html %}
+  {% include layout/nav.html %}
   <main data-scroll-container>
     {{ content }}
   </main>
-  {% include footer.html %}
+  {% include layout/footer.html %}
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -175,6 +182,34 @@
       });
     });
   </script>
+
+<script>
+  // Simple fade transition
+  document.addEventListener('DOMContentLoaded', function() {
+    // Fade in on page load
+    const main = document.querySelector('main');
+    if (main) main.style.opacity = '0';
+    if (main) main.style.transition = 'opacity 0.3s ease-in-out';
+    
+    setTimeout(() => {
+      if (main) main.style.opacity = '1';
+    }, 100);
+  });
+
+  // Fade out before navigation
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && link.href.includes(window.location.origin) && !link.href.includes('#')) {
+      e.preventDefault();
+      const main = document.querySelector('main');
+      if (main) main.style.opacity = '0';
+      
+      setTimeout(() => {
+        window.location.href = link.href;
+      }, 300);
+    }
+  });
+</script>
 
   <!-- Locomotive Scroll -> For the smoother scroll experience -->
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>

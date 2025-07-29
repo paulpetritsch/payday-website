@@ -1,18 +1,19 @@
----
-layout: default
-title: Finanztipps
-permalink: /financial-advice/
----
+{% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
+{% assign section = 'blog_overview' %}
 
-<div class="px-8 md:px-4 py-10 md:py-32">
+{% assign section_data = site.data.textblocks.pages[page_key].sections[section] | default: site.data.textblocks.sections[section] %}
+
+
+<div class="px-8 md:px-4 py-10 md:py-32 mt-24 {% if section_data.bg %}bg-{{section_data.bg}} rounded-3xl {% endif %}">
     <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-12">
-          <h1 class="text-7xl font-bold font-display reveal">PayDay Finanztipps</h1>
+        <div class="text-center mb-8">
+            {% include elements/section-subheadline.html text=section_data.subheadline %}
+            {% include elements/section-headline.html text=section_data.headline %}
         </div>
-        <div class="mt-4 flex overflow-x-scroll overflow-y-hidden flex-row gap-8 md:justify-center mb-8 flex-wrap">
-            {% assign blog_posts = site.categories.financial-advice %}
+        <div class="flex overflow-x-scroll overflow-y-hidden flex-row gap-8 md:justify-center mb-8 is-animated">
+            {% assign blog_posts = site.categories.financial-advice | slice: 0, 4 %}
             {% for post in blog_posts %}
-              <a href="{{ post.url }}" class="md:w-[calc(25%-2rem)] group is-animated">
+              <a href="{{ post.url }}" class="md:flex-1 group">
                 <div class="mb-4 w-[60vw] md:w-full rounded-3xl aspect-[1/1] relative bg-{{ post.color }}">
                     <div class="absolute top-4 left-4 bg-white text-xs rounded-lg px-2 py-1">
                         {{ site.data.textblocks.texts.reading_time }} {{ post.duration }} {{ site.data.textblocks.texts.min}} 
@@ -37,7 +38,8 @@ permalink: /financial-advice/
             </a>
             {% endfor %}
           </div>
+          <div class="text-center">
+            {% include elements/button.html text=section_data.button_text link=section_data.button_link %}
+          </div>
     </div>
 </div>
-
-  {% include sections/newsletter.html %}

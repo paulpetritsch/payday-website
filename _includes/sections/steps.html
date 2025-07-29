@@ -7,8 +7,8 @@ site.data.textblocks.sections[section] %}
 <div class="px-8 md:px-4 py-10 md:py-32 bg-purple-50 rounded-3xl min-h-screen">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
-            {% include section-headline.html text=section_data.headline %}
-            {% include section-subheadline.html text=section_data.subheadline %}
+            {% include elements/section-headline.html text=section_data.headline %}
+            {% include elements/section-subheadline.html text=section_data.subheadline %}
         </div>
         <div class="flex flex-col md:flex-row gap-8 md:gap-4 mb-16">
             {% for step in section_data.steps %}
@@ -24,7 +24,7 @@ site.data.textblocks.sections[section] %}
                 </div>
                 <div class="absolute top-1/3 left-1/2 -translate-x-1/2 text-center w-full px-8">         
                     <div class="!font-semibold">
-                        {% include section-subheadline.html text=step.title animation=false %}
+                        {% include elements/section-subheadline.html text=step.title animation=false %}
                     </div>
                     <p class="text-lg md:text-base">
                         {{ step.text }}
@@ -34,7 +34,7 @@ site.data.textblocks.sections[section] %}
             {% endfor %}
         </div>
         <div class="text-center">
-        {% include button.html text=section_data.button_text link=section_data.button_link %}
+        {% include elements/button.html text=section_data.button_text link=section_data.button_link %}
         </div>
     </div>
 </div>

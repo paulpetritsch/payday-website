@@ -1,0 +1,19 @@
+<div class="px-8 md:px-4 pt-10 md:pt-32 pb-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="mb-8 md:w-full md:h-[50vh] rounded-3xl relative bg-{{ page.color }}">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="w-full h-full object-contain" loading="lazy">
+        </div>
+        <h1 class="text-7xl font-bold font-display reveal">
+            {{ page.headline }}
+        </h1>
+        <div class="flex items-center mt-8 reveal">
+            {% assign current_lang = site.data.textblocks.current_language | default: 'de' %}
+            {% assign months = site.data.textblocks.texts.months | split: "," %}
+            {% assign month_index = page.date | date: "%-m" | minus: 1 %}
+            {{ page.date | date: "%d." }} {{ months[month_index] }} {{ page.date | date: "%Y" }}
+            <div class="bg-grey rounded-md px-2 py-1 text-xs ml-4">
+                {{ site.data.textblocks.texts.reading_time }}: {{ page.duration }} {{ site.data.textblocks.texts.min}}
+            </div>
+        </div>
+    </div>
+</div>

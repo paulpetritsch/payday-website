@@ -1,0 +1,33 @@
+<div class="w-full md:w-1/2 flex flex-col items-start justify-center">
+  {% if include.preheadline %}
+    <div class="flex mb-2 items-center w-full justify-center md:justify-left md:w-fit">
+      {% for subimage in include.images %}
+        <div class="w-8 h-8 rounded-full overflow-hidden bg-{{ subimage.color }} -mr-2 -z-[{{forloop.index}}] opacity-0 {% if forloop.index == 1 %} animate-fadein-100
+        {% elsif forloop.index == 2 %} animate-fadein-200
+        {% elsif forloop.index == 3 %} animate-fadein-300
+        {% endif %}">
+            <img src="{{ subimage.image | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_preheadline | escape }}" class="w-auto h-full object-cover mx-auto">
+        </div>
+      {% endfor %}
+      <span class="ml-4 opacity-0 animate-fadein-400">
+        {{ include.preheadline }}
+      </span>
+    </div>
+  {% endif %}
+    <h1 class="text-7xl font-bold font-display mb-4 opacity-0 animate-fadein-500 text-center md:text-left">
+      {{ include.headline }}
+    </h1>
+    {% if include.subheadline %}
+      <div class="text-2xl font-display mb-4 opacity-0 animate-fadein-600 text-center md:text-left">
+          {{ include.subheadline }}
+      </div>
+    {% endif %}
+    {% if include.text %}
+    <p class="text-center md:text-left max-w-2xl mb-4 opacity-0 animate-fadein-600 max-w-md">
+      {{ include.text }}
+    </p>
+    {% endif %}
+    <a href="{{include.button_link}}" class="text-xl md:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 md:py-3 rounded-xl opacity-0 animate-fadein-700 w-full md:w-fit text-center max-w-xs mx-auto md:mx-0">
+      {{ include.button_text }}
+    </a>
+</div>

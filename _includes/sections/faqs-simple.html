@@ -1,0 +1,72 @@
+{% comment %} Check if custom FAQs are passed as parameters {% endcomment %}
+{% if include.faqs %}
+  {% assign custom_faqs = include.faqs %}
+{% else %}
+  {% assign custom_faqs = site.data.textblocks.faqs.default %}
+{% endif %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Simple accordion for custom FAQs
+    const items = document.querySelectorAll('.faq-item');
+    items.forEach((item, idx) => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      const toggle = item.querySelector('.faq-toggle');
+      question.addEventListener('click', function () {
+        // Close all others
+        items.forEach((it, i) => {
+          if (i !== idx) {
+            it.querySelector('.faq-answer').style.maxHeight = '0';
+            it.querySelector('.faq-toggle').style.transform = 'rotate(0deg)';
+            it.querySelector('.faq-toggle').classList.remove('text-pink-500');
+          }
+        });
+        // Toggle this one
+        if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+          answer.style.maxHeight = '0';
+          toggle.style.transform = 'rotate(0deg)';
+          toggle.classList.remove('text-pink-500');
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          toggle.style.transform = 'rotate(45deg)';
+          toggle.classList.add('text-pink-500');
+        }
+      });
+    });
+  });
+</script>
+
+<div class="px-4 py-12 bg-purple-50 rounded-3xl">
+  <div class="max-w-7xl mx-auto is-animated">
+    <div class="text-center mb-8">
+      {% if include.headline %}
+        {% include elements/section-headline.html text=include.headline %}
+      {% else %}
+        {% include elements/section-headline.html text="Häufig gestellte Fragen" %}
+      {% endif %}
+    </div>
+    <div class="max-w-4xl mx-auto" id="faq-app">
+      <!-- Custom FAQs -->
+      {% for faq in custom_faqs %}
+      <div class="faq-item border-b border-gray-200 first-of-type:border-t">
+        <button class="faq-question py-4 w-full flex justify-between items-center text-lg md:text-base md:font-semibold text-left transition"
+          type="button">
+          <span>{{ faq.question }}</span>
+          <span class="faq-toggle ml-4 transition-transform duration-300">
+            <svg class="w-8 h-8 md:w-6 md:h-6" width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path class="stroke-purple-500" d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+        <div class="faq-answer overflow-hidden"
+          style="max-height:0;transition:max-height 0.3s ease-in-out;">
+          <div class="pb-4 text-lg md:text-base">
+            {{ faq.answer }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

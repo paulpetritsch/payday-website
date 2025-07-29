@@ -1,6 +1,7 @@
 # _data/textblocks.de.yml
 
 # Global/shared text
+######################################################## FOOTER
 footer:
   copyright: ". Alle Rechte vorbehalten."
   address_street: "Beethovenstrasse 11"
@@ -25,6 +26,7 @@ footer:
   unerwartet_design: "Gestaltet von <a class='text-white transition-colors duration-200 hover:text-pink-100 underline' href='https://www.unerwartet.design'>Unerwartet Design</a>."
   bureaubuero: "Umgesetzt von <a class='text-white transition-colors duration-200 hover:text-green-100 underline' href='https://www.bureaubuero.com'>BUREAU BÜRO</a>"
 
+######################################################## NAV
 nav:
   nav_links:
     - url: "/about"
@@ -41,12 +43,43 @@ nav:
   nav_register:
       url: "/register"
       text: "Registrieren"
+  nav_floating_cta:
+      url: "/upload"
 
+######################################################## 404
+error:
+  headline: "404"
+  subheadline: "Seite nicht gefunden"
+  button_text: "Zur Startseite"
+  button_link: "/"
+
+######################################################## Texte
 texts:
   reading_time: "Lesezeit"
   min: "Min."
+  similar_articles: "Ähnliche Artikel"
+  more_tips: "Mehr Finanztipps"
+  blog_link: "/financial-advice"
+  months: "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember"
+  date_format: "%d. %B %Y"
 
+######################################################## SECTIONS
 sections:
+  slider:
+    headline: "„Zum Glück gibt’s PayDay”"
+    slides:
+      - image: "/assets/images/home-slider1.png"
+        headline: "Kredit?"
+      - image: "/assets/images/home-slider2.png"
+        headline: "Lizenzen?"
+      - image: "/assets/images/home-slider3.png"
+        headline: "Leasingraten?"
+      - image: "/assets/images/home-slider4.png"
+        headline: "Strom?"
+      - image: "/assets/images/home-slider5.png"
+        headline: "Versicherung?"
+      - image: "/assets/images/home-slider6.png"
+        headline: "Arztrechnung?"
   steps:
     headline: "In 3 Schritten zu mehr finanzieller Freiheit"
     subheadline: "Ohne Zinsen. Ohne Papierkram. Ohne Druck."
@@ -87,7 +120,7 @@ sections:
           svg: "lock"
           svg_color: "text-purple-200"
     home2:
-      image: "/assets/images/image-placeholder.png"
+      image: "/assets/images/home-section2.png"
       headline: "Vorteile bei PayDay"
       subheadline: "Fair & schnell, ohne versteckte Kosten."
       text: |
@@ -119,7 +152,7 @@ sections:
           svg: "smiley"
           svg_color: "text-green-100"
     home3:
-      image: "/assets/images/image-placeholder.png"
+      image: "/assets/images/home-section3.png"
       headline: "Dein persönlicher PayDay - genau dann, wenn du ihn brauchst"
       subheadline: "Weil du Besseres zu tun hast, als dich um unbezahlte Rechnungen zu sorgen."
       button_text: "Jetzt Registrieren"
@@ -135,6 +168,163 @@ sections:
           text: "Für dich"
           svg: "persona"
           svg_color: "text-purple-200"
+    about1:
+      image: "/assets/images/about-section1.png"
+      headline: "Warum wir tun, was wir tun"
+      text: "Wir wissen, wie es sich anfühlt, wenn das Geld am Monatsende nicht reicht. 
+        <br><br>
+        Wenn eine einzige Rechnung plötzlich alles durcheinanderbringt. Genau deshalb gibt's payday: Um Menschen zu helfen, die sonst niemand sieht. Keine Hürden – sondern echte Unterstützung, genau dann, wenn man sie braucht.
+        <br><br>
+        Wir glauben daran, dass finanzielle Unterstützung einfach, menschlich und transparent sein muss. Mit payday bieten wir einen digitalen Weg, der in schwierigen Momenten entlastet."
+      left: true
+      centered: true
+      tags:
+        - color: "bg-pink-50"
+          text: "Arztrechnung?"
+          svg: "doctor"
+          svg_color: "text-pink-100"
+        - color: "bg-green-50"
+          text: "Versicherung?"
+          svg: "insurance"
+          svg_color: "text-green-100"
+    about2:
+      image: "/assets/images/about-section2.png"
+      headline: "Gemeinsam für eine starke finanzielle Zukunft"
+      text: "Unsere Vision geht weit über den Status quo hinaus. Wir wollen wachsen, neue Wege gehen und noch mehr Menschen erreichen, die kurzfristige Unterstützung benötigen - mit digitalen Lösungen, die einfach, zugänglich und wirkungsvoll sind. 
+        <br><br>
+        In den kommenden Jahren werden wir gezielt Partnerschaften im B2B-Bereich aufbauen, zum Beispiel mit Energieversorgern und Dienstleistungsunternehmen, um noch schneller helfen zu können."
+      button_text: "Für Unternehmen"
+      button_link: "/companies"
+      left: false
+      centered: true
+      tags:
+        - color: "bg-pink-50"
+          text: "B2B"
+          svg: "heart-handshake"
+          svg_color: "text-pink-100"
+        - color: "bg-green-50"
+          text: "schnell?"
+          svg: "fast"
+          svg_color: "text-green-100"
+        - color: "bg-purple-100"
+          text: "diskret?"
+          svg: "lock"
+          svg_color: "text-purple-200"
+        - color: "bg-green-50"
+          text: "0% Zinsen"
+          svg: "smiley"
+          svg_color: "text-green-100"
+    about3:
+      image: "/assets/images/about-section3.png"
+      headline: "Mit jeder Rechnung Hoffnung schenken"
+      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
+      button_text: "Rechnung hochladen"
+      button_link: "/upload"
+      left: true
+      centered: true
+      tags:
+        - color: "bg-pink-50"
+          text: "givedirectly.org"
+          svg: "heart-handshake"
+          svg_color: "text-pink-100"
+          about1:
+      image: "/assets/images/about-section1.png"
+      headline: "Warum wir tun, was wir tun"
+      text: "Wir wissen, wie es sich anfühlt, wenn das Geld am Monatsende nicht reicht. 
+        <br><br>
+        Wenn eine einzige Rechnung plötzlich alles durcheinanderbringt. Genau deshalb gibt's payday: Um Menschen zu helfen, die sonst niemand sieht. Keine Hürden – sondern echte Unterstützung, genau dann, wenn man sie braucht.
+        <br><br>
+        Wir glauben daran, dass finanzielle Unterstützung einfach, menschlich und transparent sein muss. Mit payday bieten wir einen digitalen Weg, der in schwierigen Momenten entlastet."
+      left: true
+      centered: true
+      tags:
+        - color: "bg-pink-50"
+          text: "Arztrechnung?"
+          svg: "doctor"
+          svg_color: "text-pink-100"
+        - color: "bg-green-50"
+          text: "Versicherung?"
+          svg: "insurance"
+          svg_color: "text-green-100"
+    processbenefits1:
+      image: "/assets/images/about-section2.png"
+      headline: "Gemeinsam für eine starke finanzielle Zukunft"
+      text: "Unsere Vision geht weit über den Status quo hinaus. Wir wollen wachsen, neue Wege gehen und noch mehr Menschen erreichen, die kurzfristige Unterstützung benötigen - mit digitalen Lösungen, die einfach, zugänglich und wirkungsvoll sind. 
+        <br><br>
+        In den kommenden Jahren werden wir gezielt Partnerschaften im B2B-Bereich aufbauen, zum Beispiel mit Energieversorgern und Dienstleistungsunternehmen, um noch schneller helfen zu können."
+      button_text: "Für Unternehmen"
+      button_link: "/companies"
+      left: false
+      centered: true
+      tags:
+        - color: "bg-pink-50"
+          text: "B2B"
+          svg: "heart-handshake"
+          svg_color: "text-pink-100"
+        - color: "bg-green-50"
+          text: "schnell?"
+          svg: "fast"
+          svg_color: "text-green-100"
+        - color: "bg-purple-100"
+          text: "diskret?"
+          svg: "lock"
+          svg_color: "text-purple-200"
+        - color: "bg-green-50"
+          text: "0% Zinsen"
+          svg: "smiley"
+          svg_color: "text-green-100"
+    processbenefits2:
+      image: "/assets/images/about-section3.png"
+      headline: "Mit jeder Rechnung Hoffnung schenken"
+      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
+      button_text: "Rechnung hochladen"
+      button_link: "/upload"
+      left: true
+      centered: true
+      tags:
+        - color: "bg-pink-50"
+          text: "givedirectly.org"
+          svg: "heart-handshake"
+          svg_color: "text-pink-100"
+    processbenefits3:
+      image: "/assets/images/about-section3.png"
+      headline: "Mit jeder Rechnung Hoffnung schenken"
+      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
+      button_text: "Rechnung hochladen"
+      button_link: "/upload"
+      left: true
+      centered: true
+      tags:
+        - color: "bg-pink-50"
+          text: "givedirectly.org"
+          svg: "heart-handshake"
+          svg_color: "text-pink-100"
+    processbenefits4:
+      image: "/assets/images/about-section3.png"
+      headline: "Mit jeder Rechnung Hoffnung schenken"
+      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
+      button_text: "Rechnung hochladen"
+      button_link: "/upload"
+      left: true
+      centered: true
+      tags:
+        - color: "bg-pink-50"
+          text: "givedirectly.org"
+          svg: "heart-handshake"
+          svg_color: "text-pink-100"
+    processbenefits5:
+      image: "/assets/images/about-section3.png"
+      headline: "Mit jeder Rechnung Hoffnung schenken"
+      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
+      button_text: "Rechnung hochladen"
+      button_link: "/upload"
+      left: true
+      centered: true
+      tags:
+        - color: "bg-pink-50"
+          text: "givedirectly.org"
+          svg: "heart-handshake"
+          svg_color: "text-pink-100"
   blog_overview:
       headline: "Für alle, die Geld neu denken"
       subheadline: "Finanztipps"
@@ -163,10 +353,11 @@ sections:
     - category: "Nutzung"
       items:
         - question: "Wie schnell erhalte ich mein Geld?"
-          answer: "In der Regel innerhalb von 24 Stunden nach Prüfung."
+          answer: "In der Regel inne  rhalb von 24 Stunden nach Prüfung."
         - question: "Welche Gebühren fallen an?"
           answer: "Die Gebühren sind transparent und werden vorab angezeigt."
 
+######################################################## PAGES
 pages:
   home:
     hero_headline: "Sorgenfrei bis zum nächsten PayDay"
@@ -181,9 +372,9 @@ pages:
         color: "purple-100"
       - image: "/assets/images/man1.png"
         color: "green-50"
-    hero_image1: "/assets/images/image-placeholder2.png"
-    hero_image2: "/assets/images/image-placeholder2.png"
-    hero_image3: "/assets/images/image-placeholder2.png"
+    hero_image1: "/assets/images/home-hero2.png"
+    hero_image2: "/assets/images/home-hero1.png"
+    hero_image3: "/assets/images/home-hero3.png"
     hero_tag1:
       color: "bg-green-50"
       text: "0% Zinsen!"
@@ -196,8 +387,309 @@ pages:
       svg_color: "text-pink-100"
     sections:
     
+
   about:
+    hero_headline: "Für alle, bei denen’s manchmal knapp wird"
+    hero_text: "Statt klassischer Kleinkredite setzen wir auf einen neuen Ansatz: Wir bezahlen offene Rechnungen direkt – schnell, diskret und digital. So helfen wir Menschen, finanzielle Belastungen zu überbrücken und ihren Alltag wieder unter Kontrolle zu bringen."
+    hero_button_text: "Rechnung hochladen"
+    hero_button_link: "/upload"
+    hero_preheadline: "300+ benutzen bereits PayDay"
+    hero_subimages:
+      - image: "/assets/images/women1.png"
+        color: "pink-50"
+      - image: "/assets/images/women2.png"
+        color: "purple-100"
+      - image: "/assets/images/man1.png"
+        color: "green-50"
     sections:
       blog_overview:
         headline: "Für alle, die Geld neu denken"
         subheadline: "Finanztipps"
+  process_benefits:
+    hero_headline: "Rechnung da? PayDay auch"
+    hero_text: "Wir zahlen deine offenen Rechnungen direkt, bis zu CHF 499.- pro Monat. Du bekommst 30 Tage Zeit, um uns bequem zurückzuzahlen. So bleibst du handlungsfähig, vermeidest Mahnungen und schützt deinen Bonitäts-Score."
+    hero_button_text: "Rechnung hochladen"
+    hero_button_link: "/upload"
+    
+    sections:
+      blog_overview:
+        headline: "Für alle, die Geld neu denken"
+        subheadline: "Finanztipps"
+
+
+  anti_money_laundering:
+    hero_headline: "KYC-Erklärung Anti-Geldwäsche"
+    hero_text: >
+      Bei KYC geht es darum, deine Identität zu überprüfen und sicherzustellen, dass die Informationen, die du uns zur Verfügung stellst korrekt sind. Dies hilft uns, kriminelle Aktivitäten zu verhindern und unsere Plattform sicher zu halten. <br><br>
+      Wenn du unsere Dienste nutzt, wirst du gebeten, einige grundlegende Informationen anzugeben, wie deinen vollständigen Namen, dein Geburtsdatum und deine Adresse. Anschliessend überprüfen und bestätigen wir diese Informationen sorgfältig mithilfe einer von der FINMA festgelegten und empfohlenen Methode
+    hero_button_text: "Jetzt registrieren"
+    hero_button_link: "/register"
+  
+
+  terms:
+    headline: "Allgemeine Geschäftsbedingungen Payfresh AG"
+    valid_from: "gültig ab 01.10.2024"
+    sections:
+      - number: "1."
+        title: "Allgemeines"
+        subsections:
+          - number: "1.1"
+            title: "Angebot PayDay"
+            text: >
+              PayDay übernimmt ausstehende Rechnungen, (hauptsächlich «Utility Bills» wie Strom, Heizung, Telefon, Schulkosten, etc. ) oder Einkäufe seiner Kunden bis zu einem Maximalbetrag von Total CHF 499.00. Der Kunde muss den durch PayDay bezahlten Betrag inkl. Gebühren innert 30 Tagen (bzw. 60 Tagen) zurückbezahlen. Die Rückzahlungsfrist betrifft in keinem Fall mehr als drei Monate. Die Dienstleistung wird ausschliesslich online über die Plattform von PayDay angeboten.
+              Das Angebot von PayDay richtet sich nur an natürliche Privatpersonen, die in der Schweiz wohnhaft sind und über ein regelmässiges Einkommen verfügen.
+          - number: "1.2"
+            title: "Registrierung, Anerkennung der AGB und KYC"
+            subsections:
+              - number: "1.2.1"
+                title: "Registrierungsprozess"
+                text: >
+                  Die Registrierung erfolgt online über die Website von PayDay. Der Interessent begleicht die einmalige Registrierungsgebühr und/oder die Jahresgebühr. Die Bezahlung kann online per Kreditkarte, Postfinance Karte, Paypal oder innerhalb von 7 Tagen per Rechnung bezahlt werden. Erfolgt die Bezahlung nicht innert Frist, so wird das Konto automatisch geschlossen und sämtliche Kundendaten werden gelöscht. Der Interessent kann sich auf Wunsch nochmals neu registrieren.
+                  Der Interessent erhält einen Verifizierungscode auf sein Handy geschickt; dieser muss via Plattform bestätigt werden. Ferner erhält er eine E-Mail, welche ebenfalls per Klick bestätigt werden muss, wodurch die persönliche E-Mail Adresse des Interessenten verifiziert wird. Im Rahmen des Registrierungsprozesses erklärt der Interessent, dass er die AGB sorgfältig gelesen und verstanden hat.
+              - number: "1.2.2"
+                title: "KYC (Know your Client) und Bonitätsprüfung"
+                text: >
+                  Da PayDay für die Kunden in Vorleistung geht, ist es für PayDay äusserst wichtig seine Kunden zu kennen und weitestgehend sicherzustellen, dass die gemachten Angaben korrekt sind und dass der Interessent auch in der Lage sein wird, die für ihn bezahlten Rechnungen inkl. der Gebühren, innert Frist zurückzuzahlen. Im Rahmen des Registrierungsprozesses erfolgt deshalb eine KYC Prüfung einerseits durch Überprüfung der vom Interessenten gemachten Angaben und andererseits mittels eigener Nachforschungen. Neben den Personalien muss der Interessent folgende Unterlagen auf der PayDay Plattform uploaden:
+                  Pass / ID Kopie oder Ausländerausweis
+                  die letzten 3 Gehaltsabrechnungen bzw. Bankbelege, welche das regelmässige Einkommen im Rahmen einer Anstellung bzw. selbständigen Erwerbstätigkeit belegen
+                  Sobald alle Unterlagen und Informationen vollständig vorliegen, werden diese von PayDay geprüft und bestätigt.
+                  PayDay behält sich vor, für die Verifizierung und Bonitätsprüfung Wirtschaftsauskunftsstellen und Bonitätsdatenbanken wie (z.B. ZEK, IKO, CRIF) anzufragen, Daten einzuholen und auszutauschen. Der Interessent und Kunde erteilt PayDay hierzu mit Bestätigung diese AGB ausdrücklich die Einwilligung.
+                  Ist die Registrierungs- und Jahresgebühr beglichen, die KYC Vorgaben erfüllt und von PayDay bestätigt (i.d.R. innert 24h), wird der Interessent offiziell Kunde und kann die Dienstleistung von PayDay nutzen. Davon zu unterscheiden ist die gesetzlich vorgeschriebene KYC-Prüfung zwecks Geldwäschereibekämpfung, welche separat erfolgt.
+              - number: "1.2.3"
+                title: "Korrekte und aktuelle Angaben"
+                text: >
+                  Der Interessent und Kunde ist verpflichtet gegenüber PayDay korrekte Angaben zu machen. Eine Person darf sich nur einmal registrieren. Zuwiderhandlungen (Z.B. Errichtung von Fake Profilen oder dergleichen) werden entsprechend rechtlich geahndet. Der Kunde ist zudem verpflichtet, seine Personalien, Angaben und oben genannten Dokumente stets aktuell zu halten (z.B. im Falle eines abgelaufenen Pass, ID etc.). Stellenwechsel sind auf der Plattform umgehend zu kommunizieren. PayDay kann jederzeit ein Update von Unterlagen verlangen. Kommt der Kunde dieser Verpflichtung nicht nach, kann PayDay die Dienstleistung sperren. Für den Fall, dass der Kunde die Dienstleistung bezieht, obwohl seine Angaben nicht aktuell sind, behält sich PayDay die Geltendmachung von Schadenersatz ausdrücklich vor
+                  PayDay kann jederzeit und ohne Angaben von Gründen eine Registrierung ablehnen oder auch kündigen.
+      - number: "2."
+        title: "Nutzung der Dienstleistungen"
+        subsections:
+          - number: "2.1"
+            title: "Nutzungsfenster"
+            text: >
+              Die PayDay Dienstleistung steht dem Kunden während dem sogenannten Nutzungsfenster zur Verfügung. Ein Nutzungsfenster beginnt jeweils am 5ten des Monats und endet am letzten Tag eines jeden Monats. An Feiertagen und Wochenendtagen werden von PayDay keine Zahlungen ausgeführt. Während eines Nutzungsfensters können ausstehende Rechnungen bis zu einem Totalbetrag von CHF 499.00 an die PayDay zur Zahlung in Auftrag zu geben.
+              Der Betrag von CHF 499.00 pro Nutzungsfenster stellt ein Maximalbetrag dar. Der Kunde kann während dieser Zeitspanne mehrere Rechnungen durch PayDay begleichen lassen, bis dieser Maximalbetrag ausgeschöpft ist (vgl. dazu Ziff. 2.3). Massgebend für die Kalkulation sind die effektiven Beträge der eingereichten Rechnungen bzw. Einkäufe (ohne Gebühren von PayDay etc.).
+              Die Rechnungen können auch auf den Namen von Dritten lauten. Schuldner ist und bleibt in diesem Fall ausschliesslich der Kunde von PayDay; er haftet vollumfänglich gegenüber PayDay. Der Dritte wird zu keiner Zeit Vertragspartei von PayDay
+              PayDay begleicht die vom Kunden eingereichten Rechnungen, sofern die formellen Angaben (wie z.B. korrekte Referenznummer etc.) korrekt sind.
+              PayDay kann eingereichte Rechnungen ohne Angaben von Gründen jederzeit ablehnen.  
+              Ab Datum der Nutzung dieser Dienstleistung erhält der Kunde eine Rechnung inkl. Gebühren von PayDay. Nur wenn diese Rechnung beglichen worden ist, wird ein neues Nutzungsfenster eröffnet.
+          - number: "2.2"
+            title: "Sessions"
+            text: >
+              Startet der Kunde einen Auftrag zur Begleichung von Rechnungen eröffnet er eine sog. «Session». Im Rahmen einer Session kann der Kunde eine oder mehrere Rechnungen auf die PayDay Plattform zur Begleichung hochladen.
+              Eine Session dauert von 00.01 Uhr bis 23.00 Uhr. Sofern ein Kunde am Morgen um 08.00 Uhr eine Rechnung uploadet, kann er am Abend die Session nochmals editieren und die zweite oder weitere Rechnung hinzufügen.
+              Der Mindestbetrag einer Rechnung beträgt CHF 50.00. Pro Session beträgt der Mindestbetrag CHF 100.00. 
+          - number: "2.3"
+            title: "Bezahlung einer Rechnung durch PayDay"
+            text: >
+              Die Zahlung durch PayDay erfolgt im Namen des Schuldners. Die Zahlung durch PayDay stellt keine Schuldübernahme dar; das ursprüngliche Schuldverhältnis zwischen Nutzer und dem jeweiligen Vertragspartner bleibt jederzeit unberührt.
+              Gebühren, Zahlungsmodalitäten und Säumnisfolgen
+              Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit zu ändern. Änderungen werden auf unserer Website veröffentlicht. Wir empfehlen Ihnen, die Datenschutzerklärung regelmässig zu überprüfen, um über den aktuellen Stand informiert zu bleiben.
+      - number: "3."
+        title: "Gebühren, Zahlungsmodalitäten und Säumnisfolgen"
+        subsections:
+          - number: "3.1"
+            title: "Grundgebühren"
+            subsections:
+              - number: "3.1.1"
+                title: "Registrierungsgebühr"
+                text: >
+                  PayDay erhebt keine Zinsen, sondern lediglich tiefe Dienstleistungsgebühren. Um dies weiterhin sicherzustellen, dient die einmalige Registrierungsgebühr dem manuellen Verifizierungsprozess.
+                  Wurde die einmalige Registrierungsgebühr bezahlt, jedoch die für die KYC Prüfung erforderlichen Angaben und Unterlagen nicht vollständig beigebracht, ist eine Rückerstattung ausgeschlossen.
+              - number: "3.1.2"
+                title: "Jahresgebühr"
+                text: >
+                  Die Jahresgebühr beträgt CHF 19.90. Wurde die Jahresgebühr bezahlt, jedoch die für die KYC Prüfung erforderlichen Angaben und Unterlagen nicht vollständig beigebracht, ist eine die Rückerstattung ausgeschlossen. Bei vorzeitiger Vertragsauflösung besteht kein Anspruch auf anteilsmässige Rückerstattung der Jahresgebühr.
+                  Mit Begleichung der Jahresgebühr und erfolgreicher Verifizierung, kann der Kunde die Plattform ein Jahr lang uneingeschränkt nutzen und wiederkehrende Bonitätsprüfungsmassnahmen bei der jeweiligen Nutzung unserer Dienstleistung erübrigen sich.
+      - number: "4."
+        title: "Gebühren für die Dienstleistungen"
+        subsections:
+          - number: "4.1"
+            title: "Basis Gebühr für den Service zur Begleichung von Rechnungen"
+            text: >
+              Die Basisgebühr pro Session beträgt CHF 25.00 und beinhaltet die Begleichung einer Rechnung.
+              Pro weitere Rechnung in derselben Session bezahlt der Kunde jeweils nur CHF 5.00.
+              Bsp. Wenn der Kunde drei Rechnungen an uns zur Begleichung überreicht, 1ste CHF 175.00, 2te CHF 125.00, 3te 150.00 = Total CHF 450.00, dann bezahlt der Kunde innerhalb von 30 Tagen Total CHF 485.00 an PayDay zurück.
+          - number: "4.2"
+            title: "Administrative Gebühren"
+            text: >
+              Wünscht der Kunde die Rechnungen in Papierform zu erhalten belastet PayDay pro erstellte Rechnung/Mahnung CHF 2.50 pauschal.
+              Die bei Einzahlungen am Postschalter mittels Einzahlungsscheine anfallenden Gebühren werden dem Kundenkonto mit pauschal CHF 1.50 weiterbelastet. Da dies erst nach Bezahlung einer Rechnung festgestellt werden kann, ist die Nutzungssumme dann um diesen Betrag gekürzt und wird erst bei der nächsten Nutzung der Dienstleistung in Rechnung gestellt.
+          - number: "4.3"
+            title: "Gebühren für optionale Dienstleistungen"
+            text: >
+              Der Kunde hat verschiedene Möglichkeiten, die Frist für die Rückzahlung der durch PayDay gewährten Kredite, zu verlängern.
+              «Buy more Time» Option 1:  CHF 9.90
+              Diese Option kann ab dem 20sten – 24sten Tag nach Nutzung der Dienstleistung gezogen werden. Der Kunde erhält weitere 30 Tage.
+              «Buy more Time» Option 2:   CHF 19.90
+              Hat der Kunde die erste Option nicht genutzt wird ab dem 25sten- 29sten Tag die Option 2 freigeschaltet und der Kunde hat jetzt nochmals die Möglichkeit weitere 30 Tage dazuzukaufen.
+              Wird die «buy more time» Option gezogen, erhält der Kunde eine neue Rechnung inkl. der jeweiligen Gebühr. Das Zahlungsziel dieser Rechnung ist dann um 30 Tage des ursprünglichen Zahlungsziels verlängert.
+          - number: "4.4"
+            title: "Zahlungsmodalitäten"
+            text: >
+              Der Kunde erhält für die genutzten Dienstleistungen eine elektronische Rechnung per Mail oder auf Wunsch in Papierform. Jede Rechnung ist jeweils auch im persönlichen Profil unserer Plattform ersichtlich. 
+              Die Begleichung des jeweiligen Rechnungsbetrags muss bis spätestens zum auf der jeweiligen Rechnung genannten Zahlungstermin erfolgen.
+          - number: "4.5"
+            title: "Säumnisfolgen"
+            subsections:
+              - number: "4.5.1"
+                title: "Mahnung"
+                text: >
+                  Wird der Fälligkeitstermin nicht eingehalten kommt der Kunde ohne Mahnung in Verzug (Verfalltag).
+                  Mahnungen werden am 2ten Tag nach Verfall der Rechnung ausgestellt und werden jeweils mit einer Aufwandsentschädigung von CHF 25.00 pro Mahnung belastet.
+                  PayDay stellt insgesamt 2 Mahnungen aus, danach wird das Dossier des säumigen Kunden dem Inkasso überreicht. Die Zustellung der Mahnungen erfolgt auf dem gleichen Weg (Mail/Papierform) wie ursprünglich vom Kunden gewünscht.
+              - number: "4.5.3"
+                title: "Reaktivierungsgebühr"
+                text: >
+                  Eine Reaktivierungsgebühr von CHF 35.00 ist dann fällig, wenn ein Konto gesperrt wurde und nach Ablauf der laufenden Mitgliedschaft reaktiviert werden soll. Eine Reaktivierung ist nur möglich, wenn sämtlich Forderungen an das Inkasso bezahlt wurden und die üblichen Richtlinien erfüllt sind.
+          - number: "4.6"
+            title: "Beispiele für die Berechnung der Gebühren"
+            text: >
+              Am 7. Januar wurden 2 Rechnungen von Total CHF 280.00 zur Bezahlung in Auftrag gegeben. Der Kunde erhält eine Rechnung von CHF 310.00 welche zur Rückzahlung fällig ist (CHF 280.00 von PayDay bezahlt + CHF 25.00 Basic Gebühr + CHF 5.00 für die 2te Rechnung ergibt ein Total von CHF 310.00).
+              Am 24. Januar hat der Kunde nochmals eine Rechnung von Total CHF 170.00 zur Zahlung in Auftrag gegeben. Der Kunde erhält für diese Session eine Rechnung von CHF 195.00, welche zur Rückzahlung fällig ist (CHF 170.00 von PayDay bezahlt + Basic Gebühr von CHF 25.00 ergibt ein Total von CHF 195.00).
+              In diesem Fall wird für diesen Kunden ein neues Nutzungsfenster erst dann wieder geöffnet, wenn der Kunde beide Rechnungen vollumfänglich beglichen hat.
+              Wurde/-n die offene Rechnung/-n vollständig zurückbezahlt, ist am darauffolgenden Tag das neue Nutzungsfenster wieder geöffnet und der Kunde kann wieder bis zu Total CHF 499.00 den PayDay Service nutzen.
+              Das Nutzungsfenster schliesst jeweils am letzten Tag jedes Monats um 23.59 Uhr auch dann, wenn der Kunde nicht die volle Summe von bis zu CHF 499.00 ausgeschöpft hat. Auch hier bleibt das Nutzungsfenster so lange geschlossen, bis die ausstehende Rechnung vollumfänglich beglichen wurde.
+              Vom 1sten bis und mit 5ten jeden Monats werden von PayDay keine Rechnungen beglichen.
+      - number: "5."
+        title: "Datenschutz"
+        text: >
+          Der Kunde ist damit einverstanden, dass PayDay personenbezogene Daten zwecks Erbringung der Dienstleistungen verarbeitet. Nähere Informationen zur Datenverarbeitung finden sich in der Datenschutzerklärung.
+      - number: "6."
+        title: "Laufzeit & Kündigung"
+        subsections:
+          - number: "6.1"
+            title: "Vertragsdauer / vorzeitige Auflösung"
+            text: >
+              Nach der Registrierung hat der Kunde die Möglichkeit die Nutzung der Plattform ein Jahr lang zu nutzen. Massgeblich für die Nutzungs- und damit Vertragsperiode ist das Verfalldatum, welches auf der Plattform ersichtlich ist (üblicherweise 365 Tage ab Datum der Bezahlung der Jahresprämie).
+              Die Kundenbeziehung verlängert sich nicht automatisch, sondern muss vor Ablauf bestätigt und bezahlt werden. Das System von PayDay verschickt vor Ablauf der Nutzungsdauer eine Erinnerung per Mail sowie eine Notiz auf der Plattform selbst. 
+          - number: "6.2"
+            title: "Vorzeitige Auflösung"
+            text: >
+              Eine vorzeitige Vertragsauflösung durch PayDay ist grundsätzlich jederzeit ohne Angabe von Gründen möglich.
+              Eine Vorzeitige Auflösung erfolgt insbesondere – aber nicht abschliessend - dann, wenn der Kunde mit seiner Zahlungspflicht so weit in Verzug kommt, dass das Dossier dem Inkasso überreicht werden muss. In einem solchen Fall wird die Dienstleistung automatisch eingestellt und der Kunde bleibt für das ganze noch laufende Mitgliedschaftsjahr gesperrt. Selbst dann, wenn er die Rechnung zwischenzeitlich über das Inkasso bezahlt hat. 
+              Der Kunde kann bei Änderungen der AGB nach Bekanntgabe innerhalb von 30 Tagen jederzeit kündigen. Evtl. ausstehende Rückzahlungsverpflichtungen bleiben bestehen. Eine Rückzahlung oder teilweise Rückzahlung der Jahresprämie besteht nicht.
+      - number: "7."
+        title: "Weitere Bestimmungen"
+        subsections:
+          - number: "7.1"
+            title: "Änderungen der AGB"
+            text: >
+              PayDay behält sich das Recht vor die AGB (inklusive Anpassungen der Dienstleistungen und der anwendbaren Gebühr usw.) jederzeit abzuändern. Änderungen werden schriftlich oder in anderer angemessener Form mitgeteilt und gelten als genehmigt, falls die Dienstleistung von PayDay nicht vor Inkrafttreten der Änderungen ausserordentlich gekündigt wird.
+          - number: "7.2"
+            title: "Salvatorische Klausel"
+            text: >
+              Sollten einzelne Bestimmungen dieses Vertrages ganz oder teilweise rechtsunwirksam sein oder werden oder sollte dieser Vertrag eine Lücke aufweisen, so wird hierdurch die Gültigkeit der übrigen Bestimmungen dieses Vertrages nicht berührt. Die Vertragspartner verpflichten sich schon jetzt, anstelle der unwirksamen Bestimmung eine rechtswirksame Bestimmung zu vereinbaren, die - wirtschaftlich gesehen – dem Sinn und Zweck der unwirksamen Bestimmung möglichst nahekommt.
+          - number: "7.3"
+            title: "Anwendbares Recht, Gerichtsstand"
+            text: >
+              Dieser Vertrag untersteht dem Schweizer Recht. Gerichtsstand ist Zürich, zwingende gesetzliche Gerichtsstands Vorschriften vorbehalten.
+      - number: "8."
+        title: "Bekämpfung von Geldwäsche"
+        text: >
+          PayDay AG verpflichtet sich, den gesetzlichen Anforderungen zur Bekämpfung von Geldwäsche (AML) und Terrorismusfinanzierung gemäss den schweizerischen Bestimmungen strikt nachzukommen.
+          Identifikation der Kunden (KYC):
+          PayDay führt eine umfassende Identitätsprüfung aller Kunden durch, bevor Dienstleistungen bereitgestellt werden. Dazu müssen Kunden eine Kopie ihres Reisepasses oder Personalausweises und die letzten drei Gehaltsabrechnungen bzw. Kontoauszüge vorlegen, um ihre Identität und Zahlungsfähigkeit zu bestätigen.
+          Sorgfaltspflicht:
+          PayDay überwacht laufend Transaktionen, um sicherzustellen, dass diese den gesetzlichen Vorschriften entsprechen und keine verdächtigen Aktivitäten vorliegen. Bei Auffälligkeiten werden weitergehende Prüfungen eingeleitet.
+          Zusammenarbeit mit Behörden:
+          In Verdachtsfällen oder bei Pflichtmeldungen erfolgt eine Zusammenarbeit mit den zuständigen schweizerischen Behörden (z.B. der Meldestelle für Geldwäscherei MROS).
+          Schulungen und Prozesse:
+          PayDay schult seine Mitarbeiter regelmässig über die Prävention von Geldwäsche und implementiert interne Prozesse, um jederzeit die Einhaltung der AML-Vorgaben sicherzustellen.
+          Rechtsfolgen:
+          PayDay behält sich das Recht vor, Dienstleistungen zu verweigern, Konten zu sperren oder den Vertrag zu kündigen, falls Verstösse gegen die AML-Richtlinien festgestellt werden oder bei Verdacht auf Geldwäscherei.
+          Diese Massnahmen stellen sicher, dass PayDay proaktiv zur Bekämpfung von Geldwäsche beiträgt und die Einhaltung der schweizerischen gesetzlichen Anforderungen garantiert.
+      - number: "9."
+        title: "Haftungsausschluss bei Plattform-Fehlfunktionen und Zahlungsverzögerungen"
+        text: >
+          PayDay übernimmt keine Haftung für technische Störungen, Ausfälle oder Unterbrechungen der Plattform, die die Nutzung der Dienstleistungen beeinträchtigen könnten. Dies umfasst insbesondere Verzögerungen bei der Übermittlung von Rechnungen oder Zahlungen, die auf technische Probleme zurückzuführen sind. PayDay haftet zudem nicht für finanzielle Verluste oder Schäden, die durch Verspätungen oder Fehlfunktionen entstehen, es sei denn, diese wurden durch grobe Fahrlässigkeit oder Vorsatz von PayDay verursacht. Der Kunde verpflichtet sich, technische Probleme umgehend zu melden, damit diese zeitnah behoben werden können.
+  privacy:
+    headline: "Datenschutzerklärung PayDay"
+    sections:
+      - number: "1."
+        title: "Verantwortliche Stelle"
+        text: >
+          Die verantwortliche Stelle für die Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen Daten ist: 
+          <br><br>PayFresh AG<br>
+          Beethovenstrasse 11<br>
+          8002 Zürich<br><br>
+          <a href="mailto:datenschutz@payday.ch">datenschutz@payday.ch</a>
+      - number: "2."
+        title: "Datenschutz und Datensicherheit"
+        text: >
+          PayDay nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und in Übereinstimmung mit den geltenden Datenschutzgesetzen, insbesondere dem Schweizer Datenschutzgesetz (DSG) und der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union. In dieser Datenschutzerklärung wird erläutert, welche Daten wir erheben, wie wir sie verwenden und welche Rechte Sie in Bezug auf Ihre Daten haben.
+      - number: "3."
+        title: "Erhebung und Verarbeitung personenbezogener Daten"
+        text: >
+          Wir erheben personenbezogene Daten, wenn Sie unsere Dienstleistungen nutzen, ein Konto bei PayDay erstellen oder uns kontaktieren. Zu den Daten, die wir verarbeiten, gehören:
+          Kontaktdaten: Name, Adresse, E-Mail-Adresse, Telefonnummer
+          Zahlungsinformationen: Bankverbindungen, Kreditkartendaten, Transaktionshistorie
+          Technische Daten: IP-Adresse, Browser-Informationen, Geräteinformationen, Cookies
+          Nutzungsdaten: Informationen über Ihre Interaktionen mit unseren Diensten (zB Transaktionen, Anfragen)
+      - number: "4."
+        title: "Zweck der Datenverarbeitung"
+        text: >
+          PayDay verwendet Ihre personenbezogenen Daten ausschliesslich für folgende Zwecke:
+          Bereitstellung unserer Zahlungsdienstleistungen und Abwicklung von Transaktionen
+          Kommunikation mit Ihnen im Zusammenhang mit Ihrem Konto oder unseren Dienstleistungen
+          Erfüllung gesetzlicher Verpflichtungen, wie zB Geldwäschereibekämpfung und Steuerrecht
+          Verbesserung unserer Dienstleistungen und Analyse der Nutzung unserer Plattform
+          Sicherheit und Betrugsprävention
+      - number: "5."
+        title: "Weitergabe personenbezogener Daten"
+        text: >
+          Ihre Daten werden nur dann an Dritte weitergegeben, wenn dies zur Erbringung unserer Dienstleistungen erforderlich ist, Sie hierzu ausdrücklich Ihre Zustimmung gegeben haben oder wir gesetzlich dazu verpflichtet sind. Beispiele für solche Dritten sind:
+          Banken und Zahlungsdienstleister zur Abwicklung von Transaktionen
+          Aufsichtsbehörden und staatliche Institutionen, wenn dies gesetzlich vorgeschrieben ist
+          Dienstleister (zB IT-Dienstleister), die uns bei der Erbringung unserer Dienste unterstützen
+          Wir bestätigen alle Dritten, die Ihre Daten verarbeiten, zur Einhaltung der geltenden Datenschutzvorschriften.
+      - number: "6."
+        title: "Datenaufbewahrung"
+        text: >
+          Wir speichern Ihre personenbezogenen Daten nur so lange, wie dies für die Erfüllung der in dieser Datenschutzerklärung genannten Zwecke erforderlich ist oder wie es gesetzlich vorgeschrieben ist. Sobald die Daten für diese Zwecke nicht mehr benötigt werden, werden sie gelöscht oder anonymisiert.
+      - number: "7."
+        title: "Datensicherheit"
+        text: >
+          Wir setzen technische und organisatorische Sicherheitsmassnahmen ein, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen. Dazu gehören Verschlüsselungstechnologien, sichere Server sowie Zugangsbeschränkungen.
+      - number: "8."
+        title: "Rechte der betroffenen Personen"
+        text: >
+          Sie haben das Recht:
+          Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten zu erhalten
+          Meldung unrichtiger Daten zu verlangen
+          Die Löschung Ihrer Daten ist zu verlangen, sofern keine gesetzlichen Aufbewahrungspflichten bestehen
+          Die Einschränkung der Verarbeitung Ihrer Daten zu fordern
+          Ihre Einwilligung zur Datenverarbeitung jederzeit widerrufen
+          Unter bestimmten Umständen die Übertragung Ihrer Daten an einen anderen Dienstleister zu verlangen (Datenportabilität)
+          Zur Ausübung dieser Rechte können Sie uns unter den oben genannten Kontaktdaten erreichen.
+      - number: "9."
+        title: "Einsatz von Cookies"
+        text: >
+          Unsere Website verwendet Cookies, um die Benutzerfreundlichkeit zu verbessern und bestimmte Funktionen bereitzustellen. Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden. Sie können die Verwendung von Cookies in den Einstellungen Ihres Browsers deaktivieren. Bitte beachten Sie, dass die Funktionalität unserer Website beeinträchtigt werden kann.
+      - number: "10."
+        title: "Änderungen der Datenschutzerklärung"
+        text: >
+          Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit zu ändern. Änderungen werden auf unserer Website veröffentlicht. Wir empfehlen Ihnen, die Datenschutzerklärung regelmässig zu überprüfen, um über den aktuellen Stand informiert zu bleiben.
+      - number: "11."
+        title: "Kontakte"
+        text: >
+          Für Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte können Sie uns unter folgenden Kontaktdaten erreichen:
+          <br><br> PayFresh AG <br>
+          Beethovenstrasse 11 <br>
+          8002 Zürich <br>
+          <br>
+          <a href="mailto:datenschutz@payday.ch">datenschutz@payday.ch</a>
+  imprint:
+    headline: "Impressum"
+    subheadline: "Payfresh AG"
+    text: >
+      Beethovenstrasse 11<br>
+      8002 Zürich<br>
+      Schweiz<br>
+      <a href="mailto:info@payday.ch">info@payday.ch</a><br><br>
+      Eingetragen im Handelsregister des Kantons Zürich unter der Nummer CH-020.3.051.941-6<br>
+      CHE-414.269.059<br> 
+      <a href="mailto:info@payday.at">info@payday.at</a><br><br>
+      <strong>Design, Konzept und Webdesign</strong><br> <a href="https://unerwartet.design" target="_blank">Unerwartet Branding und Design OG</a><br><br>
+      <strong>Webdevelopment</strong><br> <a href="https://bureaubuero.com" target="_blank">BUREAU BÜRO</a><br>
+      <br>
+      Handelsgericht: Schweiz
