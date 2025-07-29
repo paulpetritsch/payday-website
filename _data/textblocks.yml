@@ -24,7 +24,7 @@ footer:
   imprint: "Impressum"
 
   unerwartet_design: "Gestaltet von <a class='text-white transition-colors duration-200 hover:text-pink-100 underline' href='https://www.unerwartet.design'>Unerwartet Design</a>."
-  bureaubuero: "Umgesetzt von <a class='text-white transition-colors duration-200 hover:text-green-100 underline' href='https://www.bureaubuero.com'>BUREAU BÜRO</a>"
+  bureaubuero: "Umgesetzt von <a class='text-white transition-colors duration-200 hover:text-green-100 underline' href='https://www.bureaubuero.com'>BUREAU BÜRO</a>."
 
 ######################################################## NAV
 nav:
