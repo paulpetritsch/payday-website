@@ -1,0 +1,134 @@
+<svg width="522" height="513" viewBox="0 0 522 513" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Outer Circle 1 - Top -->
+  <ellipse cx="260.485" cy="65.4585" rx="64.9429" ry="65.4585" fill="#E6F3B7" class="circle-outer animate-fadein-400"/>
+  <ellipse cx="260.485" cy="65.4585" rx="64.9429" ry="65.4585" fill="url(#pattern0)" fill-opacity="0.95" class="circle-outer animate-fadein-400"/>
+  
+  <!-- Outer Circle 2 - Bottom -->
+  <path d="M325.428 446.871C325.428 483.022 296.352 512.329 260.485 512.329C224.618 512.329 195.542 483.022 195.542 446.871C195.542 410.719 224.618 381.412 260.485 381.412C296.352 381.412 325.428 410.719 325.428 446.871Z" fill="#E6F3B7" class="circle-outer animate-fadein-500"/>
+  <path d="M325.428 446.871C325.428 483.022 296.352 512.329 260.485 512.329C224.618 512.329 195.542 483.022 195.542 446.871C195.542 410.719 224.618 381.412 260.485 381.412C296.352 381.412 325.428 410.719 325.428 446.871Z" fill="url(#pattern1)" fill-opacity="0.95" class="circle-outer animate-fadein-500"/>
+  
+  <!-- Outer Circle 3 - Right -->
+  <ellipse cx="399.133" cy="392.236" rx="65.4584" ry="65.4585" fill="#FADEF0" class="circle-outer animate-fadein-600"/>
+  <ellipse cx="399.133" cy="392.236" rx="65.4584" ry="65.4585" fill="url(#pattern2)" fill-opacity="0.95" class="circle-outer animate-fadein-600"/>
+  
+  <!-- Outer Circle 4 - Left -->
+  <ellipse cx="121.836" cy="121.124" rx="65.4584" ry="65.4585" fill="#FADEF0" class="circle-outer animate-fadein-700"/>
+  <ellipse cx="121.836" cy="121.124" rx="65.4584" ry="65.4585" fill="url(#pattern3)" fill-opacity="0.9" class="circle-outer animate-fadein-700"/>
+  
+  <!-- Outer Circle 5 - Top Right -->
+  <ellipse cx="399.133" cy="121.124" rx="65.4584" ry="65.4585" fill="#E1CBFC" class="circle-outer animate-fadein-800"/>
+  <ellipse cx="399.133" cy="121.124" rx="65.4584" ry="65.4585" fill="url(#pattern4)" fill-opacity="0.95" class="circle-outer animate-fadein-800"/>
+  
+  <!-- Inner Circle 1 - Top -->
+  <ellipse cx="260.485" cy="176.274" rx="36.0794" ry="36.0795" fill="#E1CBFC" class="circle-inner animate-fadein-200"/>
+  <ellipse cx="260.485" cy="176.274" rx="36.0794" ry="36.0795" fill="url(#pattern5)" fill-opacity="0.95" class="circle-inner animate-fadein-200"/>
+  
+  <!-- Inner Circle 2 - Bottom Right -->
+  <ellipse cx="222.344" cy="345.333" rx="36.0794" ry="36.0795" fill="#E1CBFC" class="circle-inner animate-fadein-300"/>
+  <ellipse cx="222.344" cy="345.333" rx="36.0794" ry="36.0795" fill="url(#pattern6)" fill-opacity="0.95" class="circle-inner animate-fadein-300"/>
+  
+  <!-- Inner Circle 3 - Bottom Left -->
+  <ellipse cx="172.863" cy="282.451" rx="36.0794" ry="36.0795" fill="#FADEF0" class="circle-inner animate-fadein-400"/>
+  <ellipse cx="172.863" cy="282.451" rx="36.0794" ry="36.0795" fill="url(#pattern7)" fill-opacity="0.95" class="circle-inner animate-fadein-400"/>
+  
+  <!-- Inner Circle 4 - Top Right -->
+  <ellipse cx="350.167" cy="282.451" rx="36.0794" ry="36.0795" fill="#FADEF0" class="circle-inner animate-fadein-500"/>
+  <ellipse cx="350.167" cy="282.451" rx="36.0794" ry="36.0795" fill="url(#pattern8)" fill-opacity="0.95" class="circle-inner animate-fadein-500"/>
+  
+  <!-- Inner Circle 5 - Bottom -->
+  <ellipse cx="301.719" cy="345.333" rx="36.0794" ry="36.0795" fill="#E6F3B7" class="circle-inner animate-fadein-600"/>
+  <ellipse cx="301.719" cy="345.333" rx="36.0794" ry="36.0795" fill="url(#pattern9)" fill-opacity="0.95" class="circle-inner animate-fadein-600"/>
+  
+  <!-- Center Circle -->
+  <ellipse cx="262.546" cy="264.927" rx="41.2336" ry="41.2337" fill="#E6F3B7" class="circle-center animate-fadein-100"/>
+  <ellipse cx="262.546" cy="264.927" rx="41.2336" ry="41.2337" fill="url(#pattern10)" fill-opacity="0.95" class="circle-center animate-fadein-100"/>
+  
+  <!-- Inner Circle 6 - Right -->
+  <ellipse cx="333.079" cy="207.2" rx="36.0794" ry="36.0795" fill="#E6F3B7" class="circle-inner animate-fadein-700"/>
+  <ellipse cx="333.079" cy="207.2" rx="36.0794" ry="36.0795" fill="url(#pattern11)" fill-opacity="0.95" class="circle-inner animate-fadein-700"/>
+  
+  <!-- Inner Circle 7 - Left -->
+  <ellipse cx="188.079" cy="206.169" rx="36.0794" ry="36.0795" fill="#E6F3B7" class="circle-inner animate-fadein-800"/>
+  <ellipse cx="188.079" cy="206.169" rx="36.0794" ry="36.0795" fill="url(#pattern12)" fill-opacity="0.95" class="circle-inner animate-fadein-800"/>
+  
+  <!-- Outer Circle 6 - Bottom Left -->
+  <ellipse cx="121.836" cy="392.236" rx="65.4584" ry="65.4585" fill="#E1CBFC" class="circle-outer animate-fadein-900"/>
+  <ellipse cx="121.836" cy="392.236" rx="65.4584" ry="65.4585" fill="url(#pattern13)" fill-opacity="0.9" class="circle-outer animate-fadein-900"/>
+  
+  <!-- Outer Circle 7 - Right -->
+  <ellipse cx="455.829" cy="256.165" rx="65.4584" ry="65.4585" fill="#E6F3B7" class="circle-outer animate-fadein-1000"/>
+  <ellipse cx="455.829" cy="256.165" rx="65.4584" ry="65.4585" fill="url(#pattern14)" fill-opacity="0.95" class="circle-outer animate-fadein-1000"/>
+  
+  <!-- Outer Circle 8 - Left -->
+  <ellipse cx="66.1703" cy="256.165" rx="65.4584" ry="65.4585" fill="#E6F3B7" class="circle-outer animate-fadein-1100"/>
+  <ellipse cx="66.1703" cy="256.165" rx="65.4584" ry="65.4585" fill="url(#pattern15)" fill-opacity="0.9" class="circle-outer animate-fadein-1100"/>
+  
+  <defs>
+    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0" transform="translate(-0.320019 0.033861) scale(0.00083612)"/>
+    </pattern>
+    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image1" transform="matrix(0.00112221 0 0 0.00111337 -0.672527 0.0178301)"/>
+    </pattern>
+    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image2" transform="translate(-0.186747 -0.0239545) scale(0.000858434)"/>
+    </pattern>
+    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image3" transform="translate(0.140577 0.0384615) scale(0.000538462)"/>
+    </pattern>
+    <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image4" transform="translate(-0.258935 0.0393701) scale(0.000730445)"/>
+    </pattern>
+    <pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image5" transform="translate(-0.26473 0.0106024) scale(0.000827349)"/>
+    </pattern>
+    <pattern id="pattern6" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image6" transform="translate(-0.409712 0.0106024) scale(0.000972331)"/>
+    </pattern>
+    <pattern id="pattern7" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image7" transform="translate(0.0534826 -0.0218345) scale(0.000722798)"/>
+    </pattern>
+    <pattern id="pattern8" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image8" transform="translate(-0.409712 0.0106024) scale(0.000972331)"/>
+    </pattern>
+    <pattern id="pattern9" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image9" transform="translate(0 -0.0804418) scale(0.00084664)"/>
+    </pattern>
+    <pattern id="pattern10" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image10" transform="translate(-0.602287 0.0731408) scale(0.00121366)"/>
+    </pattern>
+    <pattern id="pattern11" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image11" transform="translate(-0.807646) scale(0.00103283)"/>
+    </pattern>
+    <pattern id="pattern12" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image12" transform="matrix(0.000976206 0 0 0.000978406 -0.569875 0.0600935)"/>
+    </pattern>
+    <pattern id="pattern13" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image13" transform="translate(-0.336917 0.0617124) scale(0.000703892)"/>
+    </pattern>
+    <pattern id="pattern14" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image14" transform="translate(0.0800274 -0.0692254) scale(0.000596836)"/>
+    </pattern>
+    <pattern id="pattern15" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image15" transform="translate(-0.785098 -0.00754172) scale(0.00118706)"/>
+    </pattern>
+    
+    <!-- Image definitions with relative paths -->
+    <image id="image0" width="2000" height="1334" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image1" width="2000" height="1335" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image2" width="1600" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image3" width="1335" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image4" width="2000" height="1722" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image5" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image6" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image7" width="1333" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image8" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image9" width="1333" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image10" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image11" width="2000" height="1367" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image12" width="2000" height="1331" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image13" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image14" width="2000" height="3011" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+    <image id="image15" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/about-hero/outer-1.png"/>
+  </defs>
+</svg> 

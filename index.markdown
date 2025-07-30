@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Payday Home
+title: Payday | Sorgenfrei Rechnung bezahlen
 permalink: /
 key: home
 ---

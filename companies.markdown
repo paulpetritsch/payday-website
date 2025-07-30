@@ -26,3 +26,5 @@ permalink: /companies/
         </div>
     </div>
   </div>
+
+  {% include sections/steps-quote.html %}

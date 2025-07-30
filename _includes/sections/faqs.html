@@ -116,7 +116,7 @@ site.data.textblocks.sections[section] %}
 initAccordion(categories[0]);
 </script>
 
-<div class="px-4 py-12 bg-purple-50 rounded-3xl">
+<div class="px-4 py-12 {% if include.bg != false and include.bg != 'false' %}bg-purple-50{% endif %} rounded-3xl">
   <div class="max-w-7xl mx-auto is-animated">
     <div class="text-center mb-8">
       {% include elements/section-headline.html text=section_data.headline animation=false %}

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: About
+title: About | PayDay
 permalink: /about/
 key: about
 ---
 
-<div class="px-4 min-h-screen pt-32">
-  <div class="flex flex-col md:flex-row items-center gap-8 max-w-7xl mx-auto h-full">
+<div class="px-4 min-h-screen h-full flex items-center pt-32 lg:pt-8">
+  <div class="flex flex-col lg:flex-row items-center gap-8 max-w-7xl mx-auto h-full">
         <!-- Text Content -->
         {% include sections/hero-text.html 
           headline=site.data.textblocks.pages.about.hero_headline
@@ -18,30 +18,61 @@ key: about
           images=site.data.textblocks.pages.about.hero_subimages
           %}
         <!-- Image -->
-        <div class="w-full md:w-1/2 flex justify-center relative items-center">
-          <div class="relative">
-            <img src="{{ site.data.textblocks.pages.home.hero_image1 | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
-                class="max-h-128 object-contain w-full opacity-0 animate-fadein-400">
-            <span
-                    class="flex items-center px-4 py-2 rounded-full text-sm md:text-xl w-fit border-12 border-white {{ site.data.textblocks.pages.home.hero_tag1.color }} absolute -bottom-8 -right-1 opacity-0 animate-fadedown-800">
-                        <span class="w-5 h-5 mr-2 inline-block align-middle {{ site.data.textblocks.pages.home.hero_tag1.svg_color }}">
-                            {{ site.data.svgs[site.data.textblocks.pages.home.hero_tag1.svg] }}
-                        </span>
-                    <span>{{ site.data.textblocks.pages.home.hero_tag1.text }}</span>
-                </span>
-          </div>
-          <div class="relative">
-            <img src="{{ site.data.textblocks.pages.home.hero_image2 | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
-              class="max-h-128 object-contain w-full  opacity-0 animate-fadein-500">
-            <img src="{{ site.data.textblocks.pages.home.hero_image3 | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_headline | escape }}"
-              class="max-h-128 object-contain w-full opacity-0 animate-fadein-600 pl-5">
-              <span
-                    class="flex items-center px-4 py-2 rounded-full text-sm md:text-xl w-fit border-12 border-white {{ site.data.textblocks.pages.home.hero_tag2.color }} absolute -bottom-8 left-4 opacity-0 animate-fadein-800">
-                        <span class="w-5 h-5 mr-2 inline-block align-middle {{ site.data.textblocks.pages.home.hero_tag2.svg_color }}">
-                            {{ site.data.svgs[site.data.textblocks.pages.home.hero_tag2.svg] }}
-                        </span>
-                    <span>{{ site.data.textblocks.pages.home.hero_tag2.text }}</span>
-                </span>
+        <div class="w-full h-full md:w-1/2 flex justify-center relative items-center">
+          <div class="relative w-full flex-1 flex items-center justify-center">
+            <!-- SVG with animated circles -->
+            <div class="w-full max-w-md md:max-w-lg lg:max-w-xl">
+            <svg class="w-full h-auto" width="522" height="513" viewBox="0 0 522 513" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Outer Circle 1 - Top -->
+              <ellipse cx="260.485" cy="65.4585" rx="64.9429" ry="65.4585" fill="#E6F3B7" class="opacity-0 circle-outer animate-fadein-400"/>
+              
+              <!-- Outer Circle 2 - Bottom -->
+              <path d="M325.428 446.871C325.428 483.022 296.352 512.329 260.485 512.329C224.618 512.329 195.542 483.022 195.542 446.871C195.542 410.719 224.618 381.412 260.485 381.412C296.352 381.412 325.428 410.719 325.428 446.871Z" fill="#E6F3B7" class="opacity-0 circle-outer animate-fadein-500"/>
+              
+              <!-- Outer Circle 3 - Right -->
+              <ellipse cx="399.133" cy="392.236" rx="65.4584" ry="65.4585" fill="#FADEF0" class="opacity-0 circle-outer animate-fadein-600"/>
+              
+              <!-- Outer Circle 4 - Left -->
+              <ellipse cx="121.836" cy="121.124" rx="65.4584" ry="65.4585" fill="#FADEF0" class="opacity-0 circle-outer animate-fadein-700"/>
+              
+              <!-- Outer Circle 5 - Top Right -->
+              <ellipse cx="399.133" cy="121.124" rx="65.4584" ry="65.4585" fill="#E1CBFC" class="opacity-0 circle-outer animate-fadein-800"/>
+              
+              <!-- Inner Circle 1 - Top -->
+              <ellipse cx="260.485" cy="176.274" rx="36.0794" ry="36.0795" fill="#E1CBFC" class="opacity-0 circle-inner animate-fadein-200"/>
+              
+              <!-- Inner Circle 2 - Bottom Right -->
+              <ellipse cx="222.344" cy="345.333" rx="36.0794" ry="36.0795" fill="#E1CBFC" class="opacity-0 circle-inner animate-fadein-300"/>
+              
+              <!-- Inner Circle 3 - Bottom Left -->
+              <ellipse cx="172.863" cy="282.451" rx="36.0794" ry="36.0795" fill="#FADEF0" class="opacity-0 circle-inner animate-fadein-400"/>
+              
+              <!-- Inner Circle 4 - Top Right -->
+              <ellipse cx="350.167" cy="282.451" rx="36.0794" ry="36.0795" fill="#FADEF0" class="opacity-0 circle-inner animate-fadein-500"/>
+              
+              <!-- Inner Circle 5 - Bottom -->
+              <ellipse cx="301.719" cy="345.333" rx="36.0794" ry="36.0795" fill="#E6F3B7" class="opacity-0 circle-inner animate-fadein-600"/>
+              
+              <!-- Center Circle -->
+              <ellipse cx="262.546" cy="264.927" rx="41.2336" ry="41.2337" fill="#E6F3B7" class="opacity-0 circle-center animate-fadein-100"/>
+              
+              <!-- Inner Circle 6 - Right -->
+              <ellipse cx="333.079" cy="207.2" rx="36.0794" ry="36.0795" fill="#E6F3B7" class="opacity-0 circle-inner animate-fadein-700"/>
+              
+              <!-- Inner Circle 7 - Left -->
+              <ellipse cx="188.079" cy="206.169" rx="36.0794" ry="36.0795" fill="#E6F3B7" class="opacity-0 circle-inner animate-fadein-800"/>
+              
+              <!-- Outer Circle 6 - Bottom Left -->
+              <ellipse cx="121.836" cy="392.236" rx="65.4584" ry="65.4585" fill="#E1CBFC" class="opacity-0 circle-outer animate-fadein-900"/>
+              
+              <!-- Outer Circle 7 - Right -->
+              <ellipse cx="455.829" cy="256.165" rx="65.4584" ry="65.4585" fill="#E6F3B7" class="opacity-0 circle-outer animate-fadein-1000"/>
+              
+              <!-- Outer Circle 8 - Left -->
+              <ellipse cx="66.1703" cy="256.165" rx="65.4584" ry="65.4585" fill="#E6F3B7" class="opacity-0 circle-outer animate-fadein-1100"/>
+              </defs>
+            </svg> 
+            </div>
           </div>
         </div>
     </div>
@@ -59,8 +90,9 @@ key: about
     tags=about1.tags
     bg=about1.bg
     centered=about1.centered
+    tags_layout=about1.tags_layout
   %}
-
+  {% include sections/quote.html %}
   {% assign about2 = site.data.textblocks.sections.image_quote.about2 %}
   {% include sections/image-quote-text.html
     image=about2.image
@@ -73,8 +105,9 @@ key: about
     tags=about2.tags
     bg=about2.bg
     centered=about2.centered
+    tags_layout=about2.tags_layout
   %}
-
+  {% include sections/steps-quote.html %}
   {% assign about3 = site.data.textblocks.sections.image_quote.about3 %}
   {% include sections/image-quote-text.html
     image=about3.image
@@ -87,4 +120,5 @@ key: about
     tags=about3.tags
     bg=about3.bg
     centered=about3.centered
+    tags_layout=about3.tags_layout
   %}

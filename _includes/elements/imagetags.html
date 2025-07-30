@@ -13,6 +13,7 @@
           {% assign tag_class = "-left-4 md:-left-12 top-[45%]" %}
         {% endif %}
 
+
       {% when "quote-2tags-alt" %}
         {% if forloop.index == 1 %}
           {% assign tag_class = "left-0 md:-left-12 top-1/4" %}
@@ -22,9 +23,9 @@
 
       {% when "quote-2tags-bottom" %}
         {% if forloop.index == 1 %}
-          {% assign tag_class = "left-4 bottom-4" %}
+          {% assign tag_class = "left-4 bottom-1/4" %}
         {% elsif forloop.index == 2 %}
-          {% assign tag_class = "right-4 bottom-4" %}
+          {% assign tag_class = "right-4 bottom-0" %}
         {% endif %}
 
       {% when "quote-4tags" %}
@@ -49,6 +50,11 @@
           {% assign tag_class = "-right-4 bottom-4" %}
         {% endif %}
 
+      {% when "square-1tag-top" %}
+        {% if forloop.index == 1 %}
+          {% assign tag_class = "-right-4 top-0" %}
+        {% endif %}
+
       {% when "square-2tags-bottom" %}
         {% if forloop.index == 1 %}
           {% assign tag_class = "-left-4 md:-left-12 top-1/4" %}
@@ -60,7 +66,7 @@
         {% if forloop.index == 1 %}
           {% assign tag_class = "-left-4 md:-left-12 top-1/4" %}
         {% elsif forloop.index == 2 %}
-          {% assign tag_class = "-right-3 bottom-1/4" %}
+          {% assign tag_class = "-right-3 md:-right-12 bottom-1/4" %}
       {% endif %}
 
     {% endcase %}

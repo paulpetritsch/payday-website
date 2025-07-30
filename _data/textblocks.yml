@@ -65,8 +65,13 @@ texts:
 
 ######################################################## SECTIONS
 sections:
+  quote:
+    headline: "„Zum Glück gibt's PayDay”"
+    preheadline: "Wir möchten den Menschen das Gefühl geben:"
+    from: "CEO PayDay"
+    bg: "purple-50"
   slider:
-    headline: "„Zum Glück gibt’s PayDay”"
+    headline: "„Zum Glück gibt's PayDay”"
     slides:
       - image: "/assets/images/home-slider1.png"
         headline: "Kredit?"
@@ -98,6 +103,24 @@ sections:
         color: "green-100"
     button_text: "Jetzt registrieren"
     button_link: "/register"
+  steps_quote:
+    headline: "Darum lohnt sich's."
+    subheadline: "Echte Vorteile für Sie – einfach, sicher, schnell."
+    steps:
+      - title: "5%"
+        subtitle: "mehr Sichtbarkeit"
+        text: "Ihr Angebot wird bei PayDay empfohlen – für Kund:innen, die aktiv nach Hilfe suchen."
+        bg: "pink-50"
+      - title: "25%"
+        subtitle: "Wiederkaufrate"
+        text: "Flexible Zahlungsoptionen stärken die Kundenbindung und sorgen für mehr Vertrauen."
+        bg: "purple-100"
+      - title: "100%"
+        subtitle: "Auszahlungssicherheit"
+        text: "Sie bekommen Ihr Geld direkt von uns. Kein Mahnwesen, keine Zahlungsausfälle."
+        bg: "green-50"
+    button_text: "Parnter werden"
+    button_link: "/companies"
   image_quote:
     home1:
       image: "/assets/images/image-placeholder2.png"
@@ -181,6 +204,7 @@ sections:
         Wir glauben daran, dass finanzielle Unterstützung einfach, menschlich und transparent sein muss. Mit payday bieten wir einen digitalen Weg, der in schwierigen Momenten entlastet."
       left: true
       centered: true
+      tags_layout: "quote-2tags-bottom"
       tags:
         - color: "bg-pink-50"
           text: "Arztrechnung?"
@@ -200,17 +224,18 @@ sections:
       button_link: "/companies"
       left: false
       centered: true
+      tags_layout: "quote-4tags"
       tags:
+        - color: "bg-green-50"
+          text: "schnell"
+          svg: "fast"
+          svg_color: "text-green-100"
         - color: "bg-pink-50"
           text: "B2B"
           svg: "heart-handshake"
           svg_color: "text-pink-100"
-        - color: "bg-green-50"
-          text: "schnell?"
-          svg: "fast"
-          svg_color: "text-green-100"
         - color: "bg-purple-100"
-          text: "diskret?"
+          text: "diskret"
           svg: "lock"
           svg_color: "text-purple-200"
         - color: "bg-green-50"
@@ -225,51 +250,39 @@ sections:
       button_link: "/upload"
       left: true
       centered: true
+      tags_layout: "square-1tag-top"
       tags:
         - color: "bg-pink-50"
           text: "givedirectly.org"
           svg: "heart-handshake"
           svg_color: "text-pink-100"
-          about1:
-      image: "/assets/images/about-section1.png"
-      headline: "Warum wir tun, was wir tun"
-      text: "Wir wissen, wie es sich anfühlt, wenn das Geld am Monatsende nicht reicht. 
-        <br><br>
-        Wenn eine einzige Rechnung plötzlich alles durcheinanderbringt. Genau deshalb gibt's payday: Um Menschen zu helfen, die sonst niemand sieht. Keine Hürden – sondern echte Unterstützung, genau dann, wenn man sie braucht.
-        <br><br>
-        Wir glauben daran, dass finanzielle Unterstützung einfach, menschlich und transparent sein muss. Mit payday bieten wir einen digitalen Weg, der in schwierigen Momenten entlastet."
-      left: true
-      centered: true
-      tags:
-        - color: "bg-pink-50"
-          text: "Arztrechnung?"
-          svg: "doctor"
-          svg_color: "text-pink-100"
-        - color: "bg-green-50"
-          text: "Versicherung?"
-          svg: "insurance"
-          svg_color: "text-green-100"
     processbenefits1:
-      image: "/assets/images/about-section2.png"
-      headline: "Gemeinsam für eine starke finanzielle Zukunft"
-      text: "Unsere Vision geht weit über den Status quo hinaus. Wir wollen wachsen, neue Wege gehen und noch mehr Menschen erreichen, die kurzfristige Unterstützung benötigen - mit digitalen Lösungen, die einfach, zugänglich und wirkungsvoll sind. 
-        <br><br>
-        In den kommenden Jahren werden wir gezielt Partnerschaften im B2B-Bereich aufbauen, zum Beispiel mit Energieversorgern und Dienstleistungsunternehmen, um noch schneller helfen zu können."
-      button_text: "Für Unternehmen"
-      button_link: "/companies"
+      image: "/assets/images/home-section2.png"
+      headline: "Vorteile bei PayDay"
+      subheadline: "Fair & schnell, ohne versteckte Kosten."
+      text: |
+        - Keine Zinsen
+        - Nur CHF 25.- für die 1. Rechnung
+        - Weitere Rechnungen für nur CHF 5.-
+        - Direkte Bezahlung
+        - Einfach & papierlos
+        - Diskrete Abwicklung - wir schützen deine Privatsphäre
+        - Deine Kreditwürdigkeit bleibt unberührt
+      button_text: "Rechnung hochladen"
+      button_link: "/upload"
       left: false
-      centered: true
+      tags_layout: "quote-4tags"
       tags:
-        - color: "bg-pink-50"
-          text: "B2B"
-          svg: "heart-handshake"
-          svg_color: "text-pink-100"
         - color: "bg-green-50"
-          text: "schnell?"
+          text: "schnell"
           svg: "fast"
           svg_color: "text-green-100"
+        - color: "bg-pink-50"
+          text: "nur 25 CHF"
+          svg: "franken"
+          svg_color: "text-pink-100"
         - color: "bg-purple-100"
-          text: "diskret?"
+          text: "Kreditwürdigkeit"
           svg: "lock"
           svg_color: "text-purple-200"
         - color: "bg-green-50"
@@ -277,57 +290,75 @@ sections:
           svg: "smiley"
           svg_color: "text-green-100"
     processbenefits2:
-      image: "/assets/images/about-section3.png"
-      headline: "Mit jeder Rechnung Hoffnung schenken"
-      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
+      image: "/assets/images/processbenefits-section2.png"
+      headline: "Wie viel kostet die Nutzung von PayDay?"
+      text: "Für deine hochgeladene Rechnung zahlst du nur CHF 25.-.
+        <br>
+        Ab dem zweiten Jahr fällt zusätzlich eine jährliche Servicegebühr von CHF 19.90 an - nur, wenn du payday nutzt.
+        <br><br>
+        <strong>Du brauchst mehr Zeit? Buy more Time!</strong><br>
+        Mit unserer Rückzahlungsverlängerung bekommst du bis zu 60 Tage Zeit - für nur CHF 9.90 oder CHF 19.90, je nach Option."
       button_text: "Rechnung hochladen"
       button_link: "/upload"
       left: true
       centered: true
+      tags_layout: "square-2tags"
       tags:
         - color: "bg-pink-50"
-          text: "givedirectly.org"
-          svg: "heart-handshake"
+          text: "Buy more Time!"
+          svg: "smiley"
           svg_color: "text-pink-100"
+        - color: "bg-purple-100"
+          text: "nur 19.90 CHF"
+          svg: "franken"
+          svg_color: "text-purple-200"
     processbenefits3:
-      image: "/assets/images/about-section3.png"
-      headline: "Mit jeder Rechnung Hoffnung schenken"
-      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
+      image: "/assets/images/processbenefits-section3.png"
+      headline: "Mehrere Rechnungen? Kein Problem!"
+      text: "Nach der ersten Rechnung öffnet sich ein Tagesfenster, in dem du weitere Rechnungen einreichen kannst – für nur CHF 5.– pro Rechnung.
+        <br><br>
+        Insgesamt kannst du bis zu CHF 499.– pro Monat über payday abwickeln. So bleibst du flexibel und behältst trotzdem den Überblick."
       button_text: "Rechnung hochladen"
       button_link: "/upload"
-      left: true
+      left: false
       centered: true
+      bg: "purple-50"
+      tags_layout: "quote-4tags"
       tags:
+        - color: "bg-green-50"
+          text: "flexibel"
+          svg: "fast"
+          svg_color: "text-green-100"
         - color: "bg-pink-50"
-          text: "givedirectly.org"
-          svg: "heart-handshake"
+          text: "nur 5 CHF"
+          svg: "franken"
           svg_color: "text-pink-100"
+        - color: "bg-purple-100"
+          text: "diskret"
+          svg: "lock"
+          svg_color: "text-purple-200"
+        - color: "bg-green-50"
+          text: "0% Zinsen"
+          svg: "smiley"
+          svg_color: "text-green-100"
     processbenefits4:
-      image: "/assets/images/about-section3.png"
-      headline: "Mit jeder Rechnung Hoffnung schenken"
-      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
-      button_text: "Rechnung hochladen"
-      button_link: "/upload"
+      image: "/assets/images/processbenefits-section4.png"
+      headline: "Mach jeden Tag zum Payday"
+      subheadline: "Mit unserer Hilfe bleibst du auch zwischen den Gehaltstagen entspannt."
+      button_text: "Jetzt registrieren"
+      button_link: "/register"
       left: true
       centered: true
+      tags_layout: "quote-2tags"
       tags:
-        - color: "bg-pink-50"
-          text: "givedirectly.org"
+        - color: "bg-purple-100"
+          text: "Soforthilfe"
           svg: "heart-handshake"
-          svg_color: "text-pink-100"
-    processbenefits5:
-      image: "/assets/images/about-section3.png"
-      headline: "Mit jeder Rechnung Hoffnung schenken"
-      text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
-      button_text: "Rechnung hochladen"
-      button_link: "/upload"
-      left: true
-      centered: true
-      tags:
-        - color: "bg-pink-50"
-          text: "givedirectly.org"
-          svg: "heart-handshake"
-          svg_color: "text-pink-100"
+          svg_color: "text-purple-200"
+        - color: "bg-green-50"
+          text: "Für dich"
+          svg: "persona"
+          svg_color: "text-green-100"
     antimoneylaundering:
       image: "/assets/images/antimoneylaundering-section1.png"
       headline: "Wozu dieser Onboarding-Prozess?"
@@ -353,6 +384,7 @@ sections:
       subheadline: "Finanztipps"
       button_text: "Weitere Tipps"
       bg: "purple-50"
+      button_link: "/financial-advice"
   newsletter:
     headline: "Dein monatliches Finanz-Update"
     text: "Unsere besten Finanztipps direkt in dein Postfach: klar verständlich, leicht umzusetzen und wirklich hilfreich. Weil du selbst bestimmst, was mit deinem Geld passiert - und wir dich dabei unterstützen."
@@ -363,22 +395,34 @@ sections:
     faqs:
     - category: "Allgemeines"
       items:
-        - question: "Was ist Payday?"
-          answer: "Payday ist ein Service für schnelle und sichere Rechnungsfinanzierung."
-        - question: "Wie funktioniert die Anmeldung?"
-          answer: "Sie registrieren sich online und laden Ihre Rechnung hoch."
+        - question: "Darf jeder PayDay nutzen?"
+          answer: "Ja, grundsätzlich kann jeder PayDay nutzen, sofern du mindestens 18 Jahre alt bist, ein regelmässiges Einkommen hast und deinen Wohnsitz in der Schweiz hast."
+        - question: "Hat die Nutzung von PayDay Auswirkungen auf meine Kreditwürdigkeit?"
+          answer: "PayDay wirkt sich nicht negativ auf die Kreditwürdigkeit aus, selbst bei weniger guter Bonität. Zudem wird deine Bonität durch pünktliche Rückzahlung der Rechnungen eher gestärkt durch gute Zahlungsmoral und weniger Mahnungen – das verbessert deine Situation."
+        - question: "Kann ich mich mit schlechtem Credit Score bewerben?"
+          answer: "Ja. Auch wenn deine Kreditwürdigkeit nicht perfekt ist, kannst du dich bei PayDay bewerben."
+        - question: "Was unterscheidet PayDay von einem klassischen Privatdarlehen?"
+          answer: "PayDay verwendet keine Zinssätze oder versteckten Kosten wie bei herkömmlichen Privatkrediten. Stattdessen zahlst du eine klar definierte monatliche Gebühr – volle Kostenkontrolle, ohne Überraschungen"
     - category: "Kosten"
       items:
-        - question: "Wie sicher sind meine Daten?"
-          answer: "Ihre Daten werden nach höchsten Sicherheitsstandards verarbeitet."
-        - question: "Wer kann meine Daten sehen?"
-          answer: "Nur autorisierte Mitarbeiter haben Zugriff auf Ihre Daten."
+        - question: "Gibt es Zinsen?"
+          answer: "Nein, es werden keine Zinsen berechnet. Stattdessen erhebt PayDay eine fixe Monatsgebühr von 25 CHF für die Nutzung des Services, ohne weitere Kosten."
+        - question: "Was passiert, wenn ich die Zahlungsfrist verpasse?"
+          answer: "Du hast 30 Tage Zeit für die Rückzahlung. Brauchst du mehr Zeit, kannst du die Frist einmalig um weitere 30 Tage verlängern – gegen eine zusätzliche Gebühr von 19,90 CHF."
+        - question: "Gibt es zusätzliche Jahresgebühren?"
+          answer: "Ab dem zweiten Nutzungsjahr fällt eine fixe Jahresgebühr von CHF 19.90 an, um das Konto aktiv zu halten"
+        - question: "Wie viel kostet das Hochladen von Rechnungen?"
+          answer: "Für jede erste Rechnung am Tag zahlst du CHF 25, gefolgt von CHF 5 für jede weitere Rechnung am selben Tag."
     - category: "Nutzung"
       items:
-        - question: "Wie schnell erhalte ich mein Geld?"
-          answer: "In der Regel inne  rhalb von 24 Stunden nach Prüfung."
-        - question: "Welche Gebühren fallen an?"
-          answer: "Die Gebühren sind transparent und werden vorab angezeigt."
+        - question: "Wozu muss ich einen Lohnzettel vorweisen?"
+          answer: "Die letzten 3 Gehaltsabrechnungen sind dazu da, PayDay als Kreditplattform sicherzustellen, dass du regelmässiges Einkommen hast und in der Lage bist, die bezahlten Rechnungen zurückzuzahlen – um dich nicht zusätzlich zu verschulden."
+        - question: "Welche Informationen brauche ich für die Registrierung?"
+          answer: "Für die Bewerbung benötigst du: E-Mail-Adresse, Kopie des Reisepasses oder Ausweis (ID, B-/C-Permit) und die letzten 3 Gehaltsabrechnungen als Einkommensnachweis. Beim Onboarding wird außerdem ein KYC‑Prozess durchgeführt (z. B. ID‑Upload, Bank‑QR‑Transaktion oder Gesicht‑ID-Abgleich)."
+        - question: "Wie viele Rechnungen darf ich hochladen?"
+          answer: "Es gibt keine zahlenmässige Begrenzung – entscheidend ist, dass der Gesamtbetrag aller Rechnungen im Monat maximal 499 CHF beträgt."
+        - question: "Wie kann ich meinen Kredit an PayDay zurückzahlen?"
+          answer: "Nach Zahlung deiner Rechnungen durch PayDay hast du 30 Tage Zeit, den entsprechenden Betrag per Banküberweisung zurückzuzahlen. Möchtest du mehr Zeit, zahlst du die 19,90 CHF Fristverlängerungsgebühr für weitere 30 Tage."
 
 ######################################################## PAGES
 pages:
@@ -417,6 +461,23 @@ pages:
     hero_button_text: "Rechnung hochladen"
     hero_button_link: "/upload"
     hero_preheadline: "300+ benutzen bereits PayDay"
+    hero_image: "/assets/images/about-hero/cirlce.svg"
+    hero_image_outer1: "/assets/images/about-hero/outer-1.png"
+    hero_image_outer2: "/assets/images/about-hero/outer-2.png"
+    hero_image_outer3: "/assets/images/about-hero/outer-3.png"
+    hero_image_outer4: "/assets/images/about-hero/outer-4.png"
+    hero_image_outer5: "/assets/images/about-hero/outer-5.png"
+    hero_image_outer6: "/assets/images/about-hero/outer-6.png"
+    hero_image_outer7: "/assets/images/about-hero/outer-7.png"
+    hero_image_outer8: "/assets/images/about-hero/outer-8.png"
+    hero_image_inner1: "/assets/images/about-hero/inner-1.png"
+    hero_image_inner2: "/assets/images/about-hero/inner-2.png"
+    hero_image_inner3: "/assets/images/about-hero/inner-3.png"
+    hero_image_inner4: "/assets/images/about-hero/inner-4.png"
+    hero_image_inner5: "/assets/images/about-hero/inner-5.png"
+    hero_image_inner6: "/assets/images/about-hero/inner-6.png"
+    hero_image_inner7: "/assets/images/about-hero/inner-7.png"
+    hero_image_center: "/assets/images/about-hero/center.png"
     hero_subimages:
       - image: "/assets/images/women1.png"
         color: "pink-50"
@@ -433,7 +494,47 @@ pages:
     hero_text: "Wir zahlen deine offenen Rechnungen direkt, bis zu CHF 499.- pro Monat. Du bekommst 30 Tage Zeit, um uns bequem zurückzuzahlen. So bleibst du handlungsfähig, vermeidest Mahnungen und schützt deinen Bonitäts-Score."
     hero_button_text: "Rechnung hochladen"
     hero_button_link: "/upload"
-    
+    hero_image1: "/assets/images/processbenefits-hero2.png"
+    hero_image2: "/assets/images/processbenefits-hero1.png"
+    hero_image3: "/assets/images/processbenefits-hero3.png"
+    hero_tag1:
+      color: "bg-purple-100"
+      text: "30 Tage Frist"
+      svg: "clock"
+      svg_color: "text-purple-200"
+    hero_tag2:
+      color: "bg-green-50"
+      text: "bis zu CHF 499,-"
+      svg: "dollar"
+      svg_color: "text-green-100"
+    customsection_subheadline: "Wer kann von PayDay profitieren?"
+    customsection_text: |
+        payday ist für alle da, die kurzfristige Entlastung brauchen – auch ohne perfekten Kredit-Score. Wenn du unsere Services nutzen möchtest, brauchst du nur ein paar einfache Voraussetzungen. So stellen wir sicher, dass du payday verantwortungsvoll nutzen kannst – ohne zusätzliche Belastung.
+        <br><br>
+        - Du bist mindestens 18 Jahre alt
+        - Du hast ein festes Einkommen
+        - Du wohnst in der Schweiz"
+    customsection_button_text: "Jetzt registrieren"
+    customsection_button_link: "/register"
+    customsection_image1: "/assets/images/processbenefits-customsection1.png"
+    customsection_image2: "/assets/images/processbenefits-customsection2.png"
+    customsection_image3: "/assets/images/processbenefits-customsection3.png"
+    customsection_tag1:
+      color: "bg-green-50"
+      text: "18+"
+      svg: "smiley"
+      svg_color: "text-green-100"
+    customsection_tag2:
+      color: "bg-purple-100"
+      text: "Schweiz"
+      svg: "location"
+      svg_color: "text-purple-200"
+    customsection_tag3:
+      color: "bg-pink-50"
+      text: "festes Einkommen"
+      svg: "lock"
+      svg_color: "text-pink-100"
+
     sections:
       blog_overview:
         headline: "Für alle, die Geld neu denken"
@@ -458,7 +559,45 @@ pages:
         text: "sicher"
         svg: "lock"
         svg_color: "text-purple-200"
+
+  companies:
+    hero_headline: "Schnelle Hilfe für Ihre Kund:innen"
+    hero_image: "/assets/images/about-section2.png"
+    hero_text: >
+      Bieten Sie Zahlungen über payday an und ermöglichen Sie Ihren Kund:innen mehr finanzielle Flexibilität. Sie selbst erhalten den offenen Betrag sofort von uns – ganz ohne Mahnwesen oder zusätzlichen Aufwand für Ihr Team. So können Sie sich ganz auf Ihre Kund:innen konzentrieren und wir kümmern uns um den Rest.
+    hero_button_text: "Partner werden"
+    hero_button_link: "/register"
+    hero_tags_layout: "quote-4tags"
+    hero_tags:
+      - color: "bg-green-50"
+        text: "schnell"
+        svg: "fast"
+        svg_color: "text-green-100"
+      - color: "bg-pink-50"
+        text: "B2B"
+        svg: "heart-handshake"
+        svg_color: "text-pink-100"
+      - color: "bg-purple-100"
+        text: "diskret"
+        svg: "lock"
+        svg_color: "text-purple-200"
+      - color: "bg-green-50"
+        text: "0% Zinsen"
+        svg: "smiley"
+        svg_color: "text-green-100"
   
+  support:
+    headline: "Wie können wir dir helfen?"
+    send: "Absenden"
+    firstname: "Vorname"
+    firstname_placeholder: "Max"
+    lastname: "Nachname"
+    lastname_placeholder: "Mustermann"
+    email: "E-Mail"
+    email_placeholder: "mail@mail.com"
+    message: "Nachricht"
+    message_placeholder: "Schreibe uns etwas..."
+
 
   terms:
     headline: "Allgemeine Geschäftsbedingungen Payfresh AG"
