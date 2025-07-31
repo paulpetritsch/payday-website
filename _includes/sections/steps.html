@@ -10,7 +10,7 @@ site.data.textblocks.sections[section] %}
             {% include elements/section-headline.html text=section_data.headline %}
             {% include elements/section-subheadline.html text=section_data.subheadline %}
         </div>
-        <div class="flex flex-col lg:flex-row gap-8 lg:gap-4 mb-16 max-w-md mx-auto lg:max-w-full">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-4 mb-10 max-w-md mx-auto lg:max-w-full">
             {% for step in section_data.steps %}
             <div class="relative flex-1 flex justify-center items-center is-animated"
             style="animation-delay: {{ forloop.index0 | times: 0.4 }}s;">
@@ -34,7 +34,7 @@ site.data.textblocks.sections[section] %}
             {% endfor %}
         </div>
         <div class="text-center">
-        {% include elements/button.html text=section_data.button_text link=section_data.button_link %}
+        {% include elements/button.html icon=section_data.button_icon text=section_data.button_text link=section_data.button_link %}
         </div>
     </div>
 </div>

@@ -4,7 +4,7 @@
 {% assign section_data = site.data.textblocks.pages[page_key].sections[section] | default: site.data.textblocks.sections[section] %}
 
 
-<div class="px-8 md:px-4 {% if section_data.bg %}bg-{{section_data.bg}} rounded-3xl {% endif %}">
+<div class="px-8 md:px-4 mb-12 md:mb-0 {% if section_data.bg %}bg-{{section_data.bg}} rounded-3xl {% endif %}">
     <div class="max-w-7xl mx-auto relative py-32 mt-24">
         <div class="absolute -top-12 left-0">
           <svg width="183" height="144" viewBox="0 0 183 144" fill="none" xmlns="http://www.w3.org/2000/svg">

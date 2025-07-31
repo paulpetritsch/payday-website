@@ -4,7 +4,7 @@
 {% assign section_data = site.data.textblocks.pages[page_key].sections[section] | default: site.data.textblocks.sections[section] %}
 
 
-<div class="px-8 md:px-4 py-10 md:py-32 mt-24 {% if section_data.bg %}bg-{{section_data.bg}} rounded-3xl {% endif %}">
+<div class="px-0 md:px-4 py-10 md:py-32 mt-0 md:mt-24 {% if section_data.bg %}bg-{{section_data.bg}} rounded-3xl {% endif %}">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-8">
             {% include elements/section-subheadline.html text=section_data.subheadline %}
@@ -13,7 +13,7 @@
         <div class="flex overflow-x-scroll overflow-y-hidden md:overflow-visible flex-row gap-8 md:justify-center mb-8 is-animated">
             {% assign blog_posts = site.categories.financial-advice | slice: 0, 4 %}
             {% for post in blog_posts %}
-              <a href="{{ post.url }}" class="md:flex-1 group">
+              <a href="{{ site.baseurl }}{{ post.url }}" class="md:flex-1 first-of-type:ml-8 last-of-type:mr-8 group">
                 <div class="mb-4 w-[60vw] md:w-full rounded-3xl aspect-[1/1] relative bg-{{ post.color }}">
                     <div class="absolute top-4 left-4 bg-white text-xs rounded-lg px-2 py-1">
                         {{ site.data.textblocks.texts.reading_time }} {{ post.duration }} {{ site.data.textblocks.texts.min}} 
@@ -21,7 +21,7 @@
                     {% if post.image %}
                       <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="w-full h-full object-cover" loading="lazy">
                     {% endif %}
-                    <div class="absolute rounded-full bg-black group-hover:bg-pink-100 -bottom-2.5 -right-2.5 w-16 h-16 flex items-center justify-center border-white border-12 scale-100 group-hover:scale-110 transition-all duration-300">
+                    <div class="absolute rounded-full bg-black group-hover:bg-pink-100 -bottom-2.5 -right-2.5 w-16 h-16 flex items-center justify-center {% if section_data.bg %}border-{{section_data.bg}} {% else %} border-white {% endif %} rounded-full border-12 scale-100 group-hover:scale-110 transition-all duration-300">
                         <svg class=" scale-100 group-hover:scale-90 transition-all duration-300" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 6L21 6" stroke="#FAF6FE" stroke-width="2" stroke-linecap="round"/>
                             <path d="M16 1L21 6" stroke="#FAF6FE" stroke-width="2" stroke-linecap="round"/>
@@ -29,17 +29,17 @@
                         </svg>                            
                     </div>
                 </div>
-                <div class="font-semibold">
+                <div class="font-semibold mb-4">
                   {{ post.title }}
                 </div>
-                <p class="text-gray-600 mb-4">
+                <p class="text-gray-600 mb-4 md:pr-10">
                   {{ post.intro | default: post.excerpt | strip_html | truncate: 200 }}
                 </p>
             </a>
             {% endfor %}
           </div>
           <div class="text-center">
-            {% include elements/button.html text=section_data.button_text link=section_data.button_link %}
+            {% include elements/button.html icon=section_data.button_icon text=section_data.button_text link=section_data.button_link %}
           </div>
     </div>
 </div>

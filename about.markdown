@@ -5,7 +5,7 @@ permalink: /about/
 key: about
 ---
 
-<div class="px-4 min-h-screen h-full flex items-center pt-32 lg:pt-8">
+<div class="px-4 pt-32 lg:pt-44">
   <div class="flex flex-col lg:flex-row items-center gap-8 max-w-7xl mx-auto h-full">
         <!-- Text Content -->
         {% include sections/hero-text.html 
@@ -15,10 +15,11 @@ key: about
           text=site.data.textblocks.pages.about.hero_text
           button_text=site.data.textblocks.pages.about.hero_button_text
           button_link=site.data.textblocks.pages.about.hero_button_link
+          button_icon=site.data.textblocks.pages.about.hero_button_icon
           images=site.data.textblocks.pages.about.hero_subimages
           %}
         <!-- Image -->
-        <div class="w-full h-full md:w-1/2 flex justify-center relative items-center">
+        <div class="w-full h-full md:w-1/2 flex justify-end relative items-center">
           <div class="relative w-full flex-1 flex items-center justify-center">
             <!-- SVG with animated circles -->
             <div class="w-full max-w-md md:max-w-lg lg:max-w-xl">
@@ -86,6 +87,7 @@ key: about
     text=about1.text
     button_text=about1.button_text
     button_link=about1.button_link
+    button_icon=about1.button_icon
     left=about1.left
     tags=about1.tags
     bg=about1.bg
@@ -101,6 +103,7 @@ key: about
     text=about2.text
     button_text=about2.button_text
     button_link=about2.button_link
+    button_icon=about2.button_icon
     left=about2.left
     tags=about2.tags
     bg=about2.bg
@@ -116,6 +119,7 @@ key: about
     text=about3.text
     button_text=about3.button_text
     button_link=about3.button_link
+    button_icon=about3.button_icon
     left=about3.left
     tags=about3.tags
     bg=about3.bg

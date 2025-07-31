@@ -28,6 +28,9 @@ footer:
 
 ######################################################## NAV
 nav:
+  nav_home:
+      url: "/"
+      text: "Home"
   nav_links:
     - url: "/about"
       text: "Über Payday"
@@ -40,6 +43,7 @@ nav:
   nav_cta:
       url: "/upload"
       text: "Rechnung hochladen"
+      icon: true
   nav_register:
       url: "/register"
       text: "Registrieren"
@@ -119,12 +123,12 @@ sections:
         subtitle: "Auszahlungssicherheit"
         text: "Sie bekommen Ihr Geld direkt von uns. Kein Mahnwesen, keine Zahlungsausfälle."
         bg: "green-50"
-    button_text: "Parnter werden"
+    button_text: "Partner werden"
     button_link: "/companies"
   image_quote:
     home1:
       image: "/assets/images/image-placeholder2.png"
-      headline: "Eine Rechnung zu viel?<br><strong>Zum Glück gibt's PayDay</strong>"
+      headline: "Eine Rechnung zu viel? <strong>Zum Glück gibt's PayDay</strong>"
       text: "Egal ob Zahnarzt, Strom, Reparatur oder Versicherung: Lade deine Rechnung bei uns hoch - wir bezahlen sie für dich. 
         <br><br>
         Dann hast du 30 Tage Zeit, den Betrag stressfrei zurückzuzahlen - ganz diskret, ohne jemandem aus dem Freundes- oder Familienkreis erklären zu müssen, warum das Geld gerade knapp ist."
@@ -133,6 +137,7 @@ sections:
       left: true
       bg: "purple-50"
       tags_layout: "square-2tags"
+      squareimage: true
       centered: true
       tags:
         - color: "bg-green-50"
@@ -157,6 +162,7 @@ sections:
         - Deine Kreditwürdigkeit bleibt unberührt
       button_text: "Rechnung hochladen"
       button_link: "/upload"
+      button_icon: true
       left: false
       tags_layout: "quote-4tags"
       tags:
@@ -248,9 +254,11 @@ sections:
       text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
       button_text: "Rechnung hochladen"
       button_link: "/upload"
+      button_icon: true
       left: true
       centered: true
       tags_layout: "square-1tag-top"
+      squareimage: true
       tags:
         - color: "bg-pink-50"
           text: "givedirectly.org"
@@ -270,6 +278,7 @@ sections:
         - Deine Kreditwürdigkeit bleibt unberührt
       button_text: "Rechnung hochladen"
       button_link: "/upload"
+      button_icon: true
       left: false
       tags_layout: "quote-4tags"
       tags:
@@ -300,6 +309,7 @@ sections:
         Mit unserer Rückzahlungsverlängerung bekommst du bis zu 60 Tage Zeit - für nur CHF 9.90 oder CHF 19.90, je nach Option."
       button_text: "Rechnung hochladen"
       button_link: "/upload"
+      button_icon: true
       left: true
       centered: true
       tags_layout: "square-2tags"
@@ -320,6 +330,7 @@ sections:
         Insgesamt kannst du bis zu CHF 499.– pro Monat über payday abwickeln. So bleibst du flexibel und behältst trotzdem den Überblick."
       button_text: "Rechnung hochladen"
       button_link: "/upload"
+      button_icon: true
       left: false
       centered: true
       bg: "purple-50"
@@ -431,6 +442,7 @@ pages:
     hero_subheadline: "Wenn das Geld knapp wird, <strong>bezahlen wir deine Rechnungen.</strong>"
     hero_button_text: "Rechnung hochladen"
     hero_button_link: "/upload"
+    hero_button_icon: true
     hero_preheadline: "300+ benutzen bereits PayDay"
     hero_subimages:
       - image: "/assets/images/women1.png"
@@ -460,6 +472,7 @@ pages:
     hero_text: "Statt klassischer Kleinkredite setzen wir auf einen neuen Ansatz: Wir bezahlen offene Rechnungen direkt – schnell, diskret und digital. So helfen wir Menschen, finanzielle Belastungen zu überbrücken und ihren Alltag wieder unter Kontrolle zu bringen."
     hero_button_text: "Rechnung hochladen"
     hero_button_link: "/upload"
+    hero_button_icon: true
     hero_preheadline: "300+ benutzen bereits PayDay"
     hero_image: "/assets/images/about-hero/cirlce.svg"
     hero_image_outer1: "/assets/images/about-hero/outer-1.png"
@@ -494,6 +507,7 @@ pages:
     hero_text: "Wir zahlen deine offenen Rechnungen direkt, bis zu CHF 499.- pro Monat. Du bekommst 30 Tage Zeit, um uns bequem zurückzuzahlen. So bleibst du handlungsfähig, vermeidest Mahnungen und schützt deinen Bonitäts-Score."
     hero_button_text: "Rechnung hochladen"
     hero_button_link: "/upload"
+    hero_button_icon: true
     hero_image1: "/assets/images/processbenefits-hero2.png"
     hero_image2: "/assets/images/processbenefits-hero1.png"
     hero_image3: "/assets/images/processbenefits-hero3.png"

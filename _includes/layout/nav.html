@@ -34,7 +34,10 @@
         <a href="{{ site.baseurl }}{{ site.data.textblocks.nav.nav_register.link }}" class="hidden md:inline">
           {{ site.data.textblocks.nav.nav_register.text }}
         </a>
-        <a href="{{ site.baseurl }}{{ site.data.textblocks.nav.nav_cta.link }}" class="hidden md:inline bg-black hover:bg-pink-100 transition-colors duration-200 text-white font-medium px-4 py-3 rounded-xl">
+        <a href="{{ site.baseurl }}{{ site.data.textblocks.nav.nav_cta.link }}" class="hidden md:flex bg-black hover:bg-pink-100 transition-colors duration-200 text-white font-medium px-4 py-3 rounded-xl">
+          <svg class="w-3.5 h-auto mr-2" width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.8571 1V6.77778C13.8571 7.16087 14.0077 7.52827 14.2756 7.79915C14.5435 8.07004 14.9068 8.22222 15.2857 8.22222H21M13.8571 1H3.85714C3.09938 1 2.37266 1.30436 1.83684 1.84614C1.30102 2.38791 1 3.12271 1 3.88889V24.1111C1 24.8773 1.30102 25.6121 1.83684 26.1539C2.37266 26.6956 3.09938 27 3.85714 27H18.1429C18.9006 27 19.6273 26.6956 20.1632 26.1539C20.699 25.6121 21 24.8773 21 24.1111V8.22222M13.8571 1L21 8.22222M11 12.5556V21.2222M11 12.5556L7.42857 16.1667M11 12.5556L14.5714 16.1667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>   
           {{ site.data.textblocks.nav.nav_cta.text }}
         </a>
         <button id="nav-toggle" class="lg:hidden ml-2 p-2 rounded focus:outline-none group">
@@ -45,7 +48,7 @@
       </div>
     </div>
     <!-- Language Switch -> TODO -->
-    <div id="language-switch" class="absolute top-5 right-20 z-50 flex border-[0.5px] text-sm px-2 py-1.5 border-grey rounded-lg bg-white items-center justify-center opacity-0 pointer-events-none transition-opacity duration-700 md:hidden">
+    <div id="language-switch" class="absolute top-5 right-20 z-50 flex border-[0.5px] text-sm px-2 py-1.5 border-grey rounded-lg bg-white items-center justify-center pointer-events-none transition-opacity duration-700 md:hidden">
       <svg class="w-4 h-4 mr-1.5" xmlns="http://www.w3.org/2000/svg" width="241.008" height="241.009" viewBox="0 0 241.008 241.009">
         <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
           <path id="Path_1" data-name="Path 1" d="M241.008,120.506a120.5,120.5,0,1,0-120.5,120.5,120.5,120.5,0,0,0,120.5-120.5" transform="translate(0 -0.002)" fill="red"/>
@@ -57,6 +60,12 @@
     <!-- Mobile Menu -->
     <div id="nav-overlay" class="fixed px-8 top-0 left-0 h-[100dvh] w-screen inset-0 bg-white z-30 flex flex-col justify-between pt-32 pb-16 opacity-0 pointer-events-none transition-opacity duration-700 lg:hidden">
       <div class="flex flex-col space-y-8 ">
+        <a href="{{ site.baseurl }}{{ site.data.textblocks.nav.nav_home.url }}" class="text-3xl flex justify-between items-center w-full">
+          {{ site.data.textblocks.nav.nav_home.text }}
+          <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 12H27M27 12L15.8571 23M27 12L15.8571 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>          
+        </a>
         {% for link in site.data.textblocks.nav.nav_links %}
         <a href="{{ site.baseurl }}{{ link.url }}" class="text-3xl flex justify-between items-center w-full {% if page.permalink == link.url or page.url == link.url or page.permalink == link.url | append: '/' or page.url == link.url | append: '/' or page.permalink contains link.url or page.url contains link.url %}font-bold{% endif %}">
           {{ link.text }}
@@ -67,7 +76,10 @@
       {% endfor %}
       </div>
       <div class="flex flex-col space-y-4">
-        <a href="{{ site.baseurl }}{{ site.data.textblocks.nav.nav_cta.link }}" class="text-xl bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-4 rounded-xl text-center">
+        <a href="{{ site.baseurl }}{{ site.data.textblocks.nav.nav_cta.link }}" class="flex justify-center text-xl bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-4 rounded-xl text-center">
+          <svg class="w-4 h-auto mr-2" width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.8571 1V6.77778C13.8571 7.16087 14.0077 7.52827 14.2756 7.79915C14.5435 8.07004 14.9068 8.22222 15.2857 8.22222H21M13.8571 1H3.85714C3.09938 1 2.37266 1.30436 1.83684 1.84614C1.30102 2.38791 1 3.12271 1 3.88889V24.1111C1 24.8773 1.30102 25.6121 1.83684 26.1539C2.37266 26.6956 3.09938 27 3.85714 27H18.1429C18.9006 27 19.6273 26.6956 20.1632 26.1539C20.699 25.6121 21 24.8773 21 24.1111V8.22222M13.8571 1L21 8.22222M11 12.5556V21.2222M11 12.5556L7.42857 16.1667M11 12.5556L14.5714 16.1667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
           {{ site.data.textblocks.nav.nav_cta.text }}
         </a>
         <a href="{{ site.baseurl }}{{ site.data.textblocks.nav.nav_register.link }}" class="text-xl border border-grey hover:bg-pink-100 transition-colors duration-200 px-4 py-4 rounded-xl text-center">
@@ -85,21 +97,15 @@
     document.addEventListener("DOMContentLoaded", function () {
       const toggle = document.getElementById('nav-toggle');
       const overlay = document.getElementById('nav-overlay');
-      const languageSwitch = document.getElementById('language-switch');
       toggle.addEventListener('click', function () {
         toggle.classList.toggle('open');
         if (toggle.classList.contains('open')) {
           overlay.classList.remove('opacity-0', 'pointer-events-none');
           overlay.classList.add('opacity-100');
-          languageSwitch.classList.remove('opacity-0', 'pointer-events-none');
-          languageSwitch.classList.add('opacity-100');
         } else {
           overlay.classList.remove('opacity-100');
           overlay.classList.add('opacity-0');
-          languageSwitch.classList.remove('opacity-100');
-          languageSwitch.classList.add('opacity-0');
           setTimeout(() => overlay.classList.add('pointer-events-none'), 300);
-          setTimeout(() => languageSwitch.classList.add('pointer-events-none'), 300);
         }
       });
       // Close menu when clicking a link
@@ -108,8 +114,6 @@
           toggle.classList.remove('open');
           overlay.classList.remove('opacity-100');
           overlay.classList.add('opacity-0', 'pointer-events-none');
-          languageSwitch.classList.remove('opacity-100');
-          languageSwitch.classList.add('opacity-0', 'pointer-events-none');
         });
       });
     });

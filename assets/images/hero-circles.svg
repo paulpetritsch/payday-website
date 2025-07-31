@@ -113,22 +113,22 @@
       <use xlink:href="#image15" transform="translate(-0.785098 -0.00754172) scale(0.00118706)"/>
     </pattern>
     
-    <!-- Image definitions with relative paths -->
-    <image id="image0" width="2000" height="1334" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-1.png"/>
-    <image id="image1" width="2000" height="1335" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-2.png"/>
-    <image id="image2" width="1600" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-3.png"/>
-    <image id="image3" width="1335" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-4.png"/>
-    <image id="image4" width="2000" height="1722" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-5.png"/>
-    <image id="image5" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-6.png"/>
-    <image id="image6" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-7.png"/>
-    <image id="image7" width="1333" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-8.png"/>
-    <image id="image8" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-9.png"/>
-    <image id="image9" width="1333" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-10.png"/>
-    <image id="image10" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-11.png"/>
-    <image id="image11" width="2000" height="1367" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-12.png"/>
-    <image id="image12" width="2000" height="1331" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-13.png"/>
-    <image id="image13" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-14.png"/>
-    <image id="image14" width="2000" height="3011" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-15.png"/>
-    <image id="image15" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-16.png"/>
+    <!-- Image definitions with optimized paths -->
+    <image id="image0" width="2000" height="1334" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-1.webp"/>
+    <image id="image1" width="2000" height="1335" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-2.webp"/>
+    <image id="image2" width="1600" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-3.webp"/>
+    <image id="image3" width="1335" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-4.webp"/>
+    <image id="image4" width="2000" height="1722" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-5.webp"/>
+    <image id="image5" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-6.webp"/>
+    <image id="image6" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-7.webp"/>
+    <image id="image7" width="1333" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-8.webp"/>
+    <image id="image8" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-9.webp"/>
+    <image id="image9" width="1333" height="2000" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-10.webp"/>
+    <image id="image10" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-11.webp"/>
+    <image id="image11" width="2000" height="1367" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-12.webp"/>
+    <image id="image12" width="2000" height="1331" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-13.webp"/>
+    <image id="image13" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-14.webp"/>
+    <image id="image14" width="2000" height="3011" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-15.webp"/>
+    <image id="image15" width="2000" height="1333" preserveAspectRatio="none" xlink:href="/assets/images/hero-image-16.webp"/>
   </defs>
 </svg> 

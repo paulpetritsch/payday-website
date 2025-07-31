@@ -1,24 +1,32 @@
-<div class="px-8 md:px-4 py-10 md:py-32 mt-24 {% if include.bg %}bg-{{include.bg}} rounded-3xl {% endif %}">
-    <div class="flex flex-col-reverse justify-evenly md:flex-row items-center gap-8 max-w-7xl mx-auto 
+<div class="px-8 md:px-4 py-10 md:py-32 mt-0 md:mt-24 {% if include.bg %}bg-{{include.bg}} rounded-3xl {% endif %}">
+    <div class="flex flex-col-reverse {% if include.squareimage %} justify-between {% else %}justify-evenly{% endif %} md:flex-row items-center gap-8 max-w-7xl mx-auto 
     {% if include.left %}md:flex-row{% else %}md:flex-row-reverse{% endif %}">
         <!-- Image -->
-        <div class="w-full md:w-1/2 flex justify-center relative max-w-md">
+        <div class="w-full md:w-1/2 flex justify-center relative {% if include.squareimage %} max-w-lg {% else %}max-w-md{% endif %}">
             <img src="{{ include.image | relative_url }}" alt="{{ include.headline | escape }}"
-                class="max-h-128 object-contain w-full max-w-md">
+                class="max-h-[35rem] object-contain w-full {% if include.squareimage %}max-w-lg{% else %}max-w-md{% endif %}">
             <!-- Tags -->
             {% if include.tags %}
               {% include elements/imagetags.html tags=include.tags layout=include.tags_layout bg=include.bg %}
             {% endif %}
         </div>
         <!-- Text Content -->
-        <div class="w-full md:w-1/3 flex flex-col items-start {% if include.centered %}text-center md:text-left{% endif %}">
-            {% include elements/section-headline.html text=include.headline centered=include.centered %}
-            {% include elements/section-subheadline.html text=include.subheadline centered=include.centered %}
-            <div class="mb-4 is-animated text-lg md:text-base max-w-md {% if include.centered %}mx-auto md:mx-0{% endif %}">
-             {{ include.text | markdownify }}
-            </div>
+        <div class="w-full md:w-1/2 flex flex-col items-start {% if include.centered %}text-center md:text-left{% endif %}">
+            {% if include.headline %}
+                {% include elements/section-headline.html text=include.headline centered=include.centered maxwidth=true %}
+            {% endif %}
+            {% if include.subheadline %}
+                {% include elements/section-subheadline.html text=include.subheadline centered=include.centered %}
+            {% endif %}
+            {% if include.text %}
+                <div class="mb-4 is-animated text-lg md:text-base max-w-md {% if include.centered %}mx-auto md:mx-0{% endif %}">
+                {{ include.text | markdownify }}
+                </div>
+            {% endif %}
             {% if include.button_text and include.button_link %}
-                {% include elements/button.html text=include.button_text link=include.button_link %}
+                <div class="mt-4 w-fit mx-auto md:mx-0">
+                    {% include elements/button.html icon=include.button_icon text=include.button_text link=include.button_link %}
+                </div>
             {% endif %}
         </div>
     </div>

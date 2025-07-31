@@ -34,7 +34,7 @@
         </div>
         <div class="flex overflow-x-scroll overflow-y-hidden flex-row gap-8 md:justify-center mb-8 is-animated">
             {% for post in top_similar %}
-              <a href="{{ post.url }}" class="md:flex-1 group">
+              <a href="{{ site.baseurl }}{{ post.url }}" class="md:flex-1 group">
                 <div class="mb-4 w-[60vw] md:w-full rounded-3xl aspect-[1/1] relative bg-{{ post.color }}">
                     <div class="absolute top-4 left-4 bg-white text-xs rounded-lg px-2 py-1">
                         {{ site.data.textblocks.texts.reading_time }} {{ post.duration }} {{ site.data.textblocks.texts.min}} 

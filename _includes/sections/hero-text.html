@@ -13,10 +13,12 @@
         {{ include.preheadline }}
       </span>
     </div>
-  {% endif %}
-    <h1 class="text-5xl md:text-7xl font-bold font-display mb-4 opacity-0 animate-fadein-500 text-center lg:text-left w-full break-words">
-      {{ include.headline }}
-    </h1>
+    {% endif %}
+    {% if include.headline %}
+      <h1 class="text-5xl md:text-7xl font-bold font-display mb-4 opacity-0 animate-fadein-500 text-center lg:text-left w-full break-words">
+        {{ include.headline }}
+      </h1>
+    {% endif %}
     {% if include.subheadline %}
       <div class="text-2xl font-display mb-4 opacity-0 animate-fadein-600 text-center lg:text-left  mx-auto lg:mx-0">
           {{ include.subheadline }}
@@ -27,7 +29,12 @@
       {{ include.text }}
     </p>
     {% endif %}
-    <a href="{{ site.baseurl }}{{include.button_link}}" class="text-xl lg:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 lg:py-3 rounded-xl opacity-0 animate-fadein-700 w-full lg:w-fit text-center max-w-xs mx-auto lg:mx-0">
+    <a href="{{ site.baseurl }}{{include.button_link}}" class="{% if include.button_icon %} flex justify-center {% endif %} mt-4 text-xl lg:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 lg:py-3 rounded-xl opacity-0 animate-fadein-700 w-full lg:w-fit text-center max-w-xs mx-auto lg:mx-0">
+      {% if include.button_icon %}
+      <svg class="w-4 h-auto mr-2" width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.8571 1V6.77778C13.8571 7.16087 14.0077 7.52827 14.2756 7.79915C14.5435 8.07004 14.9068 8.22222 15.2857 8.22222H21M13.8571 1H3.85714C3.09938 1 2.37266 1.30436 1.83684 1.84614C1.30102 2.38791 1 3.12271 1 3.88889V24.1111C1 24.8773 1.30102 25.6121 1.83684 26.1539C2.37266 26.6956 3.09938 27 3.85714 27H18.1429C18.9006 27 19.6273 26.6956 20.1632 26.1539C20.699 25.6121 21 24.8773 21 24.1111V8.22222M13.8571 1L21 8.22222M11 12.5556V21.2222M11 12.5556L7.42857 16.1667M11 12.5556L14.5714 16.1667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    {% endif %}
       {{ include.button_text }}
     </a>
 </div>

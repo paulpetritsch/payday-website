@@ -12,7 +12,7 @@ permalink: /financial-advice/
         <div class="mt-4 flex flex-row gap-8 md:justify-center mb-8 flex-wrap">
             {% assign blog_posts = site.categories.financial-advice %}
             {% for post in blog_posts %}
-              <a href="{{ post.url }}" class="md:w-[calc(25%-2rem)] group is-animated">
+              <a href="{{ site.baseurl }}{{ post.url }}" class="md:w-[calc(25%-2rem)] group is-animated">
                 <div class="mb-4 w-full rounded-3xl aspect-[1/1] relative bg-{{ post.color }}">
                     <div class="absolute top-4 left-4 bg-white text-xs rounded-lg px-2 py-1">
                         {{ site.data.textblocks.texts.reading_time }} {{ post.duration }} {{ site.data.textblocks.texts.min}} 

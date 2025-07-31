@@ -5,7 +5,7 @@ permalink: /process-benefits/
 ---
 
 
-<div class="px-4 min-h-screen h-full flex items-center pt-32 lg:pt-8 mb-24 md:mb-0">
+<div class="px-4 pt-32 lg:pt-44 pb-24">
   <div class="flex flex-col lg:flex-row items-center gap-8 max-w-7xl mx-auto h-full">
         <!-- Text Content -->
         {% include sections/hero-text.html 
@@ -14,12 +14,13 @@ permalink: /process-benefits/
           preheadline=site.data.textblocks.pages.process_benefits.hero_preheadline
           button_text=site.data.textblocks.pages.process_benefits.hero_button_text
           button_link=site.data.textblocks.pages.process_benefits.hero_button_link
+          button_icon=site.data.textblocks.pages.process_benefits.hero_button_icon
           images=site.data.textblocks.pages.process_benefits.hero_subimages
           text=site.data.textblocks.pages.process_benefits.hero_text
           %}
         <!-- Image -->
-        <div class="w-full md:w-1/2 flex justify-center relative items-center">
-          <div class="relative">
+        <div class="w-full md:w-1/2 flex justify-end relative items-center">
+          <div class="flex-1 relative">
             <img src="{{ site.data.textblocks.pages.process_benefits.hero_image1 | relative_url }}" alt="{{ site.data.textblocks.pages.process_benefits.hero_headline | escape }}"
                 class="max-h-128 object-contain w-full opacity-0 animate-fadein-400">
             <span
@@ -30,7 +31,7 @@ permalink: /process-benefits/
                     <span>{{ site.data.textblocks.pages.process_benefits.hero_tag1.text }}</span>
                 </span>
           </div>
-          <div class="relative">
+          <div class="flex-1 relative">
             <img src="{{ site.data.textblocks.pages.process_benefits.hero_image2 | relative_url }}" alt="{{ site.data.textblocks.pages.process_benefits.hero_headline | escape }}"
               class="max-h-128 object-contain w-full  opacity-0 animate-fadein-500 pl-4 pb-5">
             <img src="{{ site.data.textblocks.pages.process_benefits.hero_image3 | relative_url }}" alt="{{ site.data.textblocks.pages.process_benefits.hero_headline | escape }}"
@@ -56,6 +57,7 @@ permalink: /process-benefits/
     text=processbenefits1.text
     button_text=processbenefits1.button_text
     button_link=processbenefits1.button_link
+    button_icon=processbenefits1.button_icon
     left=processbenefits1.left
     tags=processbenefits1.tags
     bg=processbenefits1.bg
@@ -70,8 +72,10 @@ permalink: /process-benefits/
     text=processbenefits2.text
     button_text=processbenefits2.button_text
     button_link=processbenefits2.button_link
+    button_icon=processbenefits1.button_icon
     left=processbenefits2.left
     tags=processbenefits2.tags
+    squareimage=true
     tags_layout=processbenefits2.tags_layout
   %}
   {% assign processbenefits3 = site.data.textblocks.sections.image_quote.processbenefits3 %}
@@ -82,15 +86,16 @@ permalink: /process-benefits/
     text=processbenefits3.text
     button_text=processbenefits3.button_text
     button_link=processbenefits3.button_link
+    button_icon=processbenefits1.button_icon
     left=processbenefits3.left
     tags=processbenefits3.tags
     tags_layout=processbenefits3.tags_layout
   %}
-  <div class="px-4 min-h-screen h-full flex items-center pt-32 lg:pt-8 mb-24 lg:mb-0">
-  <div class="flex flex-col lg:flex-row items-center gap-8 max-w-7xl mx-auto h-full">
+  <div class="px-4 min-h-screen h-full flex items-center pt-0 lg:pt-8 mb-12 lg:mb-0">
+  <div class="flex flex-col-reverse lg:flex-row items-center gap-8 max-w-7xl mx-auto h-full w-full">
         <!-- Image -->
         <div class="w-full lg:w-1/2 flex justify-center relative items-center mb-12 lg:mb-0">
-          <div class="relative">
+          <div class="relative flex-1 ">
             <img src="{{ site.data.textblocks.pages.process_benefits.customsection_image1 | relative_url }}" alt="{{ site.data.textblocks.pages.process_benefits.customsection_subheadline | escape }}"
                 class="max-h-128 object-contain w-full">
                 <div class="flex items-center text-sm md:text-xl w-fit absolute -bottom-8 left-1/2 -translate-x-1/2">
@@ -103,7 +108,7 @@ permalink: /process-benefits/
                   </span>
                 </div>
           </div>
-          <div class="relative">
+          <div class="flex-1 relative">
             <img src="{{ site.data.textblocks.pages.process_benefits.customsection_image2 | relative_url }}" alt="{{ site.data.textblocks.pages.process_benefits.customsection_headline | escape }}"
               class="max-h-128 object-contain w-full pl-4">
               <span
@@ -125,12 +130,12 @@ permalink: /process-benefits/
           </div>
         </div>
         <div class="w-full lg:w-1/2 flex flex-col items-start justify-center lg:pl-12">
-            {% include elements/section-headline.html text=site.data.textblocks.pages.process_benefits.customsection_subheadline centered=true %}
-            <div class="mb-4 is-animated text-lg md:text-base max-w-md {% if include.centered %}mx-auto md:mx-0{% endif %}">
+            {% include elements/section-headline.html text=site.data.textblocks.pages.process_benefits.customsection_subheadline centered=true maxwidth=true %}
+            <div class="mb-8 is-animated text-lg md:text-base max-w-md {% if include.centered %}mx-auto md:mx-0{% endif %}">
              {{ site.data.textblocks.pages.process_benefits.customsection_text | markdownify }}
             </div>
             {% if site.data.textblocks.pages.process_benefits.customsection_button_text and site.data.textblocks.pages.process_benefits.customsection_button_link %}
-                {% include elements/button.html text=site.data.textblocks.pages.process_benefits.customsection_button_text link=site.data.textblocks.pages.process_benefits.customsection_button_link %}
+                {% include elements/button.html icon=site.data.textblocks.pages.process_benefits.customsection_button_icon text=site.data.textblocks.pages.process_benefits.customsection_button_text link=site.data.textblocks.pages.process_benefits.customsection_button_link %}
             {% endif %}
         </div>
     </div>
