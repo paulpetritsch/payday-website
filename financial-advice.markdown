@@ -28,7 +28,7 @@ permalink: /financial-advice/
                         </svg>                            
                     </div>
                 </div>
-                <div class="font-semibold">
+                <div class="font-semibold mb-4">
                   {{ post.title }}
                 </div>
                 <p class="text-gray-600 mb-4">

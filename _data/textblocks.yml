@@ -77,17 +77,17 @@ sections:
   slider:
     headline: "„Zum Glück gibt's PayDay”"
     slides:
-      - image: "/assets/images/home-slider1.png"
+      - image: "/assets/images/home/slider/slider1"
         headline: "Kredit?"
-      - image: "/assets/images/home-slider2.png"
+      - image: "/assets/images/home/slider/slider2"
         headline: "Lizenzen?"
-      - image: "/assets/images/home-slider3.png"
+      - image: "/assets/images/home/slider/slider3"
         headline: "Leasingraten?"
-      - image: "/assets/images/home-slider4.png"
+      - image: "/assets/images/home/slider/slider4"
         headline: "Strom?"
-      - image: "/assets/images/home-slider5.png"
+      - image: "/assets/images/home/slider/slider5"
         headline: "Versicherung?"
-      - image: "/assets/images/home-slider6.png"
+      - image: "/assets/images/home/slider/slider6"
         headline: "Arztrechnung?"
   steps:
     headline: "In 3 Schritten zu mehr finanzieller Freiheit"
@@ -127,11 +127,11 @@ sections:
     button_link: "/companies"
   image_quote:
     home1:
-      image: "/assets/images/image-placeholder2.png"
+      image: "/assets/images/home/sections/section1"
       headline: "Eine Rechnung zu viel? <strong>Zum Glück gibt's PayDay</strong>"
-      text: "Egal ob Zahnarzt, Strom, Reparatur oder Versicherung: Lade deine Rechnung bei uns hoch - wir bezahlen sie für dich. 
-        <br><br>
-        Dann hast du 30 Tage Zeit, den Betrag stressfrei zurückzuzahlen - ganz diskret, ohne jemandem aus dem Freundes- oder Familienkreis erklären zu müssen, warum das Geld gerade knapp ist."
+      text_paragraphs:
+        - "Egal ob Zahnarzt, Strom, Reparatur oder Versicherung: Lade deine Rechnung bei uns hoch - wir bezahlen sie für dich."
+        - "Dann hast du 30 Tage Zeit, den Betrag stressfrei zurückzuzahlen - ganz diskret, ohne jemandem aus dem Freundes- oder Familienkreis erklären zu müssen, warum das Geld gerade knapp ist."
       button_text: "Ablauf & Vorteile"
       button_link: "/process-benefits"
       left: true
@@ -149,7 +149,7 @@ sections:
           svg: "lock"
           svg_color: "text-purple-200"
     home2:
-      image: "/assets/images/home-section2.png"
+      image: "/assets/images/home/sections/section2"
       headline: "Vorteile bei PayDay"
       subheadline: "Fair & schnell, ohne versteckte Kosten."
       text: |
@@ -183,7 +183,7 @@ sections:
           svg: "smiley"
           svg_color: "text-green-100"
     home3:
-      image: "/assets/images/home-section3.png"
+      image: "/assets/images/home/sections/section3"
       headline: "Dein persönlicher PayDay - genau dann, wenn du ihn brauchst"
       subheadline: "Weil du Besseres zu tun hast, als dich um unbezahlte Rechnungen zu sorgen."
       button_text: "Jetzt Registrieren"
@@ -201,13 +201,12 @@ sections:
           svg: "persona"
           svg_color: "text-purple-200"
     about1:
-      image: "/assets/images/about-section1.png"
+      image: "/assets/images/about/sections/about1"
       headline: "Warum wir tun, was wir tun"
-      text: "Wir wissen, wie es sich anfühlt, wenn das Geld am Monatsende nicht reicht. 
-        <br><br>
-        Wenn eine einzige Rechnung plötzlich alles durcheinanderbringt. Genau deshalb gibt's payday: Um Menschen zu helfen, die sonst niemand sieht. Keine Hürden – sondern echte Unterstützung, genau dann, wenn man sie braucht.
-        <br><br>
-        Wir glauben daran, dass finanzielle Unterstützung einfach, menschlich und transparent sein muss. Mit payday bieten wir einen digitalen Weg, der in schwierigen Momenten entlastet."
+      text_paragraphs:
+        - "Wir wissen, wie es sich anfühlt, wenn das Geld am Monatsende nicht reicht."
+        - "Wenn eine einzige Rechnung plötzlich alles durcheinanderbringt. Genau deshalb gibt's payday: Um Menschen zu helfen, die sonst niemand sieht. Keine Hürden – sondern echte Unterstützung, genau dann, wenn man sie braucht."
+        - "Wir glauben daran, dass finanzielle Unterstützung einfach, menschlich und transparent sein muss. Mit payday bieten wir einen digitalen Weg, der in schwierigen Momenten entlastet."
       left: true
       centered: true
       tags_layout: "quote-2tags-bottom"
@@ -221,11 +220,11 @@ sections:
           svg: "insurance"
           svg_color: "text-green-100"
     about2:
-      image: "/assets/images/about-section2.png"
+      image: "/assets/images/about/sections/about2"
       headline: "Gemeinsam für eine starke finanzielle Zukunft"
-      text: "Unsere Vision geht weit über den Status quo hinaus. Wir wollen wachsen, neue Wege gehen und noch mehr Menschen erreichen, die kurzfristige Unterstützung benötigen - mit digitalen Lösungen, die einfach, zugänglich und wirkungsvoll sind. 
-        <br><br>
-        In den kommenden Jahren werden wir gezielt Partnerschaften im B2B-Bereich aufbauen, zum Beispiel mit Energieversorgern und Dienstleistungsunternehmen, um noch schneller helfen zu können."
+      text_paragraphs:
+        - "Unsere Vision geht weit über den Status quo hinaus. Wir wollen wachsen, neue Wege gehen und noch mehr Menschen erreichen, die kurzfristige Unterstützung benötigen - mit digitalen Lösungen, die einfach, zugänglich und wirkungsvoll sind. "
+        - "In den kommenden Jahren werden wir gezielt Partnerschaften im B2B-Bereich aufbauen, zum Beispiel mit Energieversorgern und Dienstleistungsunternehmen, um noch schneller helfen zu können."
       button_text: "Für Unternehmen"
       button_link: "/companies"
       left: false
@@ -249,7 +248,7 @@ sections:
           svg: "smiley"
           svg_color: "text-green-100"
     about3:
-      image: "/assets/images/about-section3.png"
+      image: "/assets/images/about/sections/about3"
       headline: "Mit jeder Rechnung Hoffnung schenken"
       text: "Bei PayDay setzen wir uns dafür ein, einen positiven Beitrag zu leisten und einen grösseren Zweck zu unterstützen. Um unsere ESG-Werte zu fördern, spenden wir 1 CHF an givedirectly.org für jede Rechnung, die auf unsere Plattform hochgeladen wird."
       button_text: "Rechnung hochladen"
@@ -265,7 +264,7 @@ sections:
           svg: "heart-handshake"
           svg_color: "text-pink-100"
     processbenefits1:
-      image: "/assets/images/home-section2.png"
+      image: "/assets/images/home/sections/section2"
       headline: "Vorteile bei PayDay"
       subheadline: "Fair & schnell, ohne versteckte Kosten."
       text: |
@@ -299,14 +298,12 @@ sections:
           svg: "smiley"
           svg_color: "text-green-100"
     processbenefits2:
-      image: "/assets/images/processbenefits-section2.png"
+      image: "/assets/images/processbenefits/sections/section2"
       headline: "Wie viel kostet die Nutzung von PayDay?"
-      text: "Für deine hochgeladene Rechnung zahlst du nur CHF 25.-.
-        <br>
-        Ab dem zweiten Jahr fällt zusätzlich eine jährliche Servicegebühr von CHF 19.90 an - nur, wenn du payday nutzt.
-        <br><br>
-        <strong>Du brauchst mehr Zeit? Buy more Time!</strong><br>
-        Mit unserer Rückzahlungsverlängerung bekommst du bis zu 60 Tage Zeit - für nur CHF 9.90 oder CHF 19.90, je nach Option."
+      text_paragraphs:
+        - "Für deine hochgeladene Rechnung zahlst du nur CHF 25.-."
+        - "Ab dem zweiten Jahr fällt zusätzlich eine jährliche Servicegebühr von CHF 19.90 an - nur, wenn du payday nutzt."
+        - "<strong>Du brauchst mehr Zeit? Buy more Time! </strong>Mit unserer Rückzahlungsverlängerung bekommst du bis zu 60 Tage Zeit - für nur CHF 9.90 oder CHF 19.90, je nach Option."
       button_text: "Rechnung hochladen"
       button_link: "/upload"
       button_icon: true
@@ -323,11 +320,11 @@ sections:
           svg: "franken"
           svg_color: "text-purple-200"
     processbenefits3:
-      image: "/assets/images/processbenefits-section3.png"
+      image: "/assets/images/processbenefits/sections/section3"
       headline: "Mehrere Rechnungen? Kein Problem!"
-      text: "Nach der ersten Rechnung öffnet sich ein Tagesfenster, in dem du weitere Rechnungen einreichen kannst – für nur CHF 5.– pro Rechnung.
-        <br><br>
-        Insgesamt kannst du bis zu CHF 499.– pro Monat über payday abwickeln. So bleibst du flexibel und behältst trotzdem den Überblick."
+      text_paragraphs:
+        - "Nach der ersten Rechnung öffnet sich ein Tagesfenster, in dem du weitere Rechnungen einreichen kannst – für nur CHF 5.– pro Rechnung."
+        - "Insgesamt kannst du bis zu CHF 499.– pro Monat über payday abwickeln. So bleibst du flexibel und behältst trotzdem den Überblick."
       button_text: "Rechnung hochladen"
       button_link: "/upload"
       button_icon: true
@@ -353,7 +350,7 @@ sections:
           svg: "smiley"
           svg_color: "text-green-100"
     processbenefits4:
-      image: "/assets/images/processbenefits-section4.png"
+      image: "/assets/images/processbenefits/sections/section4"
       headline: "Mach jeden Tag zum Payday"
       subheadline: "Mit unserer Hilfe bleibst du auch zwischen den Gehaltstagen entspannt."
       button_text: "Jetzt registrieren"
@@ -371,11 +368,11 @@ sections:
           svg: "persona"
           svg_color: "text-green-100"
     antimoneylaundering:
-      image: "/assets/images/antimoneylaundering-section1.png"
+      image: "/assets/images/antimoneylaundering/animoneylaundering2"
       headline: "Wozu dieser Onboarding-Prozess?"
-      text: "Als Finanzintermediär in der Schweiz sind wir verpflichtet, alle Kund:innen gemäss den Vorschriften der FINMA (Eidgenössische Finanzmarktaufsicht) zu identifizieren. payday nimmt diese KYC-Vorschriften (Know Your Customer) ernst, um unsere Kund:innen zu schützen und eine sichere Plattform aufrechtzuerhalten.
-        <br><br>
-        Keine Sorge, der Vorgang ist schnell und einfach, und alle deine Informationen werden vertraulich und sicher behandelt."
+      text_paragraphs:
+        - "Als Finanzintermediär in der Schweiz sind wir verpflichtet, alle Kund:innen gemäss den Vorschriften der FINMA (Eidgenössische Finanzmarktaufsicht) zu identifizieren. payday nimmt diese KYC-Vorschriften (Know Your Customer) ernst, um unsere Kund:innen zu schützen und eine sichere Plattform aufrechtzuerhalten."
+        - "Keine Sorge, der Vorgang ist schnell und einfach, und alle deine Informationen werden vertraulich und sicher behandelt."
       button_text: "Jetzt registrieren"
       button_link: "/register"
       left: true
@@ -445,15 +442,15 @@ pages:
     hero_button_icon: true
     hero_preheadline: "300+ benutzen bereits PayDay"
     hero_subimages:
-      - image: "/assets/images/women1.png"
+      - image: "/assets/images/home/hero/women1"
         color: "pink-50"
-      - image: "/assets/images/women2.png"
+      - image: "/assets/images/home/hero/women2"
         color: "purple-100"
-      - image: "/assets/images/man1.png"
+      - image: "/assets/images/home/hero/man1"
         color: "green-50"
-    hero_image1: "/assets/images/home-hero2.png"
-    hero_image2: "/assets/images/home-hero1.png"
-    hero_image3: "/assets/images/home-hero3.png"
+    hero_image1: "/assets/images/home/hero/hero2"
+    hero_image2: "/assets/images/home/hero/hero1"
+    hero_image3: "/assets/images/home/hero/hero3"
     hero_tag1:
       color: "bg-green-50"
       text: "0% Zinsen!"
@@ -492,11 +489,11 @@ pages:
     hero_image_inner7: "/assets/images/about-hero/inner-7.png"
     hero_image_center: "/assets/images/about-hero/center.png"
     hero_subimages:
-      - image: "/assets/images/women1.png"
+      - image: "/assets/images/home/hero/women1"
         color: "pink-50"
-      - image: "/assets/images/women2.png"
+      - image: "/assets/images/home/hero/women2"
         color: "purple-100"
-      - image: "/assets/images/man1.png"
+      - image: "/assets/images/home/hero/man1"
         color: "green-50"
     sections:
       blog_overview:
@@ -508,9 +505,9 @@ pages:
     hero_button_text: "Rechnung hochladen"
     hero_button_link: "/upload"
     hero_button_icon: true
-    hero_image1: "/assets/images/processbenefits-hero2.png"
-    hero_image2: "/assets/images/processbenefits-hero1.png"
-    hero_image3: "/assets/images/processbenefits-hero3.png"
+    hero_image1: "/assets/images/processbenefits/hero/hero1"
+    hero_image2: "/assets/images/processbenefits/hero/hero2"
+    hero_image3: "/assets/images/processbenefits/hero/hero3"
     hero_tag1:
       color: "bg-purple-100"
       text: "30 Tage Frist"
@@ -522,17 +519,17 @@ pages:
       svg: "dollar"
       svg_color: "text-green-100"
     customsection_subheadline: "Wer kann von PayDay profitieren?"
+    customsection_text_paragraphs:
+        - "payday ist für alle da, die kurzfristige Entlastung brauchen – auch ohne perfekten Kredit-Score. Wenn du unsere Services nutzen möchtest, brauchst du nur ein paar einfache Voraussetzungen. So stellen wir sicher, dass du payday verantwortungsvoll nutzen kannst – ohne zusätzliche Belastung."
     customsection_text: |
-        payday ist für alle da, die kurzfristige Entlastung brauchen – auch ohne perfekten Kredit-Score. Wenn du unsere Services nutzen möchtest, brauchst du nur ein paar einfache Voraussetzungen. So stellen wir sicher, dass du payday verantwortungsvoll nutzen kannst – ohne zusätzliche Belastung.
-        <br><br>
         - Du bist mindestens 18 Jahre alt
         - Du hast ein festes Einkommen
         - Du wohnst in der Schweiz"
     customsection_button_text: "Jetzt registrieren"
     customsection_button_link: "/register"
-    customsection_image1: "/assets/images/processbenefits-customsection1.png"
-    customsection_image2: "/assets/images/processbenefits-customsection2.png"
-    customsection_image3: "/assets/images/processbenefits-customsection3.png"
+    customsection_image1: "/assets/images/processbenefits/custom/custom1"
+    customsection_image2: "/assets/images/processbenefits/custom/custom2"
+    customsection_image3: "/assets/images/processbenefits/custom/custom3"
     customsection_tag1:
       color: "bg-green-50"
       text: "18+"
@@ -557,10 +554,10 @@ pages:
 
   anti_money_laundering:
     hero_headline: "KYC-Erklärung Anti-Geldwäsche"
-    hero_image: "/assets/images/antimoneylaundering-hero.png"
-    hero_text: >
-      Bei KYC geht es darum, deine Identität zu überprüfen und sicherzustellen, dass die Informationen, die du uns zur Verfügung stellst korrekt sind. Dies hilft uns, kriminelle Aktivitäten zu verhindern und unsere Plattform sicher zu halten. <br><br>
-      Wenn du unsere Dienste nutzt, wirst du gebeten, einige grundlegende Informationen anzugeben, wie deinen vollständigen Namen, dein Geburtsdatum und deine Adresse. Anschliessend überprüfen und bestätigen wir diese Informationen sorgfältig mithilfe einer von der FINMA festgelegten und empfohlenen Methode
+    hero_image: "/assets/images/antimoneylaundering/antimoneylaundering1"
+    hero_text_paragraphs:
+      - "Bei KYC geht es darum, deine Identität zu überprüfen und sicherzustellen, dass die Informationen, die du uns zur Verfügung stellst korrekt sind. Dies hilft uns, kriminelle Aktivitäten zu verhindern und unsere Plattform sicher zu halten."
+      - "Wenn du unsere Dienste nutzt, wirst du gebeten, einige grundlegende Informationen anzugeben, wie deinen vollständigen Namen, dein Geburtsdatum und deine Adresse. Anschliessend überprüfen und bestätigen wir diese Informationen sorgfältig mithilfe einer von der FINMA festgelegten und empfohlenen Methode"
     hero_button_text: "Jetzt registrieren"
     hero_button_link: "/register"
     hero_tags_layout: "quote-2tags-alt"
@@ -576,7 +573,7 @@ pages:
 
   companies:
     hero_headline: "Schnelle Hilfe für Ihre Kund:innen"
-    hero_image: "/assets/images/about-section2.png"
+    hero_image: "/assets/images/about/sections/about2"
     hero_text: >
       Bieten Sie Zahlungen über payday an und ermöglichen Sie Ihren Kund:innen mehr finanzielle Flexibilität. Sie selbst erhalten den offenen Betrag sofort von uns – ganz ohne Mahnwesen oder zusätzlichen Aufwand für Ihr Team. So können Sie sich ganz auf Ihre Kund:innen konzentrieren und wir kümmern uns um den Rest.
     hero_button_text: "Partner werden"

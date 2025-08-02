@@ -24,15 +24,31 @@ site.data.textblocks.sections[section] %}
     <div class="overflow-hidden w-full relative mt-10 md:mt-0">
         <div class="marquee-track flex w-max gap-4">
             {% for slide in site.data.textblocks.sections.slider.slides %}
-            <div class="flex flex-col-reverse md:flex-col items-center w-[80vw] md:w-fit md:min-w-80">
+            <div class="flex flex-col-reverse md:flex-col items-center w-[80vw] md:w-80">
                 <h3 class="text-3xl font-medium mt-4 md:mt-0 mb-4 text-center">{{ slide.headline }}</h3>
-                <img src="{{ slide.image | relative_url }}" alt="{{ slide.headline }}" class="w-full h-auto object-contain">
+                <img
+                    srcset="{{ slide.image | relative_url }}-400w.webp 400w, {{ slide.image | relative_url }}-600w.webp 600w, {{ slide.image | relative_url }}-800w.webp 800w, {{ slide.image | relative_url }}-1000w.webp 1000w, {{ slide.image | relative_url }}-1200w.webp 1200w"
+                    sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (min-width: 1001px) 1200px"
+                    src="{{ slide.image | relative_url }}.webp"
+                    width="1600"
+                    height="1672"
+                    loading="lazy"
+                    alt="{{ slide.headline }}" class="w-full h-auto object-contain"
+                    />
             </div>
             {% endfor %}
             {% for slide in site.data.textblocks.sections.slider.slides %}
-            <div class="flex flex-col-reverse md:flex-col items-center w-[80vw] md:w-fit md:min-w-80">
+            <div class="flex flex-col-reverse md:flex-col items-center w-[80vw] md:w-80">
                 <h3 class="text-3xl font-medium mt-4 md:mt-0 mb-4 text-center">{{ slide.headline }}</h3>
-                <img src="{{ slide.image | relative_url }}" alt="{{ slide.headline }}" class="w-full h-auto object-contain">
+                <img
+                srcset="{{ slide.image | relative_url }}-400w.webp 400w, {{ slide.image | relative_url }}-600w.webp 600w, {{ slide.image | relative_url }}-800w.webp 800w, {{ slide.image | relative_url }}-1000w.webp 1000w, {{ slide.image | relative_url }}-1200w.webp 1200w"
+                sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (min-width: 1001px) 1200px"
+                src="{{ slide.image | relative_url }}.webp"
+                width="1600"
+                height="1672"
+                loading="lazy"
+                alt="{{ slide.headline }}" class="w-full h-auto object-contain"
+                />
             </div>
             {% endfor %}
         </div>

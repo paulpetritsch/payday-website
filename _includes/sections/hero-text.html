@@ -6,6 +6,14 @@
         {% elsif forloop.index == 2 %} animate-fadein-200
         {% elsif forloop.index == 3 %} animate-fadein-300
         {% endif %}">
+        <img
+        srcset="{{ subimage.image | relative_url }}-400w.webp 400w, {{ subimage.image | relative_url }}-600w.webp 600w"
+        sizes="(max-width: 400px) 400px, (min-width: 401px) 600px"
+        src="{{ subimage.image | relative_url }}.webp"
+        width="1000"
+        height="1000"
+        alt="{{ site.data.textblocks.pages.home.hero_preheadline | escape }}" class="w-auto h-full object-cover mx-auto"
+      />
             <img src="{{ subimage.image | relative_url }}" alt="{{ site.data.textblocks.pages.home.hero_preheadline | escape }}" class="w-auto h-full object-cover mx-auto">
         </div>
       {% endfor %}
@@ -25,9 +33,16 @@
       </div>
     {% endif %}
     {% if include.text %}
-    <p class="text-center lg:text-left max-w-2xl mb-4 opacity-0 animate-fadein-600 max-w-md mx-auto lg:mx-0">
+    <p class="text-center lg:text-left max-w-2xl mb-4 mt-4 opacity-0 animate-fadein-600 max-w-md mx-auto lg:mx-0">
       {{ include.text }}
     </p>
+    {% endif %}
+    {% if include.text_paragraphs %}
+      <div class="mb-4 is-animated text-lg md:text-base mt-4 max-w-md {% if include.centered %}mx-auto md:mx-0{% endif %}">
+        {% for paragraph in include.text_paragraphs %}
+          <p class="mb-4 last:mb-0">{{ paragraph }}</p>
+        {% endfor %}
+      </div>
     {% endif %}
     <a href="{{ site.baseurl }}{{include.button_link}}" class="{% if include.button_icon %} flex justify-center {% endif %} mt-4 text-xl lg:text-base bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-3 lg:py-3 rounded-xl opacity-0 animate-fadein-700 w-full lg:w-fit text-center max-w-xs mx-auto lg:mx-0">
       {% if include.button_icon %}

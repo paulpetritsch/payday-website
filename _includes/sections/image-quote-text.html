@@ -3,8 +3,15 @@
     {% if include.left %}md:flex-row{% else %}md:flex-row-reverse{% endif %}">
         <!-- Image -->
         <div class="w-full md:w-1/2 flex justify-center relative {% if include.squareimage %} max-w-lg {% else %}max-w-md{% endif %}">
-            <img src="{{ include.image | relative_url }}" alt="{{ include.headline | escape }}"
-                class="max-h-[35rem] object-contain w-full {% if include.squareimage %}max-w-lg{% else %}max-w-md{% endif %}">
+            <img
+                    srcset="{{ include.image | relative_url }}-400w.webp 400w, {{ include.image | relative_url }}-600w.webp 600w, {{ include.image | relative_url }}-800w.webp 800w, {{ include.image | relative_url }}-1000w.webp 1000w, {{ include.image | relative_url }}-1200w.webp 1200w"
+                    sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (min-width: 1001px) 1200px"
+                    src="{{ include.image | relative_url }}.webp"
+                    width="1600"
+                    height="1672"
+                    loading="lazy"
+                    alt="{{ include.headline | escape }}" class="max-h-[35rem] object-contain w-full {% if include.squareimage %}max-w-lg{% else %}max-w-md{% endif %}"
+                    />
             <!-- Tags -->
             {% if include.tags %}
               {% include elements/imagetags.html tags=include.tags layout=include.tags_layout bg=include.bg %}
@@ -19,8 +26,15 @@
                 {% include elements/section-subheadline.html text=include.subheadline centered=include.centered %}
             {% endif %}
             {% if include.text %}
-                <div class="mb-4 is-animated text-lg md:text-base max-w-md {% if include.centered %}mx-auto md:mx-0{% endif %}">
-                {{ include.text | markdownify }}
+                <div class="mb-4 mt-2 is-animated text-lg md:text-base max-w-md {% if include.centered %}mx-auto md:mx-0{% endif %}">
+                    {{ include.text | markdownify }}
+                </div>
+            {% endif %}
+            {% if include.text_paragraphs %}
+                <div class="mb-4 mt-2 is-animated text-lg md:text-base max-w-md {% if include.centered %}mx-auto md:mx-0{% endif %}">
+                    {% for paragraph in include.text_paragraphs %}
+                        <p class="mb-4 last:mb-0">{{ paragraph }}</p>
+                    {% endfor %}
                 </div>
             {% endif %}
             {% if include.button_text and include.button_link %}
