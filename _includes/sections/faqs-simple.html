@@ -1,3 +1,14 @@
+{% comment %}
+Title: Simple FAQs Section
+Description: Displays a simplified FAQ section with accordion functionality. Supports custom FAQs or falls back to default FAQs from textblocks.yml.
+Page Usages: Blog posts, support page, and other pages requiring simple FAQ content
+Parameters:
+- include.faqs: Optional array of custom FAQ objects (falls back to site.data.textblocks.faqs.default)
+  - faq.question: FAQ question text
+  - faq.answer: FAQ answer text (supports markdown)
+- include.headline: Optional custom headline text (defaults to "Häufig gestellte Fragen")
+{% endcomment %}
+
 {% comment %} Check if custom FAQs are passed as parameters {% endcomment %}
 {% if include.faqs %}
   {% assign custom_faqs = include.faqs %}

@@ -1,3 +1,15 @@
+{% comment %}
+Title: Image Slider Section
+Description: Creates an endless horizontal marquee of images with headlines. Uses CSS animations for smooth scrolling effect.
+Page Usages: Home page slider section and other pages requiring image showcases
+Parameters:
+- section_data: Data from textblocks.yml under sections.slider
+  - headline: Main section title displayed below the slider
+- site.data.textblocks.sections.slider.slides: Array of slide objects
+  - slide.headline: Text headline for each slide
+  - slide.image: Image path for each slide
+{% endcomment %}
+
 {% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
 {% assign section = 'slider' %}
 

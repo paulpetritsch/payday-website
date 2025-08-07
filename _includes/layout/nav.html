@@ -1,3 +1,24 @@
+{% comment %}
+Title: Navigation Layout
+Description: Main site navigation with logo, menu links, mobile hamburger menu, and floating CTA button. Includes active link highlighting and responsive design.
+Page Usages: Included in the main layout for all pages
+Parameters:
+- site.data.textblocks.nav.nav_links: Array of navigation links
+  - link.url: URL for the navigation link
+  - link.text: Text for the navigation link
+- site.data.textblocks.nav.nav_home: Home link object
+  - nav_home.url: URL for home link
+  - nav_home.text: Text for home link
+- site.data.textblocks.nav.nav_register: Register link object
+  - nav_register.link: URL for register link
+  - nav_register.text: Text for register link
+- site.data.textblocks.nav.nav_cta: Main CTA button object
+  - nav_cta.link: URL for CTA button
+  - nav_cta.text: Text for CTA button
+- site.data.textblocks.nav.nav_floating_cta: Floating mobile CTA object
+  - nav_floating_cta.link: URL for floating CTA
+{% endcomment %}
+
 <nav class="fixed top-0 lg:top-5 left-0 w-full z-50 lg:px-2">
     <div class="z-50 relative bg-white max-w-8xl mx-auto flex items-center justify-between pl-8 pr-6 lg:px-4 py-5 lg:py-3 lg:rounded-2xl border-b border-grey lg:border lg:border-opacity-40">
       <!-- Left: Logo and Main Menu -->

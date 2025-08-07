@@ -1,3 +1,17 @@
+{% comment %}
+Title: Similar Articles Section
+Description: Displays related blog posts based on shared tags with the current post. Shows up to 4 similar articles in a horizontal scrollable grid.
+Page Usages: Blog post pages (automatically included in blog layout)
+Parameters:
+- page.tags: Tags of the current blog post (used to find similar posts)
+- page.categories: Categories of the current blog post (fallback if tags not available)
+- site.data.textblocks.texts.similar_articles: Title text for the section
+- site.data.textblocks.texts.reading_time: Text for reading time label
+- site.data.textblocks.texts.min: Text for minutes label
+- site.data.textblocks.texts.more_tips: Text for the CTA button
+- site.data.textblocks.texts.blog_link: URL for the CTA button
+{% endcomment %}
+
 {% comment %} Get current post tags {% endcomment %}
 {% assign current_tags = page.tags | default: page.categories %}
 

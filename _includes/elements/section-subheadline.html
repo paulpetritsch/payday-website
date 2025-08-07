@@ -1,3 +1,14 @@
+{% comment %}
+Title: Section Subheadline Element
+Description: Displays section subheadlines with consistent styling, optional animation, and responsive design.
+Page Usages: Used throughout the site for section subtitles and secondary headings
+Parameters:
+- include.text: Subheadline text content
+- include.animation: Boolean to enable animation class (defaults to true)
+- include.centered: Boolean to center text on mobile (optional)
+- include.maxwidth: Boolean to limit width to max-w-md (optional)
+{% endcomment %}
+
 <div class="text-2xl font-display mb-4 {% if include.animation != false and include.animation != 'false' %}is-animated{% endif %} w-full {% if include.centered %}text-center md:text-left{% endif %} {% if include.maxwidth %}max-w-md{% endif %}">
     {{ include.text }}
 </div>

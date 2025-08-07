@@ -1,3 +1,16 @@
+{% comment %}
+Title: Blog Overview Section
+Description: Displays a horizontal scrollable grid of blog posts.
+Parameters:
+- section_data:
+  - subheadline: Section subtitle
+  - headline: Main section title  
+  - bg: Background color class (optional)
+  - button_icon: Icon for the CTA button
+  - button_text: Text for the CTA button
+  - button_link: URL for the CTA button
+{% endcomment %}
+
 {% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
 {% assign section = 'blog_overview' %}
 

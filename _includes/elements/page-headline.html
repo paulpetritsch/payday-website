@@ -1,1 +1,10 @@
+{% comment %}
+Title: Page Headline Element
+Description: Displays page headlines with large, bold styling and optional animation.
+Page Usages: Used for main page titles and hero headlines
+Parameters:
+- include.text: Headline text content
+- include.animation: Boolean to enable animation class (defaults to true)
+{% endcomment %}
+
 <h1 class="text-5xl md:text-7xl font-bold font-display mb-4 {% if include.animation != false and include.animation != 'false' %}is-animated{% endif %}">{{ include.text }}</h1>

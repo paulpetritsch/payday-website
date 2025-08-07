@@ -1,3 +1,20 @@
+{% comment %}
+Title: Blog Header Layout
+Description: Displays blog post header with featured image, title, date, and reading time. Includes responsive design and language-specific date formatting.
+Page Usages: Used in blog post layouts to display post metadata and header information
+Parameters:
+- page.color: Background color class for the image container
+- page.image: Featured image path for the blog post
+- page.title: Blog post title
+- page.headline: Blog post headline (can be different from title)
+- page.date: Publication date of the blog post
+- page.duration: Reading time in minutes
+- site.data.textblocks.current_language: Current language setting (defaults to 'de')
+- site.data.textblocks.texts.months: Array of month names for date formatting
+- site.data.textblocks.texts.reading_time: Text for reading time label
+- site.data.textblocks.texts.min: Text for minutes label
+{% endcomment %}
+
 <div class="px-8 md:px-4 pt-24 md:pt-32 pb-8">
     <div class="max-w-3xl mx-auto">
         <div class="mb-8 md:w-full md:h-[50vh] rounded-3xl relative bg-{{ page.color }}">

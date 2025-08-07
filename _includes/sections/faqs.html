@@ -1,3 +1,18 @@
+{% comment %}
+Title: FAQs Section
+Description: Displays an interactive FAQ section with category switching and accordion functionality. Includes smooth transitions and hover effects.
+Page Usages: Home page, about page, support page, and other pages requiring FAQ content
+Parameters:
+- include.bg: Boolean to control background color (defaults to purple-50)
+- section_data: Data from textblocks.yml under sections.faqs
+  - headline: Main section title
+  - faqs: Array of FAQ categories
+    - category: Category name for the tab
+    - items: Array of FAQ items
+      - question: FAQ question text
+      - answer: FAQ answer text (supports markdown)
+{% endcomment %}
+
 {% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
 {% assign section = 'faqs' %}
 

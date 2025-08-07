@@ -1,3 +1,15 @@
+{% comment %}
+Title: Quote Section
+Description: Displays a testimonial or quote with decorative quotation marks and centered text layout.
+Page Usages: Home page testimonials, about page quotes, and other pages requiring quote/testimonial content
+Parameters:
+- section_data: Data from textblocks.yml under sections.quote
+  - preheadline: Subtitle text above the main quote
+  - headline: Main quote text
+  - from: Attribution text (who said the quote)
+  - bg: Background color class (optional)
+{% endcomment %}
+
 {% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
 {% assign section = 'quote' %}
 

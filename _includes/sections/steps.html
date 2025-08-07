@@ -1,3 +1,21 @@
+{% comment %}
+Title: Steps Section
+Description: Displays a numbered step-by-step process with custom SVG backgrounds and staggered animations.
+Page Usages: Home page process section, about page steps, and other pages requiring step-by-step explanations
+Parameters:
+- section_data: Data from textblocks.yml under sections.steps
+  - headline: Main section title
+  - subheadline: Section subtitle
+  - steps: Array of step objects
+    - step.title: Title for each step
+    - step.text: Description text for each step
+    - step.bg: Background color class for SVG
+    - step.color: Text color class for step number
+  - button_icon: Icon for the CTA button
+  - button_text: Text for the CTA button
+  - button_link: URL for the CTA button
+{% endcomment %}
+
 {% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
 {% assign section = 'steps' %}
 

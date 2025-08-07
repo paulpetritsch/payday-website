@@ -1,3 +1,21 @@
+{% comment %}
+Title: Steps Quote Section
+Description: Displays a step-by-step process with custom quote-style SVG backgrounds and larger titles.
+Page Usages: Home page process section and other pages requiring step-by-step explanations with quote styling
+Parameters:
+- section_data: Data from textblocks.yml under sections.steps_quote
+  - headline: Main section title
+  - subheadline: Section subtitle
+  - steps: Array of step objects
+    - step.title: Main title for each step
+    - step.subtitle: Subtitle for each step
+    - step.text: Description text for each step
+    - step.bg: Background color class for SVG
+  - button_icon: Icon for the CTA button
+  - button_text: Text for the CTA button
+  - button_link: URL for the CTA button
+{% endcomment %}
+
 {% assign page_key = page.key | default: page.url | replace:'/','' | default: 'index' %}
 {% assign section = 'steps_quote' %}
 

@@ -1,3 +1,25 @@
+{% comment %}
+Title: Image Tags Element
+Description: Displays floating tags around images with various layout options and parallax scrolling effects.
+Page Usages: Used in image-quote-text sections and other image-heavy content areas
+Parameters:
+- include.tags: Array of tag objects to display
+  - tag.text: Text content for the tag
+  - tag.color: Background color class for the tag
+  - tag.svg: Optional SVG icon name from site.data.svgs
+  - tag.svg_color: Optional color class for the SVG icon
+- include.layout: Layout type for tag positioning
+  - "quote-2tags": Two tags positioned for quote-style images
+  - "quote-2tags-alt": Alternative positioning for two tags
+  - "quote-2tags-bottom": Two tags positioned at bottom
+  - "quote-4tags": Four tags positioned for quote-style images
+  - "quote-4tags-alt": Alternative positioning for four tags
+  - "square-1tag-top": Single tag at top for square images
+  - "square-2tags-bottom": Two tags at bottom for square images
+  - "square-2tags": Two tags for square images
+- include.bg: Background color class for tag borders (optional)
+{% endcomment %}
+
 {% if include.tags %}
 <div class="absolute inset-0 pointer-events-none">
   {% for tag in include.tags %}

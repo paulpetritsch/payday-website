@@ -1,3 +1,24 @@
+{% comment %}
+Title: Image Quote Text Section
+Description: Displays a section with an image on one side and text content on the other. Supports responsive design, image tags, and various layout options.
+Page Usages: Home page sections, about page sections, process benefits page, and other content pages
+Parameters:
+- include.bg: Background color class (optional)
+- include.squareimage: Boolean to use square image layout
+- include.left: Boolean to position image on the left (default is right)
+- include.image: Image path for the main image
+- include.headline: Main headline text
+- include.subheadline: Sub-headline text
+- include.text: Single paragraph text (supports markdown)
+- include.text_paragraphs: Array of paragraphs for multi-paragraph text
+- include.centered: Boolean to center text on mobile
+- include.button_text: Text for the CTA button
+- include.button_link: URL for the CTA button
+- include.button_icon: Icon for the CTA button
+- include.tags: Array of image tags to display
+- include.tags_layout: Layout type for image tags (quote-2tags, quote-4tags, etc.)
+{% endcomment %}
+
 <div class="px-8 md:px-4 py-10 md:py-32 mt-0 md:mt-24 {% if include.bg %}bg-{{include.bg}} rounded-3xl {% endif %}">
     <div class="flex flex-col-reverse {% if include.squareimage %} justify-between {% else %}justify-evenly{% endif %} md:flex-row items-center gap-8 max-w-7xl mx-auto 
     {% if include.left %}md:flex-row{% else %}md:flex-row-reverse{% endif %}">

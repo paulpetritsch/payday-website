@@ -1,3 +1,20 @@
+{% comment %}
+Title: Hero Text Section
+Description: Displays hero section content with animated text, images, and CTA button. Supports responsive design and staggered animations.
+Page Usages: Home page hero section, about page hero section, and other pages requiring hero content
+Parameters:
+- include.preheadline: Optional pre-headline text with small images
+- include.images: Array of small images for the pre-headline (each with color and image properties)
+- include.headline: Main headline text
+- include.subheadline: Sub-headline text
+- include.text: Single paragraph text
+- include.text_paragraphs: Array of paragraphs for multi-paragraph text
+- include.centered: Boolean to center text on mobile
+- include.button_text: Text for the CTA button
+- include.button_link: URL for the CTA button
+- include.button_icon: Boolean to show download icon in button
+{% endcomment %}
+
 <div class="w-full lg:w-1/2 flex flex-col items-start justify-center lg:pr-12">
   {% if include.preheadline %}
     <div class="flex mb-2 items-center w-full justify-center lg:justify-left lg:w-fit">

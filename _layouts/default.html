@@ -20,7 +20,6 @@
   <link rel="manifest" href="{{ site.baseurl }}/assets/favicon/site.webmanifest" />
 
   <!-- CSS -->
-
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
 
   <!-- Google Fonts -->
@@ -101,6 +100,8 @@
       }
     }
   </script>
+
+  <!-- Custom Styles -->
   <style>
     ul {
       list-style: disc !important;
@@ -166,6 +167,7 @@
   {% include layout/footer.html %}
 
   <script>
+    //********* Reveal Animations *********
     document.addEventListener("DOMContentLoaded", function () {
 
       const observer = new IntersectionObserver((entries, observer) => {
@@ -195,7 +197,7 @@
   </script>
 
 <script>
-  // Simple fade transition
+  //********* Fade Transition *********
   document.addEventListener('DOMContentLoaded', function() {
     // Fade in on page load
     const main = document.querySelector('main');

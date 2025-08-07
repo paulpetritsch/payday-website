@@ -1,1 +1,12 @@
+{% comment %}
+Title: Section Headline Element
+Description: Displays section headlines with consistent styling, optional animation, and responsive design.
+Page Usages: Used throughout the site for section titles and main headings
+Parameters:
+- include.text: Headline text content
+- include.animation: Boolean to enable animation class (defaults to true)
+- include.centered: Boolean to center text on mobile (optional)
+- include.maxwidth: Boolean to limit width to max-w-md (optional)
+{% endcomment %}
+
 <h2 class="text-4xl font-medium font-display mb-4 {% if include.animation != false and include.animation != 'false' %}is-animated{% endif %} w-full {% if include.centered %}text-center md:text-left{% endif %} {% if include.maxwidth %}max-w-md{% endif %}">{{ include.text }}</h2>

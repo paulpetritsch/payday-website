@@ -1,3 +1,14 @@
+{% comment %}
+Title: Button Element
+Description: Reusable button component with hover effects, optional icon, and responsive design.
+Page Usages: Used throughout the site for CTAs, navigation buttons, and action buttons
+Parameters:
+- include.text: Button text content
+- include.link: URL for the button (will be prefixed with site.baseurl)
+- include.icon: Boolean to show download icon (optional)
+- include.animation: Boolean to enable animation class (defaults to true)
+{% endcomment %}
+
 <a href="{{ site.baseurl }}{{include.link}}"
     class="{% if include.icon %} flex justify-center {% endif %} {% if include.animation != false and include.animation != 'false' %}is-animated{% endif %} inline-block bg-black hover:bg-pink-100 transition-colors duration-200 text-white px-4 py-4 md:py-3 rounded-xl text-xl md:text-base w-full md:w-fit text-center max-w-xs mx-auto lg:mx-0">
     {% if include.icon %}
