@@ -54,7 +54,7 @@ Parameters:
         {% if forloop.index == 1 %}
           {% assign tag_class = "-left-2 md:-left-12 top-1/4" %}
         {% elsif forloop.index == 2 %}
-          {% assign tag_class = "-right-6 md:-right-12 top-1/4 translate-y-5" %}
+          {% assign tag_class = "-right-6 md:-right-12 top-4 md:top-1/4 translate-y-5" %}
         {% elsif forloop.index == 3 %}
           {% assign tag_class = "-left-4 md:-left-20 bottom-6 md:bottom-1/4" %}
         {% elsif forloop.index == 4 %}
@@ -91,6 +91,13 @@ Parameters:
           {% assign tag_class = "-right-3 md:-right-12 bottom-1/4" %}
       {% endif %}
 
+      {% when "square-2tags-alt" %}
+        {% if forloop.index == 1 %}
+          {% assign tag_class = "-left-4 md:-left-12 bottom-2" %}
+        {% elsif forloop.index == 2 %}
+          {% assign tag_class = "-right-3 md:-right-12 bottom-1/4" %}
+      {% endif %}
+
     {% endcase %}
 
     <div class="flex items-center text-sm md:text-xl w-fit absolute {{ tag_class }}"
@@ -103,7 +110,7 @@ Parameters:
             is-animated-reverse
         {% endif %}">
         {% if tag.svg %}
-            <span class="w-5 h-5 mr-2 inline-block align-middle {% if tag.svg_color %}{{ tag.svg_color }}{% endif %}">
+            <span class="w-5 h-5 {% unless tag.svg == 'franken' %}mr-2{% endunless %} inline-block align-middle {% if tag.svg_color %}{{ tag.svg_color }}{% endif %}">
                 {{ site.data.svgs[tag.svg] }}
             </span>
         {% endif %}

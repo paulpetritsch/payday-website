@@ -207,6 +207,18 @@
     setTimeout(() => {
       if (main) main.style.opacity = '1';
     }, 100);
+
+    // Loading screen logic - only for homepage
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+      // Hide loading screen after minimum display time
+      setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+        setTimeout(() => {
+          loadingScreen.classList.add('removed');
+        }, 500);
+      }, 1500); // Show for at least 1.5 seconds
+    }
   });
 
   // Fade out before navigation

@@ -209,7 +209,7 @@ sections:
         - "Wir glauben daran, dass finanzielle Unterstützung einfach, menschlich und transparent sein muss. Mit payday bieten wir einen digitalen Weg, der in schwierigen Momenten entlastet."
       left: true
       centered: true
-      tags_layout: "quote-2tags-bottom"
+      tags_layout: "quote-2tags-alt"
       tags:
         - color: "bg-pink-50"
           text: "Arztrechnung?"
@@ -309,7 +309,7 @@ sections:
       button_icon: true
       left: true
       centered: true
-      tags_layout: "square-2tags"
+      tags_layout: "square-2tags-alt"
       tags:
         - color: "bg-pink-50"
           text: "Buy more Time!"

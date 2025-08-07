@@ -143,7 +143,7 @@ permalink: /process-benefits/
           </div>
           <div class="flex-1 relative">
               <img
-                srcset="{{ site.data.textblocks.pages.process_benefits.customsection_image2 | relative_url }}-400w.webp 400w, {{ site.data.textblocks.pages.process_benefits.customsection_image2 | relative_url }}-600w.webp 600w, {{ site.data.textblocks.pages.process_benefits.customsection_image3 | relative_url }}-800w.webp 800w"
+                srcset="{{ site.data.textblocks.pages.process_benefits.customsection_image2 | relative_url }}-400w.webp 400w, {{ site.data.textblocks.pages.process_benefits.customsection_image2 | relative_url }}-600w.webp 600w, {{ site.data.textblocks.pages.process_benefits.customsection_image2 | relative_url }}-800w.webp 800w"
                 sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (min-width: 601px) 800px"
                 src="{{ site.data.textblocks.pages.process_benefits.customsection_image2 | relative_url }}.webp"
                 alt="{{ site.data.textblocks.pages.process_benefits.customsection_subheadline | escape }}"    

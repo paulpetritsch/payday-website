@@ -23,11 +23,11 @@ Parameters:
             {% include elements/section-subheadline.html text=section_data.subheadline %}
             {% include elements/section-headline.html text=section_data.headline %}
         </div>
-        <div class="flex overflow-x-scroll overflow-y-hidden md:overflow-visible flex-row gap-8 md:justify-center mb-8 is-animated">
+        <div class="flex overflow-x-scroll overflow-y-hidden md:overflow-visible flex-row gap-4 lg:gap-8 md:justify-center mb-8 is-animated">
             {% assign blog_posts = site.categories.financial-advice | slice: 0, 4 %}
             {% for post in blog_posts %}
-              <a href="{{ site.baseurl }}{{ post.url }}" class="md:flex-1 first-of-type:ml-8 last-of-type:mr-8 group">
-                <div class="mb-4 w-[60vw] md:w-full rounded-3xl aspect-[1/1] relative bg-{{ post.color }}">
+              <a href="{{ site.baseurl }}{{ post.url }}" class="w-[60vw] md:w-[calc(25%-1rem)] lg:w-[calc(25%-1.5rem)] flex-shrink-0 first-of-type:ml-8 last-of-type:mr-8 first-of-type:md:ml-0 last-of-type:md:mr-0 first-of-type:lg:ml-8 last-of-type:lg:mr-8 group">
+                <div class="mb-4 w-full rounded-3xl aspect-square relative bg-{{ post.color }}">
                     <div class="absolute top-4 left-4 bg-white text-xs rounded-lg px-2 py-1">
                         {{ site.data.textblocks.texts.reading_time }} {{ post.duration }} {{ site.data.textblocks.texts.min}} 
                     </div>
@@ -45,7 +45,7 @@ Parameters:
                 <div class="font-semibold mb-4">
                   {{ post.title }}
                 </div>
-                <p class="text-gray-600 mb-4 md:pr-10">
+                <p class="text-gray-600 mb-4 w-full break-words">
                   {{ post.intro | default: post.excerpt | strip_html | truncate: 200 }}
                 </p>
             </a>

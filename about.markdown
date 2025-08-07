@@ -197,3 +197,4 @@ key: about
     centered=about3.centered
     tags_layout=about3.tags_layout
   %}
+  <div class="md:pt-32">
